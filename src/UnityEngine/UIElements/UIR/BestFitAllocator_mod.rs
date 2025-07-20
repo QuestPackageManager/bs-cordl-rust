@@ -38,13 +38,13 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::BestFitAllocator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -328,13 +328,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::BestFitAllocator_B
             crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+Block")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -432,14 +432,14 @@ for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
             crate::UnityEngine::UIElements::UIR::BestFitAllocator_Block,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+BestFitAllocator+BlockPool")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::BestFitAllocator_BlockPool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

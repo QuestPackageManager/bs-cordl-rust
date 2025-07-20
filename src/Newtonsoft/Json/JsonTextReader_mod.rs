@@ -42,13 +42,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::JsonTextRea
 #[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonTextReader {
     type Target = crate::Newtonsoft::Json::JsonReader;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+JsonTextReader")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::JsonTextReader {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

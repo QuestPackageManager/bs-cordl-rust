@@ -54,13 +54,13 @@ for crate::UnityEngine::UIElements::DynamicAtlas {
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas {
     type Target = crate::UnityEngine::UIElements::AtlasBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DynamicAtlas {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -601,13 +601,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlas_TextureInf
             crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlas+TextureInfo")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DynamicAtlas_TextureInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

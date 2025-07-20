@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::Vector2IntPropertyB
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::Vector2Int,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector2IntPropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::Vector2IntPropertyBag {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -121,14 +121,14 @@ for crate::Unity::Properties::Internal::Vector2IntPropertyBag_XProperty {
         crate::UnityEngine::Vector2Int,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector2IntPropertyBag+XProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector2IntPropertyBag_XProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -234,14 +234,14 @@ for crate::Unity::Properties::Internal::Vector2IntPropertyBag_YProperty {
         crate::UnityEngine::Vector2Int,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector2IntPropertyBag+YProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector2IntPropertyBag_YProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

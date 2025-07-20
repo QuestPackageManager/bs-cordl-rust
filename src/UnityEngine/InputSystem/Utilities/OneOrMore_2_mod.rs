@@ -543,7 +543,7 @@ impl<
 > std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -553,7 +553,7 @@ impl<
     TList: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Utilities::OneOrMore_2_Enumerator<TValue, TList> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

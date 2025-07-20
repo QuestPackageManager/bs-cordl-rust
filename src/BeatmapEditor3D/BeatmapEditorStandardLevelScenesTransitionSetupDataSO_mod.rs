@@ -43,14 +43,14 @@ for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataS
 impl std::ops::Deref
 for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::LevelScenesTransitionSetupDataSO;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapEditor3D+BeatmapEditorStandardLevelScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

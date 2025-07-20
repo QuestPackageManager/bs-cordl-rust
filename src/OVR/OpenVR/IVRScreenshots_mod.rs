@@ -160,14 +160,14 @@ for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyFilename")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyFilename {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -387,14 +387,14 @@ for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyType")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_GetScreenshotPropertyType")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRScreenshots__GetScreenshotPropertyType {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -582,13 +582,13 @@ for crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_HookScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_HookScreenshot")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRScreenshots__HookScreenshot {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -786,13 +786,13 @@ for crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_RequestScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_RequestScreenshot")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRScreenshots__RequestScreenshot {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1014,13 +1014,13 @@ for crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_SubmitScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_SubmitScreenshot")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRScreenshots__SubmitScreenshot {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1242,13 +1242,13 @@ for crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_TakeStereoScreenshot")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_TakeStereoScreenshot")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRScreenshots__TakeStereoScreenshot {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1460,14 +1460,14 @@ for crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_UpdateScreenshotProgress")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRScreenshots+_UpdateScreenshotProgress")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRScreenshots__UpdateScreenshotProgress {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

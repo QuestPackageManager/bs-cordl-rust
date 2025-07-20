@@ -30,13 +30,13 @@ for crate::System::Runtime::Remoting::Metadata::SoapAttribute {
 #[cfg(feature = "System+Runtime+Remoting+Metadata+SoapAttribute")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Metadata::SoapAttribute {
     type Target = crate::System::Attribute;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Metadata+SoapAttribute")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Metadata::SoapAttribute {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

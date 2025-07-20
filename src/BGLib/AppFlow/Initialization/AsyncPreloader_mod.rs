@@ -27,13 +27,13 @@ for crate::BGLib::AppFlow::Initialization::AsyncPreloader {
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncPreloader")]
 impl std::ops::Deref for crate::BGLib::AppFlow::Initialization::AsyncPreloader {
     type Target = crate::Zenject::MonoInstaller;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AsyncPreloader")]
 impl std::ops::DerefMut for crate::BGLib::AppFlow::Initialization::AsyncPreloader {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

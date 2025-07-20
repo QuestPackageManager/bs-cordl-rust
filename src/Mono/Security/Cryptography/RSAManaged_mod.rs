@@ -42,13 +42,13 @@ for crate::Mono::Security::Cryptography::RSAManaged {
 #[cfg(feature = "Mono+Security+Cryptography+RSAManaged")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::RSAManaged {
     type Target = crate::System::Security::Cryptography::RSA;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+RSAManaged")]
 impl std::ops::DerefMut for crate::Mono::Security::Cryptography::RSAManaged {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -426,14 +426,14 @@ for crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler {
 impl std::ops::Deref
 for crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Security+Cryptography+RSAManaged+KeyGeneratedEventHandler")]
 impl std::ops::DerefMut
 for crate::Mono::Security::Cryptography::RSAManaged_KeyGeneratedEventHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

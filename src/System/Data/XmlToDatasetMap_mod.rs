@@ -32,13 +32,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::XmlToDatasetMap
 #[cfg(feature = "System+Data+XmlToDatasetMap")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap")]
 impl std::ops::DerefMut for crate::System::Data::XmlToDatasetMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -704,13 +704,13 @@ for crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
 #[cfg(feature = "System+Data+XmlToDatasetMap+TableSchemaInfo")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap+TableSchemaInfo")]
 impl std::ops::DerefMut for crate::System::Data::XmlToDatasetMap_TableSchemaInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -793,13 +793,13 @@ for crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdHashtable")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
     type Target = crate::System::Collections::Hashtable;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdHashtable")]
 impl std::ops::DerefMut for crate::System::Data::XmlToDatasetMap_XmlNodeIdHashtable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -985,13 +985,13 @@ for crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdentety")]
 impl std::ops::Deref for crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+XmlToDatasetMap+XmlNodeIdentety")]
 impl std::ops::DerefMut for crate::System::Data::XmlToDatasetMap_XmlNodeIdentety {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

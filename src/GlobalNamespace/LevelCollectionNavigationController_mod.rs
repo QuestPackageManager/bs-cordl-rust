@@ -105,13 +105,13 @@ for crate::GlobalNamespace::LevelCollectionNavigationController {
 #[cfg(feature = "LevelCollectionNavigationController")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelCollectionNavigationController {
     type Target = crate::HMUI::NavigationController;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LevelCollectionNavigationController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LevelCollectionNavigationController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

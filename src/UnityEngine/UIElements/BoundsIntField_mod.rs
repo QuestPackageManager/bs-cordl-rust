@@ -37,13 +37,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField {
     type Target = crate::UnityEngine::UIElements::BaseField_1<
         crate::UnityEngine::BoundsInt,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BoundsIntField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -275,13 +275,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlFact
             crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -376,13 +376,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::BoundsIntField_UxmlTrai
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::BoundsInt,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BoundsIntField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::BoundsIntField_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

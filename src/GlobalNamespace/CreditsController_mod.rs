@@ -57,13 +57,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsContr
 #[cfg(feature = "CreditsController")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsController {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

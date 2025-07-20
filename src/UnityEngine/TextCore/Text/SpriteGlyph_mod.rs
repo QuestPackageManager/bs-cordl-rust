@@ -28,13 +28,13 @@ for crate::UnityEngine::TextCore::Text::SpriteGlyph {
 #[cfg(feature = "UnityEngine+TextCore+Text+SpriteGlyph")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::SpriteGlyph {
     type Target = crate::UnityEngine::TextCore::Glyph;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+SpriteGlyph")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::SpriteGlyph {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

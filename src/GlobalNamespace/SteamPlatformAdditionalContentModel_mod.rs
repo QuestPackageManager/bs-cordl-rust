@@ -40,13 +40,13 @@ for crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
 #[cfg(feature = "SteamPlatformAdditionalContentModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     type Target = crate::GlobalNamespace::AdditionalContentModel;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SteamPlatformAdditionalContentModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

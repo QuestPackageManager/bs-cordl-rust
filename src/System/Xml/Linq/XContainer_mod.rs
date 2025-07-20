@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Linq::XContainer
 #[cfg(feature = "System+Xml+Linq+XContainer")]
 impl std::ops::Deref for crate::System::Xml::Linq::XContainer {
     type Target = crate::System::Xml::Linq::XNode;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Linq+XContainer")]
 impl std::ops::DerefMut for crate::System::Xml::Linq::XContainer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -747,13 +747,13 @@ for crate::System::Xml::Linq::XContainer_ContentReader {
 #[cfg(feature = "System+Xml+Linq+XContainer+ContentReader")]
 impl std::ops::Deref for crate::System::Xml::Linq::XContainer_ContentReader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Linq+XContainer+ContentReader")]
 impl std::ops::DerefMut for crate::System::Xml::Linq::XContainer_ContentReader {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

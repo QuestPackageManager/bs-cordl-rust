@@ -31,13 +31,13 @@ for crate::GlobalNamespace::BindingRestrictions_TypeRestriction {
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TypeRestriction")]
 impl std::ops::Deref for crate::GlobalNamespace::BindingRestrictions_TypeRestriction {
     type Target = crate::System::Dynamic::BindingRestrictions;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+TypeRestriction")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BindingRestrictions_TypeRestriction {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

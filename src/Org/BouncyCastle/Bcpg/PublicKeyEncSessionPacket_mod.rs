@@ -35,13 +35,13 @@ for crate::Org::BouncyCastle::Bcpg::PublicKeyEncSessionPacket {
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicKeyEncSessionPacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::PublicKeyEncSessionPacket {
     type Target = crate::Org::BouncyCastle::Bcpg::ContainedPacket;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+PublicKeyEncSessionPacket")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::PublicKeyEncSessionPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

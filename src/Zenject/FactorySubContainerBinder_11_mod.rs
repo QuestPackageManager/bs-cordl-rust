@@ -129,7 +129,7 @@ for crate::Zenject::FactorySubContainerBinder_11<
     TContract,
 > {
     type Target = crate::Zenject::FactorySubContainerBinderWithParams_1<TContract>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -160,7 +160,7 @@ for crate::Zenject::FactorySubContainerBinder_11<
     TParam10,
     TContract,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

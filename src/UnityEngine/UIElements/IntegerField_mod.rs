@@ -27,13 +27,13 @@ for crate::UnityEngine::UIElements::IntegerField {
 #[cfg(feature = "UnityEngine+UIElements+IntegerField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<i32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IntegerField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IntegerField {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -286,13 +286,13 @@ for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
 #[cfg(feature = "UnityEngine+UIElements+IntegerField+IntegerInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
     type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<i32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IntegerField+IntegerInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IntegerField_IntegerInput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -510,13 +510,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_UxmlFactor
             crate::UnityEngine::UIElements::IntegerField_UxmlTraits,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IntegerField_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -599,13 +599,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::IntegerField_UxmlTraits
             crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+IntegerField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::IntegerField_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

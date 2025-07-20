@@ -42,13 +42,13 @@ for crate::UnityEngine::UIElements::RadioButtonGroup {
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup {
     type Target = crate::UnityEngine::UIElements::BaseField_1<i32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RadioButtonGroup {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -405,14 +405,14 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFa
             crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -498,13 +498,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTr
             crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RadioButtonGroup+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RadioButtonGroup_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

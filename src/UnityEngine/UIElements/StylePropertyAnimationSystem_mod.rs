@@ -34,7 +34,7 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSy
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -43,7 +43,7 @@ for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSy
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::ElementPropertyPair_StylePropertyAnimationSystem_EqualityComparer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -265,14 +265,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2247,14 +2247,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2578,14 +2578,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::Background,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesBackground")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackground {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2718,7 +2718,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::BackgroundPosition,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2727,7 +2727,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundPosition {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2864,7 +2864,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::BackgroundRepeat,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2873,7 +2873,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundRepeat {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3017,7 +3017,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::BackgroundSize,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3026,7 +3026,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroun
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesBackgroundSize {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3325,14 +3325,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::Color,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesColor")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesColor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3596,14 +3596,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         T,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesDiscrete_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3790,14 +3790,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         f32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFloat")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFloat {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4006,14 +4006,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesFont")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFont {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4146,7 +4146,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefin
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesDiscrete_1<
         crate::UnityEngine::UIElements::FontDefinition,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -4155,7 +4155,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefin
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesFontDefinition {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4289,14 +4289,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesInt")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesInt {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4512,14 +4512,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Length,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesLength")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesLength {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4814,14 +4814,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Rotate,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesRotate")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesRotate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5077,14 +5077,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Scale,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesScale")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesScale {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5340,14 +5340,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShado
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::TextShadow,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTextShadow")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTextShadow {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5609,7 +5609,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransform
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::TransformOrigin,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -5618,7 +5618,7 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransform
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTransformOrigin {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5921,14 +5921,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<
         crate::UnityEngine::UIElements::Translate,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+ValuesTranslate")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_ValuesTranslate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6254,14 +6254,14 @@ for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
     type Target = crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+StylePropertyAnimationSystem+Values_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::StylePropertyAnimationSystem_Values_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7628,7 +7628,7 @@ for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_Transi
     T,
 > {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -7639,7 +7639,7 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::Values_1_StylePropertyAnimationSystem_TransitionEventsFrameState<
     T,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -48,13 +48,13 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel {
 #[cfg(feature = "PlatformLeaderboardsModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformLeaderboardsModel {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformLeaderboardsModel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -648,14 +648,14 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel+GetScoresCompletionHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -963,14 +963,14 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel+LeaderboardScore")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1315,14 +1315,14 @@ for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandl
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformLeaderboardsModel+UploadScoreCompletionHandler")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

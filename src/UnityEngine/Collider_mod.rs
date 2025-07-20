@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Collider {
 #[cfg(feature = "UnityEngine+Collider")]
 impl std::ops::Deref for crate::UnityEngine::Collider {
     type Target = crate::UnityEngine::Component;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Collider")]
 impl std::ops::DerefMut for crate::UnityEngine::Collider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

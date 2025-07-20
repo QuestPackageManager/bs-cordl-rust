@@ -27,13 +27,13 @@ for crate::GlobalNamespace::MultiplayerBadgeDataPrecisionSO {
 #[cfg(feature = "MultiplayerBadgeDataPrecisionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerBadgeDataPrecisionSO {
     type Target = crate::GlobalNamespace::MultiplayerBadgeDataMinMaxFloatSO;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerBadgeDataPrecisionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerBadgeDataPrecisionSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

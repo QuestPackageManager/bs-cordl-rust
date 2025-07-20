@@ -60,14 +60,14 @@ unsafe impl<
 impl<A: quest_hook::libil2cpp::Type, B: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::TMPro::FastAction_2<A, B> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TMPro+FastAction_2")]
 impl<A: quest_hook::libil2cpp::Type, B: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::TMPro::FastAction_2<A, B> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

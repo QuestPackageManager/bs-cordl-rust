@@ -31,14 +31,14 @@ for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSetProxy {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSetProxy {
     type Target = crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSet;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+UnmodifiableSetProxy")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableSetProxy {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

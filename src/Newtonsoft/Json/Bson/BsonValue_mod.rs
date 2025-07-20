@@ -28,13 +28,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Newtonsoft::Json::Bson::BsonV
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonValue")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonValue {
     type Target = crate::Newtonsoft::Json::Bson::BsonToken;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonValue")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonValue {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

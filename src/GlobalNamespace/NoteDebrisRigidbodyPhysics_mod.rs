@@ -32,13 +32,13 @@ for crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
 #[cfg(feature = "NoteDebrisRigidbodyPhysics")]
 impl std::ops::Deref for crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
     type Target = crate::GlobalNamespace::NoteDebrisPhysics;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NoteDebrisRigidbodyPhysics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NoteDebrisRigidbodyPhysics {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

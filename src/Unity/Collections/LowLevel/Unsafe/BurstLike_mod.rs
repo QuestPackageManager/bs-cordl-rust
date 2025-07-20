@@ -27,13 +27,13 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike")]
 impl std::ops::Deref for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike")]
 impl std::ops::DerefMut for crate::Unity::Collections::LowLevel::Unsafe::BurstLike {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -86,14 +86,14 @@ for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Collections+LowLevel+Unsafe+BurstLike+SharedStatic")]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::BurstLike_SharedStatic {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

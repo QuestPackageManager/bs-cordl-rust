@@ -27,13 +27,13 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl std::ops::Deref for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility")]
 impl std::ops::DerefMut for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -561,14 +561,14 @@ for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
 impl std::ops::Deref
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Jobs+LowLevel+Unsafe+JobsUtility+PanicFunction_")]
 impl std::ops::DerefMut
 for crate::Unity::Jobs::LowLevel::Unsafe::JobsUtility_PanicFunction_ {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

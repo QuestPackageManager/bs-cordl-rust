@@ -28,14 +28,14 @@ for crate::Unity::Properties::Internal::DefaultPropertyBagInitializer {
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::DefaultPropertyBagInitializer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+DefaultPropertyBagInitializer")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::DefaultPropertyBagInitializer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

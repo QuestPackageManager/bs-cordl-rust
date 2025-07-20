@@ -32,14 +32,14 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
     type Target = crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceAtlasedSprite")]
 impl std::ops::DerefMut
 for crate::UnityEngine::AddressableAssets::AssetReferenceAtlasedSprite {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

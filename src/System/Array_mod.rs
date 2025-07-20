@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array {
 #[cfg(feature = "System+Array")]
 impl std::ops::Deref for crate::System::Array {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Array")]
 impl std::ops::DerefMut for crate::System::Array {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4841,13 +4841,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_ArrayEnumerator
 #[cfg(feature = "System+Array+ArrayEnumerator")]
 impl std::ops::Deref for crate::System::Array_ArrayEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Array+ArrayEnumerator")]
 impl std::ops::DerefMut for crate::System::Array_ArrayEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5058,14 +5058,14 @@ for crate::System::Array_EmptyInternalEnumerator_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Array+EmptyInternalEnumerator_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Array_EmptyInternalEnumerator_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5635,13 +5635,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Array_RawData {
 #[cfg(feature = "System+Array+RawData")]
 impl std::ops::Deref for crate::System::Array_RawData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Array+RawData")]
 impl std::ops::DerefMut for crate::System::Array_RawData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

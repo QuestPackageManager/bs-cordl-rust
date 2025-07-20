@@ -28,14 +28,14 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion2_6_0AndEarlier+BeatmapDataLoader")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -531,7 +531,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_BasicEvent
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_BasicEventConverter {
     type Target = crate::GlobalNamespace::BeatToTimeConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -540,7 +540,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_BasicEvent
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_BasicEventConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -699,7 +699,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNoteC
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNoteConverter {
     type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -708,7 +708,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNoteC
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ColorNoteConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -849,7 +849,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleCo
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleConverter {
     type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -858,7 +858,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleCo
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_ObstacleConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1041,7 +1041,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderConv
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderConverter {
     type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1050,7 +1050,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderConv
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SliderConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1194,7 +1194,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEve
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEventsFilter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1203,7 +1203,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEve
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_SpecialEventsFilter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1340,7 +1340,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointCo
 impl std::ops::Deref
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointConverter {
     type Target = crate::GlobalNamespace::BeatToTimeAndRotationConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1349,7 +1349,7 @@ for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointCo
 )]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion2_6_0AndEarlier::BeatmapDataLoader_WaypointConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

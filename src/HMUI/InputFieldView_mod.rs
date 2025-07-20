@@ -49,13 +49,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::InputFieldView {
 #[cfg(feature = "HMUI+InputFieldView")]
 impl std::ops::Deref for crate::HMUI::InputFieldView {
     type Target = crate::UnityEngine::UI::Selectable;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HMUI+InputFieldView")]
 impl std::ops::DerefMut for crate::HMUI::InputFieldView {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -702,13 +702,13 @@ impl std::ops::Deref for crate::HMUI::InputFieldView_InputFieldChanged {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HMUI+InputFieldView+InputFieldChanged")]
 impl std::ops::DerefMut for crate::HMUI::InputFieldView_InputFieldChanged {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

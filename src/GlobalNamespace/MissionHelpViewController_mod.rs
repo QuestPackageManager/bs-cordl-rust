@@ -41,13 +41,13 @@ for crate::GlobalNamespace::MissionHelpViewController {
 #[cfg(feature = "MissionHelpViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionHelpViewController {
     type Target = crate::HMUI::ViewController;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionHelpViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionHelpViewController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -305,14 +305,14 @@ for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair 
 impl std::ops::Deref
 for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

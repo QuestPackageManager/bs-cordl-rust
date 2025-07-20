@@ -28,14 +28,14 @@ for crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
 impl std::ops::Deref
 for crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi+HTTP_REQUEST_HEADER_ID")]
 impl std::ops::DerefMut
 for crate::System::Net::HttpApi_UnsafeNclNativeMethods_HTTP_REQUEST_HEADER_ID {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -106,13 +106,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::UnsafeNclNativeM
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods")]
 impl std::ops::Deref for crate::System::Net::UnsafeNclNativeMethods {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods")]
 impl std::ops::DerefMut for crate::System::Net::UnsafeNclNativeMethods {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -161,13 +161,13 @@ for crate::System::Net::UnsafeNclNativeMethods_HttpApi {
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi")]
 impl std::ops::Deref for crate::System::Net::UnsafeNclNativeMethods_HttpApi {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+HttpApi")]
 impl std::ops::DerefMut for crate::System::Net::UnsafeNclNativeMethods_HttpApi {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -215,14 +215,14 @@ for crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+SecureStringHelper")]
 impl std::ops::Deref for crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+UnsafeNclNativeMethods+SecureStringHelper")]
 impl std::ops::DerefMut
 for crate::System::Net::UnsafeNclNativeMethods_SecureStringHelper {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

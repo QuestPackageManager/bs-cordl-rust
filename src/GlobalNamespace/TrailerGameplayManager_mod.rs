@@ -35,13 +35,13 @@ for crate::GlobalNamespace::TrailerGameplayManager {
 #[cfg(feature = "TrailerGameplayManager")]
 impl std::ops::Deref for crate::GlobalNamespace::TrailerGameplayManager {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TrailerGameplayManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::TrailerGameplayManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

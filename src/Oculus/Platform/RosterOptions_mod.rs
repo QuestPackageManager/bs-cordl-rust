@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::RosterOptio
 #[cfg(feature = "Oculus+Platform+RosterOptions")]
 impl std::ops::Deref for crate::Oculus::Platform::RosterOptions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Oculus+Platform+RosterOptions")]
 impl std::ops::DerefMut for crate::Oculus::Platform::RosterOptions {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

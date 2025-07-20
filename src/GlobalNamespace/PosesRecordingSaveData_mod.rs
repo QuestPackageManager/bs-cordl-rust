@@ -42,13 +42,13 @@ for crate::GlobalNamespace::PosesRecordingSaveData {
 #[cfg(feature = "PosesRecordingSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesRecordingSaveData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecordingSaveData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -190,14 +190,14 @@ for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSave
 impl std::ops::Deref
 for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -299,13 +299,13 @@ for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
 #[cfg(feature = "PosesRecordingSaveData+PoseSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesRecordingSaveData+PoseSaveData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -406,14 +406,14 @@ for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
 impl std::ops::Deref
 for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

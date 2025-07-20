@@ -30,13 +30,13 @@ for crate::UnityEngine::AnimatorOverrideController {
 #[cfg(feature = "UnityEngine+AnimatorOverrideController")]
 impl std::ops::Deref for crate::UnityEngine::AnimatorOverrideController {
     type Target = crate::UnityEngine::RuntimeAnimatorController;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+AnimatorOverrideController")]
 impl std::ops::DerefMut for crate::UnityEngine::AnimatorOverrideController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -293,7 +293,7 @@ for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCall
 impl std::ops::Deref
 for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -302,7 +302,7 @@ for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCall
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::AnimatorOverrideController_OnOverrideControllerDirtyCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Math::Prim
 #[cfg(feature = "Org+BouncyCastle+Math+Primes")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Primes {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Primes")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::Primes {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -562,13 +562,13 @@ for crate::Org::BouncyCastle::Math::Primes_MROutput {
 #[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Primes_MROutput {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::Primes_MROutput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -800,13 +800,13 @@ for crate::Org::BouncyCastle::Math::Primes_STOutput {
 #[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Primes_STOutput {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::Primes_STOutput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -60,13 +60,13 @@ for crate::GlobalNamespace::SliderIntensityEffect {
 #[cfg(feature = "SliderIntensityEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderIntensityEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderIntensityEffect {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -446,13 +446,13 @@ for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
 #[cfg(feature = "SliderIntensityEffect+FadeElement")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderIntensityEffect+FadeElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderIntensityEffect_FadeElement {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -552,13 +552,13 @@ for crate::GlobalNamespace::SliderIntensityEffect_InitData {
 #[cfg(feature = "SliderIntensityEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderIntensityEffect_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderIntensityEffect+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderIntensityEffect_InitData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -641,14 +641,14 @@ for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
 impl std::ops::Deref
 for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderIntensityEffect+IntensityCalculationDelegate")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SliderIntensityEffect_IntensityCalculationDelegate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

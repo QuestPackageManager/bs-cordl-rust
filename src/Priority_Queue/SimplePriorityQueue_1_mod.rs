@@ -45,14 +45,14 @@ for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
 impl<TItem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
     type Target = crate::Priority_Queue::SimplePriorityQueue_2<TItem, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Priority_Queue+SimplePriorityQueue_1")]
 impl<TItem: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Priority_Queue::SimplePriorityQueue_1<TItem> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

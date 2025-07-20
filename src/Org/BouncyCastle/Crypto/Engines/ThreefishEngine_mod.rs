@@ -36,13 +36,13 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -531,14 +531,14 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Ciph
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cipher {
     type Target = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish1024Cipher")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish1024Cipher {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -758,14 +758,14 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Ciphe
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Cipher {
     type Target = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish256Cipher")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish256Cipher {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -937,14 +937,14 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Ciphe
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher {
     type Target = crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+Threefish512Cipher")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_Threefish512Cipher {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1134,14 +1134,14 @@ for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+ThreefishEngine+ThreefishCipher")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine_ThreefishCipher {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

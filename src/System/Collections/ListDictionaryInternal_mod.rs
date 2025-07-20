@@ -33,13 +33,13 @@ for crate::System::Collections::ListDictionaryInternal {
 #[cfg(feature = "System+Collections+ListDictionaryInternal")]
 impl std::ops::Deref for crate::System::Collections::ListDictionaryInternal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal")]
 impl std::ops::DerefMut for crate::System::Collections::ListDictionaryInternal {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -556,14 +556,14 @@ for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
 impl std::ops::Deref
 for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal+DictionaryNode")]
 impl std::ops::DerefMut
 for crate::System::Collections::ListDictionaryInternal_DictionaryNode {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -645,14 +645,14 @@ for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
 impl std::ops::Deref
 for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal+NodeEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Collections::ListDictionaryInternal_NodeEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -909,14 +909,14 @@ for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
 impl std::ops::Deref
 for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Collections+ListDictionaryInternal+NodeKeyValueCollection")]
 impl std::ops::DerefMut
 for crate::System::Collections::ListDictionaryInternal_NodeKeyValueCollection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1184,7 +1184,7 @@ for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_No
 impl std::ops::Deref
 for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_NodeKeyValueEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1193,7 +1193,7 @@ for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_No
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::NodeKeyValueCollection_ListDictionaryInternal_NodeKeyValueEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

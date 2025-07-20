@@ -31,14 +31,14 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
 impl std::ops::Deref
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+BufferChunk")]
 impl std::ops::DerefMut
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -131,14 +131,14 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
 impl std::ops::Deref
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+Item")]
 impl std::ops::DerefMut
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -393,13 +393,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlWellFormedWri
 #[cfg(feature = "System+Xml+XmlWellFormedWriter")]
 impl std::ops::Deref for crate::System::Xml::XmlWellFormedWriter {
     type Target = crate::System::Xml::XmlWriter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter")]
 impl std::ops::DerefMut for crate::System::Xml::XmlWellFormedWriter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2097,13 +2097,13 @@ for crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache")]
 impl std::ops::Deref for crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache")]
 impl std::ops::DerefMut for crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3034,14 +3034,14 @@ for crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
 impl std::ops::Deref for crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
 impl std::ops::DerefMut
 for crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

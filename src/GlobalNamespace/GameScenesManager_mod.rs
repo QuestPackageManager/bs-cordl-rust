@@ -85,13 +85,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameScenesMa
 #[cfg(feature = "GameScenesManager")]
 impl std::ops::Deref for crate::GlobalNamespace::GameScenesManager {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameScenesManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameScenesManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2144,13 +2144,13 @@ for crate::GlobalNamespace::GameScenesManager_ScenesStackData {
 #[cfg(feature = "GameScenesManager+ScenesStackData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameScenesManager_ScenesStackData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameScenesManager+ScenesStackData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameScenesManager_ScenesStackData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

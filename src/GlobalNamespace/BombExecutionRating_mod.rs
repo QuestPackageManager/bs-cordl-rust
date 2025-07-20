@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BombExecutio
 #[cfg(feature = "BombExecutionRating")]
 impl std::ops::Deref for crate::GlobalNamespace::BombExecutionRating {
     type Target = crate::GlobalNamespace::BeatmapObjectExecutionRating;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BombExecutionRating")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BombExecutionRating {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

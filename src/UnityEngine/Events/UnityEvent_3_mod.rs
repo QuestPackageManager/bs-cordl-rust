@@ -62,7 +62,7 @@ impl<
     T2: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::UnityEngine::Events::UnityEvent_3<T0, T1, T2> {
     type Target = crate::UnityEngine::Events::UnityEventBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -72,7 +72,7 @@ impl<
     T1: quest_hook::libil2cpp::Type,
     T2: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut for crate::UnityEngine::Events::UnityEvent_3<T0, T1, T2> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

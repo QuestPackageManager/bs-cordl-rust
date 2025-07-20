@@ -37,13 +37,13 @@ for crate::GlobalNamespace::PlayAudioOnGameEventController {
 #[cfg(feature = "PlayAudioOnGameEventController")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayAudioOnGameEventController {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayAudioOnGameEventController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayAudioOnGameEventController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -174,14 +174,14 @@ for crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding {
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayAudioOnGameEventController+EventAudioBinding")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayAudioOnGameEventController_EventAudioBinding {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

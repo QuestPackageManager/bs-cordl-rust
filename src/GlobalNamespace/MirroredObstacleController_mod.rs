@@ -35,13 +35,13 @@ for crate::GlobalNamespace::MirroredObstacleController {
 #[cfg(feature = "MirroredObstacleController")]
 impl std::ops::Deref for crate::GlobalNamespace::MirroredObstacleController {
     type Target = crate::GlobalNamespace::ObstacleControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredObstacleController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirroredObstacleController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -315,13 +315,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MirroredObstacleController_Pool
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredObstacleController>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredObstacleController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirroredObstacleController_Pool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

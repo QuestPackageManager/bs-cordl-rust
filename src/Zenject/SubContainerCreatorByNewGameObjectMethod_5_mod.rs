@@ -89,7 +89,7 @@ for crate::Zenject::SubContainerCreatorByNewGameObjectMethod_5<
     TParam5,
 > {
     type Target = crate::Zenject::SubContainerCreatorByNewGameObjectDynamicContext;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -108,7 +108,7 @@ for crate::Zenject::SubContainerCreatorByNewGameObjectMethod_5<
     TParam4,
     TParam5,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

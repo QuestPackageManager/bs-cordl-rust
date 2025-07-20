@@ -57,7 +57,7 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
     type Target = crate::Unity::Properties::PropertyBag_1<TSet>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -66,7 +66,7 @@ impl<
     TSet: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut for crate::Unity::Properties::SetPropertyBagBase_2<TSet, TElement> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -229,7 +229,7 @@ impl<
 > std::ops::Deref
 for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TElement> {
     type Target = crate::Unity::Properties::Property_2<TSet, TElement>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -239,7 +239,7 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::Unity::Properties::SetPropertyBagBase_2_SetElementProperty<TSet, TElement> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

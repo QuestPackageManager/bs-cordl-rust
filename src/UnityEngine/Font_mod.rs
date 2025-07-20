@@ -29,13 +29,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Font {
 #[cfg(feature = "UnityEngine+Font")]
 impl std::ops::Deref for crate::UnityEngine::Font {
     type Target = crate::UnityEngine::Object;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Font")]
 impl std::ops::DerefMut for crate::UnityEngine::Font {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1157,13 +1157,13 @@ for crate::UnityEngine::Font_FontTextureRebuildCallback {
 #[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
 impl std::ops::Deref for crate::UnityEngine::Font_FontTextureRebuildCallback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Font+FontTextureRebuildCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::Font_FontTextureRebuildCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

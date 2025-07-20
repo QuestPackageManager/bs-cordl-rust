@@ -50,14 +50,14 @@ for crate::System::Data::Listeners_1<TElem> {
 impl<TElem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Data::Listeners_1<TElem> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+Listeners_1")]
 impl<TElem: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Data::Listeners_1<TElem> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -386,7 +386,7 @@ impl<
     T4: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Data::Listeners_1_Action_4<TElem, T1, T2, T3, T4> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -399,7 +399,7 @@ impl<
     T4: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::System::Data::Listeners_1_Action_4<TElem, T1, T2, T3, T4> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -593,7 +593,7 @@ impl<
     TResult: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Data::Listeners_1_Func_2<TElem, T1, TResult> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -603,7 +603,7 @@ impl<
     T1: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut for crate::System::Data::Listeners_1_Func_2<TElem, T1, TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

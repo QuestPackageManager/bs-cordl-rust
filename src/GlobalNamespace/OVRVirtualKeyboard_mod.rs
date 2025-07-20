@@ -221,13 +221,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRVirtualKe
 #[cfg(feature = "OVRVirtualKeyboard")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboard {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboard")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRVirtualKeyboard {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1517,13 +1517,13 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
 #[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboard+BaseInputSource")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1725,14 +1725,14 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource {
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource {
     type Target = crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboard+ControllerInputSource")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRVirtualKeyboard_ControllerInputSource {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1886,13 +1886,13 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_HandInputSource {
 #[cfg(feature = "OVRVirtualKeyboard+HandInputSource")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRVirtualKeyboard_HandInputSource {
     type Target = crate::GlobalNamespace::OVRVirtualKeyboard_BaseInputSource;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboard+HandInputSource")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRVirtualKeyboard_HandInputSource {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2188,14 +2188,14 @@ for crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride {
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRVirtualKeyboard+InteractorRootTransformOverride")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRVirtualKeyboard_InteractorRootTransformOverride {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

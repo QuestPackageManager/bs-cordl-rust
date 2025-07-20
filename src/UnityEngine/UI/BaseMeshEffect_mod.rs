@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::BaseMeshEffe
 #[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
 impl std::ops::Deref for crate::UnityEngine::UI::BaseMeshEffect {
     type Target = crate::UnityEngine::EventSystems::UIBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UI+BaseMeshEffect")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::BaseMeshEffect {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -40,13 +40,13 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandom")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
     type Target = crate::Org::BouncyCastle::Security::SecureRandom;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandom")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandom {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -31,13 +31,13 @@ for crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
 impl std::ops::Deref for crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
     type Target = crate::BeatmapSaveDataVersion2_6_0AndEarlier::BeatmapSaveDataItem;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapSaveDataVersion2_6_0AndEarlier+WaypointData")]
 impl std::ops::DerefMut for crate::BeatmapSaveDataVersion2_6_0AndEarlier::WaypointData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

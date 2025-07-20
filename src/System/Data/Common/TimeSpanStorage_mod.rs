@@ -30,13 +30,13 @@ for crate::System::Data::Common::TimeSpanStorage {
 #[cfg(feature = "System+Data+Common+TimeSpanStorage")]
 impl std::ops::Deref for crate::System::Data::Common::TimeSpanStorage {
     type Target = crate::System::Data::Common::DataStorage;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+Common+TimeSpanStorage")]
 impl std::ops::DerefMut for crate::System::Data::Common::TimeSpanStorage {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -27,13 +27,13 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -341,7 +341,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRead
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -350,7 +350,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRead
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -562,14 +562,14 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

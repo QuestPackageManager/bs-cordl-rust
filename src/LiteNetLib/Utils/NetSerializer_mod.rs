@@ -34,13 +34,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::LiteNetLib::Utils::NetSeriali
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetSerializer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
 impl std::ops::DerefMut for crate::LiteNetLib::Utils::NetSerializer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -576,14 +576,14 @@ for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, bool>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+BoolSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_BoolSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -822,14 +822,14 @@ for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u8>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ByteSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_ByteSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1074,14 +1074,14 @@ for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
         T,
         char,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CharSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1258,14 +1258,14 @@ for crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1443,13 +1443,13 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomType {
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetSerializer_CustomType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
 impl std::ops::DerefMut for crate::LiteNetLib::Utils::NetSerializer_CustomType {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1573,14 +1573,14 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
 impl<TProperty: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_CustomType;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeClass_1")]
 impl<TProperty: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_CustomTypeClass_1<TProperty> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1734,14 +1734,14 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<TProperty> {
 impl<TProperty: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<TProperty> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_CustomType;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStatic_1")]
 impl<TProperty: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStatic_1<TProperty> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1922,14 +1922,14 @@ for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<TProperty> {
 impl<TProperty: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<TProperty> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_CustomType;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomTypeStruct_1")]
 impl<TProperty: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_CustomTypeStruct_1<TProperty> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2062,14 +2062,14 @@ for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, f64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+DoubleSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_DoubleSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2310,14 +2310,14 @@ for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumByteSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2502,14 +2502,14 @@ for crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_EnumByteSerializer_1<T>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+EnumIntSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_EnumIntSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2711,7 +2711,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty> {
         TClass,
         TProperty,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2721,7 +2721,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_FastCallClass_2<TClass, TProperty> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3001,7 +3001,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<TClass, TProp
         TClass,
         TProperty,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3011,7 +3011,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecificAuto_2<TClass, TProperty> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3364,7 +3364,7 @@ impl<
 > std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCall_1<TClass>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3374,7 +3374,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<TClass, TProperty> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3632,7 +3632,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty> 
         TClass,
         TProperty,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3642,7 +3642,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_FastCallStatic_2<TClass, TProperty> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3962,7 +3962,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty> 
         TClass,
         TProperty,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3972,7 +3972,7 @@ impl<
     TProperty: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4228,14 +4228,14 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCall_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4513,14 +4513,14 @@ for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FloatSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_FloatSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4765,14 +4765,14 @@ for crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
         T,
         quest_hook::libil2cpp::Gc<crate::System::Net::IPEndPoint>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IPEndPointSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_IPEndPointSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4949,14 +4949,14 @@ for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+IntSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_IntSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5195,14 +5195,14 @@ for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+LongSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_LongSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5441,14 +5441,14 @@ for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i8>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+SByteSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_SByteSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5687,14 +5687,14 @@ for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, i16>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ShortSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5940,14 +5940,14 @@ for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
         T,
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+StringSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6191,14 +6191,14 @@ for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UIntSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_UIntSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6437,14 +6437,14 @@ for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ULongSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_ULongSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6683,14 +6683,14 @@ for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<T, u16>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+UShortSerializer_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetSerializer_UShortSerializer_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

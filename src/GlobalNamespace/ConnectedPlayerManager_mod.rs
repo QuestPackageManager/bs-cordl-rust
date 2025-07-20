@@ -119,13 +119,13 @@ for crate::GlobalNamespace::ConnectedPlayerManager {
 #[cfg(feature = "ConnectedPlayerManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ConnectedPlayerManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3004,14 +3004,14 @@ for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
 #[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4305,14 +4305,14 @@ for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4651,13 +4651,13 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
 #[cfg(feature = "ConnectedPlayerManager+PingPacket")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PingPacket")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4905,14 +4905,14 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5163,14 +5163,14 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5436,14 +5436,14 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5698,14 +5698,14 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5970,14 +5970,14 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6231,14 +6231,14 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6485,13 +6485,13 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
 #[cfg(feature = "ConnectedPlayerManager+PongPacket")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+PongPacket")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6738,14 +6738,14 @@ for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
 #[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

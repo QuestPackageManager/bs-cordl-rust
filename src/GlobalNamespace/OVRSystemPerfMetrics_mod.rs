@@ -27,13 +27,13 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics {
 #[cfg(feature = "OVRSystemPerfMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSystemPerfMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSystemPerfMetrics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSystemPerfMetrics {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -118,14 +118,14 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSystemPerfMetrics+OVRSystemPerfMetricsTcpServer")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSystemPerfMetrics_OVRSystemPerfMetricsTcpServer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -323,13 +323,13 @@ for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
 #[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSystemPerfMetrics+PerfMetrics")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSystemPerfMetrics_PerfMetrics {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

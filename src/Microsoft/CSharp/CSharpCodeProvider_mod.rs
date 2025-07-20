@@ -27,13 +27,13 @@ for crate::Microsoft::CSharp::CSharpCodeProvider {
 #[cfg(feature = "Microsoft+CSharp+CSharpCodeProvider")]
 impl std::ops::Deref for crate::Microsoft::CSharp::CSharpCodeProvider {
     type Target = crate::Microsoft::CSharp::CodeDomProvider;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Microsoft+CSharp+CSharpCodeProvider")]
 impl std::ops::DerefMut for crate::Microsoft::CSharp::CSharpCodeProvider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

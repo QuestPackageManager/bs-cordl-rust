@@ -1146,13 +1146,13 @@ for crate::System::ComponentModel::TypeDescriptor {
 #[cfg(feature = "System+ComponentModel+TypeDescriptor")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor")]
 impl std::ops::DerefMut for crate::System::ComponentModel::TypeDescriptor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2585,14 +2585,14 @@ for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+AttributeFilterCacheItem")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_AttributeFilterCacheItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2732,14 +2732,14 @@ for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+FilterCacheItem")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_FilterCacheItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2924,14 +2924,14 @@ for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+MemberDescriptorComparer")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_MemberDescriptorComparer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3056,14 +3056,14 @@ for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+MergedTypeDescriptor")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_MergedTypeDescriptor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3563,14 +3563,14 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
     type Target = crate::System::ComponentModel::TypeDescriptionProvider;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptionNode")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptionNode {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3887,14 +3887,14 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorComObject")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorComObject {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3940,14 +3940,14 @@ for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeDescriptor+TypeDescriptorInterface")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeDescriptor_TypeDescriptorInterface {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

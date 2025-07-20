@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::FromBinderNonGeneric
 #[cfg(feature = "Zenject+FromBinderNonGeneric")]
 impl std::ops::Deref for crate::Zenject::FromBinderNonGeneric {
     type Target = crate::Zenject::FromBinder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+FromBinderNonGeneric")]
 impl std::ops::DerefMut for crate::Zenject::FromBinderNonGeneric {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

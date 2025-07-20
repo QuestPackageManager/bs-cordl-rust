@@ -67,13 +67,13 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
 #[cfg(feature = "UnifiedNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnifiedNetworkPlayerModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1693,14 +1693,14 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig
 impl std::ops::Deref
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnifiedNetworkPlayerModel+JoinMatchmakingPartyConfig")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_JoinMatchmakingPartyConfig {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1804,14 +1804,14 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
 impl std::ops::Deref
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnifiedNetworkPlayerModel+StartClientPartyConfig")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::UnifiedNetworkPlayerModel_StartClientPartyConfig {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -52,14 +52,14 @@ for crate::System::Collections::Generic::IDictionaryDebugView_2<K, V> {
 impl<K: quest_hook::libil2cpp::Type, V: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Generic::IDictionaryDebugView_2<K, V> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Collections+Generic+IDictionaryDebugView_2")]
 impl<K: quest_hook::libil2cpp::Type, V: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Collections::Generic::IDictionaryDebugView_2<K, V> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

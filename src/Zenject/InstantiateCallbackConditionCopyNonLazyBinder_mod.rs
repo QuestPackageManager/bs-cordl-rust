@@ -27,14 +27,14 @@ for crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder {
 #[cfg(feature = "Zenject+InstantiateCallbackConditionCopyNonLazyBinder")]
 impl std::ops::Deref for crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder {
     type Target = crate::Zenject::ConditionCopyNonLazyBinder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+InstantiateCallbackConditionCopyNonLazyBinder")]
 impl std::ops::DerefMut
 for crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

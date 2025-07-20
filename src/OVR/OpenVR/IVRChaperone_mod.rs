@@ -164,13 +164,13 @@ for crate::OVR::OpenVR::IVRChaperone__AreBoundsVisible {
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_AreBoundsVisible")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__AreBoundsVisible {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_AreBoundsVisible")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperone__AreBoundsVisible {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -329,13 +329,13 @@ for crate::OVR::OpenVR::IVRChaperone__ForceBoundsVisible {
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ForceBoundsVisible")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__ForceBoundsVisible {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ForceBoundsVisible")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperone__ForceBoundsVisible {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -503,13 +503,13 @@ for crate::OVR::OpenVR::IVRChaperone__GetBoundsColor {
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetBoundsColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__GetBoundsColor {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetBoundsColor")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperone__GetBoundsColor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -746,13 +746,13 @@ for crate::OVR::OpenVR::IVRChaperone__GetCalibrationState {
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetCalibrationState")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__GetCalibrationState {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetCalibrationState")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperone__GetCalibrationState {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -921,13 +921,13 @@ for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect {
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaRect")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaRect")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaRect {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1105,13 +1105,13 @@ for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize {
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_GetPlayAreaSize")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperone__GetPlayAreaSize {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1295,13 +1295,13 @@ for crate::OVR::OpenVR::IVRChaperone__ReloadInfo {
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ReloadInfo")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__ReloadInfo {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_ReloadInfo")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperone__ReloadInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1465,13 +1465,13 @@ for crate::OVR::OpenVR::IVRChaperone__SetSceneColor {
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_SetSceneColor")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRChaperone__SetSceneColor {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRChaperone+_SetSceneColor")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRChaperone__SetSceneColor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

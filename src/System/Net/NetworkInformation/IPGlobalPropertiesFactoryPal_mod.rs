@@ -28,14 +28,14 @@ for crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+NetworkInformation+IPGlobalPropertiesFactoryPal")]
 impl std::ops::DerefMut
 for crate::System::Net::NetworkInformation::IPGlobalPropertiesFactoryPal {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

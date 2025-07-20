@@ -321,13 +321,13 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1 {
 #[cfg(feature = "PlayerSaveDataV1_0_1")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveDataV1_0_1 {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -428,14 +428,14 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData {
 #[cfg(feature = "PlayerSaveDataV1_0_1+AchievementsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+AchievementsData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -518,14 +518,14 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers {
 #[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -608,13 +608,13 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer {
 #[cfg(feature = "PlayerSaveDataV1_0_1+GuestPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+GuestPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -721,13 +721,13 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer {
 #[cfg(feature = "PlayerSaveDataV1_0_1+LocalPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+LocalPlayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -810,14 +810,14 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerAllOverallStatsData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -974,14 +974,14 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData {
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerLevelStatsData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1057,14 +1057,14 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData {
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerMissionStatsData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1149,14 +1149,14 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData {
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerOverallStatsData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1323,14 +1323,14 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings {
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerSpecificSettings")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

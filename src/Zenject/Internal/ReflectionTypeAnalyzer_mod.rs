@@ -27,13 +27,13 @@ for crate::Zenject::Internal::ReflectionTypeAnalyzer {
 #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer")]
 impl std::ops::Deref for crate::Zenject::Internal::ReflectionTypeAnalyzer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeAnalyzer")]
 impl std::ops::DerefMut for crate::Zenject::Internal::ReflectionTypeAnalyzer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

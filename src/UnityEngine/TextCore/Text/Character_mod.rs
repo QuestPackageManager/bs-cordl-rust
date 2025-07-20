@@ -27,13 +27,13 @@ for crate::UnityEngine::TextCore::Text::Character {
 #[cfg(feature = "UnityEngine+TextCore+Text+Character")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::Character {
     type Target = crate::UnityEngine::TextCore::Text::TextElement;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+Character")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::Character {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

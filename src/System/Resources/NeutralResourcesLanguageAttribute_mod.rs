@@ -31,13 +31,13 @@ for crate::System::Resources::NeutralResourcesLanguageAttribute {
 #[cfg(feature = "System+Resources+NeutralResourcesLanguageAttribute")]
 impl std::ops::Deref for crate::System::Resources::NeutralResourcesLanguageAttribute {
     type Target = crate::System::Attribute;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Resources+NeutralResourcesLanguageAttribute")]
 impl std::ops::DerefMut for crate::System::Resources::NeutralResourcesLanguageAttribute {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

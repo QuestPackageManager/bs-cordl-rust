@@ -28,14 +28,14 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
     type Target = crate::GlobalNamespace::MultiplayerConnectedPlayerNoteController;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -152,14 +152,14 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
             crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerConnectedPlayerBombNoteController+Pool")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerConnectedPlayerBombNoteController_Pool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

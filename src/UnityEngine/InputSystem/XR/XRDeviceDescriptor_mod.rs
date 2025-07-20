@@ -37,13 +37,13 @@ for crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+XRDeviceDescriptor")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::XR::XRDeviceDescriptor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -30,13 +30,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Collections::BitArray
 #[cfg(feature = "System+Collections+BitArray")]
 impl std::ops::Deref for crate::System::Collections::BitArray {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Collections+BitArray")]
 impl std::ops::DerefMut for crate::System::Collections::BitArray {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -508,14 +508,14 @@ for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
 #[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
 impl std::ops::Deref for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Collections+BitArray+BitArrayEnumeratorSimple")]
 impl std::ops::DerefMut
 for crate::System::Collections::BitArray_BitArrayEnumeratorSimple {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

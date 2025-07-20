@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Doub
 #[cfg(feature = "UnityEngine+UIElements+DoubleField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<f64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -285,13 +285,13 @@ for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
     type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+DoubleInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField_DoubleInput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -505,13 +505,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_UxmlFactory
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DoubleField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DoubleField_UxmlTraits>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -594,13 +594,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::DoubleField_UxmlTraits 
             crate::UnityEngine::UIElements::UxmlDoubleAttributeDescription,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DoubleField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DoubleField_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

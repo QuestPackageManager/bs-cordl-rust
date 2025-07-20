@@ -27,13 +27,13 @@ for crate::UnityEngine::Android::AndroidAssetPacks {
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPacks")]
 impl std::ops::Deref for crate::UnityEngine::Android::AndroidAssetPacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPacks")]
 impl std::ops::DerefMut for crate::UnityEngine::Android::AndroidAssetPacks {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -132,7 +132,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
 impl std::ops::Deref
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
     type Target = crate::UnityEngine::AndroidJavaProxy;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -141,7 +141,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatu
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -326,7 +326,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
 impl std::ops::Deref
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
     type Target = crate::UnityEngine::AndroidJavaProxy;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -335,7 +335,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataCon
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerMobileDataConfirmationCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -492,7 +492,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCa
 impl std::ops::Deref
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
     type Target = crate::UnityEngine::AndroidJavaProxy;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -501,7 +501,7 @@ for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCa
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Android::AndroidAssetPacks_AssetPackManagerStatusQueryCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

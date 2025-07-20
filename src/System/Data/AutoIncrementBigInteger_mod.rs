@@ -30,13 +30,13 @@ for crate::System::Data::AutoIncrementBigInteger {
 #[cfg(feature = "System+Data+AutoIncrementBigInteger")]
 impl std::ops::Deref for crate::System::Data::AutoIncrementBigInteger {
     type Target = crate::System::Data::AutoIncrementValue;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+AutoIncrementBigInteger")]
 impl std::ops::DerefMut for crate::System::Data::AutoIncrementBigInteger {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

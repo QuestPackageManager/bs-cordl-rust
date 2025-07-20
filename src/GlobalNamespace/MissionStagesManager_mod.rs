@@ -38,13 +38,13 @@ for crate::GlobalNamespace::MissionStagesManager {
 #[cfg(feature = "MissionStagesManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionStagesManager {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionStagesManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionStagesManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

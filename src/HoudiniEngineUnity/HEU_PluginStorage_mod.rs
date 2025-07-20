@@ -42,13 +42,13 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage {
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PluginStorage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PluginStorage {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1176,13 +1176,13 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1274,14 +1274,14 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

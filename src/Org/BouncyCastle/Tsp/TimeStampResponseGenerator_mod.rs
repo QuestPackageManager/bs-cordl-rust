@@ -38,13 +38,13 @@ for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -465,14 +465,14 @@ for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
     type Target = crate::Org::BouncyCastle::Asn1::DerBitString;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Tsp+TimeStampResponseGenerator+FailInfo")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Tsp::TimeStampResponseGenerator_FailInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

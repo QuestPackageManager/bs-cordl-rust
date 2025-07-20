@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ObjectDisposedExcepti
 #[cfg(feature = "System+ObjectDisposedException")]
 impl std::ops::Deref for crate::System::ObjectDisposedException {
     type Target = crate::System::InvalidOperationException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ObjectDisposedException")]
 impl std::ops::DerefMut for crate::System::ObjectDisposedException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

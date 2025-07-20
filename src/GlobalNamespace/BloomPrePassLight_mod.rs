@@ -34,13 +34,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BloomPrePass
 #[cfg(feature = "BloomPrePassLight")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLight {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassLight")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLight {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -436,13 +436,13 @@ for crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
 #[cfg(feature = "BloomPrePassLight+LightsDataItem")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassLight+LightsDataItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassLight_LightsDataItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

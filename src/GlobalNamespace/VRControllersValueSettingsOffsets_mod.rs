@@ -33,13 +33,13 @@ for crate::GlobalNamespace::VRControllersValueSettingsOffsets {
 #[cfg(feature = "VRControllersValueSettingsOffsets")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersValueSettingsOffsets {
     type Target = crate::GlobalNamespace::VRControllerTransformOffset;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VRControllersValueSettingsOffsets")]
 impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersValueSettingsOffsets {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

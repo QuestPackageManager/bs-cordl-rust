@@ -37,13 +37,13 @@ for crate::System::Runtime::Remoting::Lifetime::Lease {
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Lifetime::Lease {
     type Target = crate::System::MarshalByRefObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::Lifetime::Lease {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -360,14 +360,14 @@ for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+Lifetime+Lease+RenewalDelegate")]
 impl std::ops::DerefMut
 for crate::System::Runtime::Remoting::Lifetime::Lease_RenewalDelegate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

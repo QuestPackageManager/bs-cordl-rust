@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Unity::UnityTls {
 #[cfg(feature = "Mono+Unity+UnityTls")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -583,13 +583,13 @@ for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_interface_struct {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1287,14 +1287,14 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_certificate_callback")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_certificate_callback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1546,13 +1546,13 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_read_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_tlsctx_read_callback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1678,13 +1678,13 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_trace_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_tlsctx_trace_callback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1811,13 +1811,13 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_write_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_tlsctx_write_callback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1944,14 +1944,14 @@ for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
 impl std::ops::Deref
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx_x509verify_callback")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::UnityTls_unitytls_tlsctx_x509verify_callback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2483,13 +2483,13 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 impl std::ops::Deref for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_x509verify_callback")]
 impl std::ops::DerefMut for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2728,7 +2728,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_c
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2737,7 +2737,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_c
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_create_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2861,7 +2861,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_r
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2870,7 +2870,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_r
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_errorstate_raise_error_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2993,14 +2993,14 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_free_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_free_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3113,14 +3113,14 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_key_get_ref_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_get_ref_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3247,7 +3247,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_de
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3256,7 +3256,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_de
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_der_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3403,7 +3403,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pe
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3412,7 +3412,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pe
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_key_parse_pem_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3559,7 +3559,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gener
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3568,7 +3568,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_gener
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3701,7 +3701,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3710,7 +3710,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_client_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3855,7 +3855,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3864,7 +3864,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_creat
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_create_server_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4007,14 +4007,14 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_free_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_free_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4133,7 +4133,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_c
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -4142,7 +4142,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_c
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_ciphersuite_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4275,7 +4275,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_p
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -4284,7 +4284,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_p
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_get_protocol_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4415,7 +4415,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notif
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -4424,7 +4424,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notif
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_notify_close_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4555,7 +4555,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proce
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -4564,7 +4564,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_proce
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_process_handshake_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4691,14 +4691,14 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_read_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_read_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4831,7 +4831,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -4840,7 +4840,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_serve
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_server_require_client_authentication_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4973,7 +4973,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -4982,7 +4982,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_c
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_certificate_callback_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5123,7 +5123,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -5132,7 +5132,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_s
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_supported_ciphersuites_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5275,7 +5275,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -5284,7 +5284,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5425,7 +5425,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -5434,7 +5434,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5569,14 +5569,14 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_write_t")]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_write_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5709,7 +5709,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -5718,7 +5718,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509_export_der_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5853,7 +5853,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -5862,7 +5862,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_der_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5999,7 +5999,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -6008,7 +6008,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_app
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_append_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6141,7 +6141,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cre
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -6150,7 +6150,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_cre
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_create_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6275,7 +6275,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fre
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -6284,7 +6284,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_fre
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_free_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6407,7 +6407,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -6416,7 +6416,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_ref_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6549,7 +6549,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -6558,7 +6558,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509list_get_x509_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6689,7 +6689,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_d
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -6698,7 +6698,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_d
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_default_ca_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6845,7 +6845,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_e
 impl std::ops::Deref
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -6854,7 +6854,7 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_e
 )]
 impl std::ops::DerefMut
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

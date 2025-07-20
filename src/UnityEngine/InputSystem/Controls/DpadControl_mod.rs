@@ -39,13 +39,13 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl {
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::DpadControl {
     type Target = crate::UnityEngine::InputSystem::Controls::Vector2Control;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::DpadControl {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -589,14 +589,14 @@ for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
     type Target = crate::UnityEngine::InputSystem::Controls::AxisControl;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+DpadControl+DpadAxisControl")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Controls::DpadControl_DpadAxisControl {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

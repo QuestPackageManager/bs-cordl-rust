@@ -27,13 +27,13 @@ for crate::System::Xml::Schema::XmlDateTimeConverter {
 #[cfg(feature = "System+Xml+Schema+XmlDateTimeConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlDateTimeConverter {
     type Target = crate::System::Xml::Schema::XmlBaseConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlDateTimeConverter")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlDateTimeConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

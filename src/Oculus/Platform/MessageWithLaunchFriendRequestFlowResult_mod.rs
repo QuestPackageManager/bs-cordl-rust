@@ -36,14 +36,14 @@ for crate::Oculus::Platform::MessageWithLaunchFriendRequestFlowResult {
             crate::Oculus::Platform::Models::LaunchFriendRequestFlowResult,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Oculus+Platform+MessageWithLaunchFriendRequestFlowResult")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::MessageWithLaunchFriendRequestFlowResult {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

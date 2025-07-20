@@ -27,13 +27,13 @@ for crate::System::ComponentModel::WeakHashtable {
 #[cfg(feature = "System+ComponentModel+WeakHashtable")]
 impl std::ops::Deref for crate::System::ComponentModel::WeakHashtable {
     type Target = crate::System::Collections::Hashtable;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+WeakHashtable")]
 impl std::ops::DerefMut for crate::System::ComponentModel::WeakHashtable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -152,14 +152,14 @@ for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
 #[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 impl std::ops::Deref for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+WeakHashtable+WeakKeyComparer")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::WeakHashtable_WeakKeyComparer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

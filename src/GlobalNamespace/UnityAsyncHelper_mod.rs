@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UnityAsyncHe
 #[cfg(feature = "UnityAsyncHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityAsyncHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityAsyncHelper")]
 impl std::ops::DerefMut for crate::GlobalNamespace::UnityAsyncHelper {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -411,7 +411,7 @@ for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsy
 impl std::ops::Deref
 for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -420,7 +420,7 @@ for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsy
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::__c__DisplayClass5_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -701,7 +701,7 @@ for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsy
 impl std::ops::Deref
 for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -710,7 +710,7 @@ for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsy
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::__c__DisplayClass6_0_UnityAsyncHelper___WaitUntilAsync_g__WaitUntilPredicateTrue_0_d {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

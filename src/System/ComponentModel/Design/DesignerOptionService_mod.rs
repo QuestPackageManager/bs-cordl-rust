@@ -38,7 +38,7 @@ for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpti
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
     type Target = crate::System::ComponentModel::PropertyDescriptor;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -47,7 +47,7 @@ for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOpti
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionCollection_DesignerOptionService_WrappedPropertyDescriptor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -377,7 +377,7 @@ for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptio
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
     type Target = crate::System::ComponentModel::PropertyDescriptor;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -386,7 +386,7 @@ for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptio
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionConverter_DesignerOptionService_OptionPropertyDescriptor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -671,14 +671,14 @@ for crate::System::ComponentModel::Design::DesignerOptionService {
 #[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
 impl std::ops::Deref for crate::System::ComponentModel::Design::DesignerOptionService {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+Design+DesignerOptionService")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionService {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -777,7 +777,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -786,7 +786,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionCollection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1065,7 +1065,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
 impl std::ops::Deref
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionConverter {
     type Target = crate::System::ComponentModel::TypeConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1074,7 +1074,7 @@ for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionC
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::Design::DesignerOptionService_DesignerOptionConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

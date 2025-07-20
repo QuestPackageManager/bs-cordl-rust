@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Cms::Recip
 #[cfg(feature = "Org+BouncyCastle+Cms+RecipientID")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::RecipientID {
     type Target = crate::Org::BouncyCastle::X509::Store::X509CertStoreSelector;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+RecipientID")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::RecipientID {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

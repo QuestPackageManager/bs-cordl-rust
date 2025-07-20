@@ -137,7 +137,7 @@ for crate::Zenject::SubContainerCreatorByNewPrefabMethod_10<
     TParam10,
 > {
     type Target = crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -166,7 +166,7 @@ for crate::Zenject::SubContainerCreatorByNewPrefabMethod_10<
     TParam9,
     TParam10,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

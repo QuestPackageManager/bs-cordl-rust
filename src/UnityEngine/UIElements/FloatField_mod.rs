@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Floa
 #[cfg(feature = "UnityEngine+UIElements+FloatField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FloatField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FloatField {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -283,13 +283,13 @@ for crate::UnityEngine::UIElements::FloatField_FloatInput {
 #[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_FloatInput {
     type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FloatField+FloatInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FloatField_FloatInput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -503,13 +503,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_UxmlFactory 
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField_UxmlTraits>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FloatField_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -592,13 +592,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::FloatField_UxmlTraits {
             crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+FloatField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::FloatField_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

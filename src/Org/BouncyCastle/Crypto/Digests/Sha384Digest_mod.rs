@@ -27,13 +27,13 @@ for crate::Org::BouncyCastle::Crypto::Digests::Sha384Digest {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Sha384Digest")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::Sha384Digest {
     type Target = crate::Org::BouncyCastle::Crypto::Digests::LongDigest;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+Sha384Digest")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Digests::Sha384Digest {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

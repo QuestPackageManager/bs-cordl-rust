@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeNames {
 #[cfg(feature = "System+TypeNames")]
 impl std::ops::Deref for crate::System::TypeNames {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+TypeNames")]
 impl std::ops::DerefMut for crate::System::TypeNames {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -78,13 +78,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TypeNames_ATypeName {
 #[cfg(feature = "System+TypeNames+ATypeName")]
 impl std::ops::Deref for crate::System::TypeNames_ATypeName {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+TypeNames+ATypeName")]
 impl std::ops::DerefMut for crate::System::TypeNames_ATypeName {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

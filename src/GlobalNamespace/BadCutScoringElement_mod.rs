@@ -29,13 +29,13 @@ for crate::GlobalNamespace::BadCutScoringElement {
 #[cfg(feature = "BadCutScoringElement")]
 impl std::ops::Deref for crate::GlobalNamespace::BadCutScoringElement {
     type Target = crate::GlobalNamespace::ScoringElement;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BadCutScoringElement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BadCutScoringElement {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -224,13 +224,13 @@ impl std::ops::Deref for crate::GlobalNamespace::BadCutScoringElement_Pool {
     type Target = crate::GlobalNamespace::ScoringElement_Pool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BadCutScoringElement>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BadCutScoringElement+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BadCutScoringElement_Pool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

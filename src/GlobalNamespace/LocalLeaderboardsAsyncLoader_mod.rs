@@ -27,13 +27,13 @@ for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
 #[cfg(feature = "LocalLeaderboardsAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LocalLeaderboardsAsyncLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LocalLeaderboardsAsyncLoader {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

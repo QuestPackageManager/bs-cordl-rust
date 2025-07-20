@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlUnspecifiedAt
 #[cfg(feature = "System+Xml+XmlUnspecifiedAttribute")]
 impl std::ops::Deref for crate::System::Xml::XmlUnspecifiedAttribute {
     type Target = crate::System::Xml::XmlAttribute;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlUnspecifiedAttribute")]
 impl std::ops::DerefMut for crate::System::Xml::XmlUnspecifiedAttribute {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::CVRSystem {
 #[cfg(feature = "OVR+OpenVR+CVRSystem")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1829,13 +1829,13 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStatePacked")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem__GetControllerStatePacked {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2048,14 +2048,14 @@ for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
 impl std::ops::Deref
 for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_GetControllerStateWithPosePacked")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::CVRSystem__GetControllerStateWithPosePacked {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2298,13 +2298,13 @@ for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+CVRSystem+_PollNextEventPacked")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSystem__PollNextEventPacked {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

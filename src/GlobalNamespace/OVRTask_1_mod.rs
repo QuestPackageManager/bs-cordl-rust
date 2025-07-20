@@ -1372,14 +1372,14 @@ for crate::GlobalNamespace::OVRTask_1_CallbackInvoker<TResult> {
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OVRTask_1_CallbackInvoker<TResult> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTask_1+CallbackInvoker")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::OVRTask_1_CallbackInvoker<TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1591,14 +1591,14 @@ for crate::GlobalNamespace::OVRTask_1_CallbackRemover<TResult> {
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OVRTask_1_CallbackRemover<TResult> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTask_1+CallbackRemover")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::OVRTask_1_CallbackRemover<TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2146,7 +2146,7 @@ impl<
 > std::ops::Deref
 for crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<TResult, T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2156,7 +2156,7 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::GlobalNamespace::OVRTask_1_IncrementalResultSubscriber_1<TResult, T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2349,14 +2349,14 @@ for crate::GlobalNamespace::OVRTask_1_InternalDataRemover<TResult> {
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::OVRTask_1_InternalDataRemover<TResult> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRTask_1+InternalDataRemover")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::GlobalNamespace::OVRTask_1_InternalDataRemover<TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2566,7 +2566,7 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::GlobalNamespace::OVRTask_1_InternalData_1<TResult, T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2575,7 +2575,7 @@ impl<
     TResult: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut for crate::GlobalNamespace::OVRTask_1_InternalData_1<TResult, T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

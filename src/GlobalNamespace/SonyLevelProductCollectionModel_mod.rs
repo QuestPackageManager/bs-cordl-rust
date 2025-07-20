@@ -51,13 +51,13 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel {
 #[cfg(feature = "SonyLevelProductCollectionModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLevelProductCollectionModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductCollectionModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyLevelProductCollectionModel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -261,14 +261,14 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalPackProduc
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalPackProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+AdditionalPackProductData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalPackProductData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -346,14 +346,14 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductDat
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+AdditionalProductData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -441,14 +441,14 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -851,14 +851,14 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirection
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackRedirectionData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1101,14 +1101,14 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelProductData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1398,14 +1398,14 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_ProductData {
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_ProductData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+ProductData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_ProductData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

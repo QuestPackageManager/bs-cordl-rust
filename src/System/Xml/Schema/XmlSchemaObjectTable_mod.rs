@@ -38,13 +38,13 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable {
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaObjectTable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaObjectTable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -526,14 +526,14 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
 impl std::ops::Deref
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+ValuesCollection")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlSchemaObjectTable_ValuesCollection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -771,14 +771,14 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
 impl std::ops::Deref
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
     type Target = crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSODictionaryEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSODictionaryEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -994,14 +994,14 @@ for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaObjectTable+XSOEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XmlSchemaObjectTable_XSOEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

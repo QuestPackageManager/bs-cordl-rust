@@ -61,14 +61,14 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -421,14 +421,14 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TR
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
     type Target = crate::System::IO::Enumeration::FileSystemEnumerator_1<TResult>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+DelegateEnumerator")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -637,14 +637,14 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindPredicate")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -790,14 +790,14 @@ for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1+FindTransform")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

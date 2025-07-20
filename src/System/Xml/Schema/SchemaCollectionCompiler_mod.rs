@@ -33,13 +33,13 @@ for crate::System::Xml::Schema::SchemaCollectionCompiler {
 #[cfg(feature = "System+Xml+Schema+SchemaCollectionCompiler")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaCollectionCompiler {
     type Target = crate::System::Xml::Schema::BaseProcessor;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+SchemaCollectionCompiler")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::SchemaCollectionCompiler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

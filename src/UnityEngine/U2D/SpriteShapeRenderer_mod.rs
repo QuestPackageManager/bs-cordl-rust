@@ -27,13 +27,13 @@ for crate::UnityEngine::U2D::SpriteShapeRenderer {
 #[cfg(feature = "UnityEngine+U2D+SpriteShapeRenderer")]
 impl std::ops::Deref for crate::UnityEngine::U2D::SpriteShapeRenderer {
     type Target = crate::UnityEngine::Renderer;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+U2D+SpriteShapeRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::U2D::SpriteShapeRenderer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

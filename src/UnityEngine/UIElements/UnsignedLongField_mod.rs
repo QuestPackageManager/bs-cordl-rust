@@ -27,13 +27,13 @@ for crate::UnityEngine::UIElements::UnsignedLongField {
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UnsignedLongField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<u64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UnsignedLongField {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -288,14 +288,14 @@ for crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
     type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<u64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UnsignedLongInput")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UnsignedLongField_UnsignedLongInput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -535,14 +535,14 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UnsignedLongField_UxmlF
             crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UnsignedLongField_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -625,14 +625,14 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::UnsignedLongField_UxmlT
             crate::UnityEngine::UIElements::UxmlUnsignedLongAttributeDescription,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UnsignedLongField+UxmlTraits")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UnsignedLongField_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

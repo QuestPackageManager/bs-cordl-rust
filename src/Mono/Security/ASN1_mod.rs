@@ -29,13 +29,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Security::ASN1 {
 #[cfg(feature = "Mono+Security+ASN1")]
 impl std::ops::Deref for crate::Mono::Security::ASN1 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Security+ASN1")]
 impl std::ops::DerefMut for crate::Mono::Security::ASN1 {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

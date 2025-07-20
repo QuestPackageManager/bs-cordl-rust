@@ -160,13 +160,13 @@ for crate::UnityEngine::ResourceManagement::ResourceManager {
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 impl std::ops::Deref for crate::UnityEngine::ResourceManagement::ResourceManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 impl std::ops::DerefMut for crate::UnityEngine::ResourceManagement::ResourceManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2899,7 +2899,7 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         TObject,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2908,7 +2908,7 @@ impl<TObject: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceManager_CompletedOperation_1<
     TObject,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3685,14 +3685,14 @@ for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+InstanceOperation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

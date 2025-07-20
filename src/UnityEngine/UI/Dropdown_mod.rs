@@ -52,13 +52,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Dropdown {
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown {
     type Target = crate::UnityEngine::UI::Selectable;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1475,13 +1475,13 @@ for crate::UnityEngine::UI::Dropdown_DropdownEvent {
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_DropdownEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<i32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown_DropdownEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1558,13 +1558,13 @@ for crate::UnityEngine::UI::Dropdown_DropdownItem {
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_DropdownItem {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+DropdownItem")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown_DropdownItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1942,13 +1942,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::Dropdown_Opt
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_OptionData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionData")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown_OptionData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2236,13 +2236,13 @@ for crate::UnityEngine::UI::Dropdown_OptionDataList {
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
 impl std::ops::Deref for crate::UnityEngine::UI::Dropdown_OptionDataList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UI+Dropdown+OptionDataList")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::Dropdown_OptionDataList {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

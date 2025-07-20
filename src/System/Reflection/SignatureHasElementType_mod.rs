@@ -30,13 +30,13 @@ for crate::System::Reflection::SignatureHasElementType {
 #[cfg(feature = "System+Reflection+SignatureHasElementType")]
 impl std::ops::Deref for crate::System::Reflection::SignatureHasElementType {
     type Target = crate::System::Reflection::SignatureType;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Reflection+SignatureHasElementType")]
 impl std::ops::DerefMut for crate::System::Reflection::SignatureHasElementType {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -27,13 +27,13 @@ for crate::Zenject::PoolExceededFixedSizeException {
 #[cfg(feature = "Zenject+PoolExceededFixedSizeException")]
 impl std::ops::Deref for crate::Zenject::PoolExceededFixedSizeException {
     type Target = crate::System::Exception;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+PoolExceededFixedSizeException")]
 impl std::ops::DerefMut for crate::Zenject::PoolExceededFixedSizeException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -261,13 +261,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MenuRpcManag
 #[cfg(feature = "MenuRpcManager")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5790,13 +5790,13 @@ for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
 #[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+CancelCountdownRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_CancelCountdownRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5869,13 +5869,13 @@ for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
 #[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+CancelLevelStartRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_CancelLevelStartRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5948,14 +5948,14 @@ for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
 #[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+CancelStartGameTimeRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_CancelStartGameTimeRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6029,14 +6029,14 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+ClearRecommendedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedBeatmapRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6110,14 +6110,14 @@ for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc 
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+ClearRecommendedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_ClearRecommendedGameplayModifiersRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6190,14 +6190,14 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
 #[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+ClearSelectedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedBeatmapRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6271,14 +6271,14 @@ for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+ClearSelectedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_ClearSelectedGameplayModifiersRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6351,14 +6351,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
 #[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetCountdownEndTimeRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetCountdownEndTimeRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6435,14 +6435,14 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToL
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetIsEntitledToLevelRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetIsEntitledToLevelRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6515,13 +6515,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
 #[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetIsInLobbyRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_GetIsInLobbyRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6594,13 +6594,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
 #[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetIsReadyRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_GetIsReadyRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6674,14 +6674,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetIsStartButtonEnabledRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetIsStartButtonEnabledRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6755,14 +6755,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetMultiplayerGameStateRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetMultiplayerGameStateRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6835,13 +6835,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
 #[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetOwnedSongPacksRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_GetOwnedSongPacksRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6915,14 +6915,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc 
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetPlayersPermissionConfigurationRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetPlayersPermissionConfigurationRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6996,14 +6996,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetRecommendedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedBeatmapRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7077,14 +7077,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetRecommendedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetRecommendedGameplayModifiersRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7157,14 +7157,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
 #[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetSelectedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedBeatmapRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7238,14 +7238,14 @@ for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetSelectedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_GetSelectedGameplayModifiersRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7318,13 +7318,13 @@ for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
 #[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+GetStartedLevelRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_GetStartedLevelRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7398,14 +7398,14 @@ for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc
 impl std::ops::Deref
 for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+InvalidateLevelEntitlementStatusesRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_InvalidateLevelEntitlementStatusesRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7482,13 +7482,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRp
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+LevelLoadErrorRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_LevelLoadErrorRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7565,13 +7565,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccess
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+LevelLoadSuccessRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_LevelLoadSuccessRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7648,13 +7648,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmap
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+RecommendBeatmapRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_RecommendBeatmapRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7732,14 +7732,14 @@ for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+RecommendGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_RecommendGameplayModifiersRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7816,13 +7816,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_RequestKickPlaye
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+RequestKickPlayerRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_RequestKickPlayerRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8029,13 +8029,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackR
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SelectLevelPackRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SelectLevelPackRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8108,14 +8108,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
 #[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<i64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetCountdownEndTimeRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetCountdownEndTimeRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8194,14 +8194,14 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToL
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetIsEntitledToLevelRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetIsEntitledToLevelRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8274,13 +8274,13 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
 #[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<bool>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetIsInLobbyRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SetIsInLobbyRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8353,13 +8353,13 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
 #[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<bool>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetIsReadyRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SetIsReadyRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8437,14 +8437,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         crate::GlobalNamespace::CannotStartGameReason,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetIsStartButtonEnabledRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetIsStartButtonEnabledRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8522,14 +8522,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         crate::GlobalNamespace::MultiplayerGameState,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetMultiplayerGameStateRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetMultiplayerGameStateRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8606,13 +8606,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPack
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         crate::GlobalNamespace::SongPackMask,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetOwnedSongPacksRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SetOwnedSongPacksRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8694,14 +8694,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelR
             crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetPlayersMissingEntitlementsToLevelRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersMissingEntitlementsToLevelRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8783,14 +8783,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc 
             crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetPlayersPermissionConfigurationRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetPlayersPermissionConfigurationRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8867,14 +8867,14 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatm
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapKeyNetSerializable>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetSelectedBeatmapRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedBeatmapRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8952,14 +8952,14 @@ for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetSelectedGameplayModifiersRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MenuRpcManager_SetSelectedGameplayModifiersRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -9032,13 +9032,13 @@ for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
 #[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<i64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+SetStartGameTimeRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_SetStartGameTimeRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -9119,13 +9119,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameplayModifiers>,
         i64,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MenuRpcManager+StartLevelRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MenuRpcManager_StartLevelRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

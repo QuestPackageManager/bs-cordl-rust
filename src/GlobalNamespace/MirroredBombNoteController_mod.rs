@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MirroredBombNoteController {
     type Target = crate::GlobalNamespace::MirroredNoteController_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INoteMirrorable>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredBombNoteController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirroredBombNoteController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -116,13 +116,13 @@ impl std::ops::Deref for crate::GlobalNamespace::MirroredBombNoteController_Pool
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MirroredBombNoteController>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MirroredBombNoteController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MirroredBombNoteController_Pool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

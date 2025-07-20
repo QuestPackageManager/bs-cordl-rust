@@ -27,14 +27,14 @@ for crate::System::Security::Principal::IdentityNotMappedException {
 #[cfg(feature = "System+Security+Principal+IdentityNotMappedException")]
 impl std::ops::Deref for crate::System::Security::Principal::IdentityNotMappedException {
     type Target = crate::System::SystemException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Security+Principal+IdentityNotMappedException")]
 impl std::ops::DerefMut
 for crate::System::Security::Principal::IdentityNotMappedException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -30,13 +30,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HMUI::DropdownWithTitleView {
 #[cfg(feature = "HMUI+DropdownWithTitleView")]
 impl std::ops::Deref for crate::HMUI::DropdownWithTitleView {
     type Target = crate::HMUI::SimpleTextDropdown;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HMUI+DropdownWithTitleView")]
 impl std::ops::DerefMut for crate::HMUI::DropdownWithTitleView {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

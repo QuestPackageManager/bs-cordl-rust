@@ -45,14 +45,14 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatSaber+TrackDefinitions+EnvironmentTracksDefinitionSO")]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -271,7 +271,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -280,7 +280,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEvent
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_BasicEventTrackInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -611,7 +611,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -620,7 +620,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupPageInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -793,7 +793,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -802,7 +802,7 @@ for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGr
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO_EventBoxGroupTrackInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

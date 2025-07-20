@@ -31,14 +31,14 @@ for crate::BGLib::MetaRemoteAssets::Installers::MetaRemoteAssetsInstaller {
 impl std::ops::Deref
 for crate::BGLib::MetaRemoteAssets::Installers::MetaRemoteAssetsInstaller {
     type Target = crate::Zenject::ScriptableObjectInstaller;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+Installers+MetaRemoteAssetsInstaller")]
 impl std::ops::DerefMut
 for crate::BGLib::MetaRemoteAssets::Installers::MetaRemoteAssetsInstaller {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

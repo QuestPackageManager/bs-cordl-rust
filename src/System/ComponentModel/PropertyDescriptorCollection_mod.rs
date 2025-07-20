@@ -49,13 +49,13 @@ for crate::System::ComponentModel::PropertyDescriptorCollection {
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::PropertyDescriptorCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
 impl std::ops::DerefMut for crate::System::ComponentModel::PropertyDescriptorCollection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1570,7 +1570,7 @@ for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescript
 impl std::ops::Deref
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1579,7 +1579,7 @@ for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescript
 )]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

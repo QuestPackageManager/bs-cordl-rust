@@ -56,13 +56,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GridView {
 #[cfg(feature = "GridView")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GridView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GridView {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -457,13 +457,13 @@ for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
 #[cfg(feature = "GridView+GridViewCellsEnumerator")]
 impl std::ops::Deref for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GridView+GridViewCellsEnumerator")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GridView_GridViewCellsEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::ParameterizedStrings 
 #[cfg(feature = "System+ParameterizedStrings")]
 impl std::ops::Deref for crate::System::ParameterizedStrings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ParameterizedStrings")]
 impl std::ops::DerefMut for crate::System::ParameterizedStrings {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -700,13 +700,13 @@ for crate::System::ParameterizedStrings_LowLevelStack {
 #[cfg(feature = "System+ParameterizedStrings+LowLevelStack")]
 impl std::ops::Deref for crate::System::ParameterizedStrings_LowLevelStack {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ParameterizedStrings+LowLevelStack")]
 impl std::ops::DerefMut for crate::System::ParameterizedStrings_LowLevelStack {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

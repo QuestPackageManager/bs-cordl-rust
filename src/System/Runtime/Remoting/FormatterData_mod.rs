@@ -27,13 +27,13 @@ for crate::System::Runtime::Remoting::FormatterData {
 #[cfg(feature = "System+Runtime+Remoting+FormatterData")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::FormatterData {
     type Target = crate::System::Runtime::Remoting::ProviderData;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+Remoting+FormatterData")]
 impl std::ops::DerefMut for crate::System::Runtime::Remoting::FormatterData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

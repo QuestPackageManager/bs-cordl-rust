@@ -27,13 +27,13 @@ for crate::UnityEngine::UIElements::ThemeStyleSheet {
 #[cfg(feature = "UnityEngine+UIElements+ThemeStyleSheet")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ThemeStyleSheet {
     type Target = crate::UnityEngine::UIElements::StyleSheet;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ThemeStyleSheet")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ThemeStyleSheet {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

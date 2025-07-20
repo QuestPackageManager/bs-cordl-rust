@@ -31,13 +31,13 @@ for crate::UnityEngine::UIElements::NavigateFocusRing {
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::NavigateFocusRing {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::NavigateFocusRing {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -337,14 +337,14 @@ for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
     type Target = crate::UnityEngine::UIElements::FocusChangeDirection;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+NavigateFocusRing+ChangeDirection")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::NavigateFocusRing_ChangeDirection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -146,14 +146,14 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromDescriptor")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromDescriptor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -340,14 +340,14 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_CreateSpatialAnchorFromPose")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSpatialAnchors__CreateSpatialAnchorFromPose {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -550,14 +550,14 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorDescriptor")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorDescriptor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -761,13 +761,13 @@ for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose {
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorPose")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSpatialAnchors+_GetSpatialAnchorPose")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSpatialAnchors__GetSpatialAnchorPose {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

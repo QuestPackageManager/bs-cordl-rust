@@ -47,13 +47,13 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator {
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -564,13 +564,13 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+AreaNode")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_AreaNode {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -751,13 +751,13 @@ for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIRAtlasAllocator+Row")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIRAtlasAllocator_Row {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

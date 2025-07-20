@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Slid
 #[cfg(feature = "UnityEngine+UIElements+Slider")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Slider {
     type Target = crate::UnityEngine::UIElements::BaseSlider_1<f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Slider")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Slider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -343,13 +343,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Slider_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Slider_UxmlTraits>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Slider+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Slider_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -442,13 +442,13 @@ for crate::UnityEngine::UIElements::Slider_UxmlTraits {
 #[cfg(feature = "UnityEngine+UIElements+Slider+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Slider_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Slider+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Slider_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

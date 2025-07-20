@@ -33,13 +33,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Security::Policy::Evi
 #[cfg(feature = "System+Security+Policy+Evidence")]
 impl std::ops::Deref for crate::System::Security::Policy::Evidence {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Security+Policy+Evidence")]
 impl std::ops::DerefMut for crate::System::Security::Policy::Evidence {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -256,14 +256,14 @@ for crate::System::Security::Policy::Evidence_EvidenceEnumerator {
 #[cfg(feature = "System+Security+Policy+Evidence+EvidenceEnumerator")]
 impl std::ops::Deref for crate::System::Security::Policy::Evidence_EvidenceEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Security+Policy+Evidence+EvidenceEnumerator")]
 impl std::ops::DerefMut
 for crate::System::Security::Policy::Evidence_EvidenceEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

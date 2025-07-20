@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Callback {
 #[cfg(feature = "Oculus+Platform+Callback")]
 impl std::ops::Deref for crate::Oculus::Platform::Callback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Oculus+Platform+Callback")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Callback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -294,13 +294,13 @@ for crate::Oculus::Platform::Callback_RequestCallback {
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback")]
 impl std::ops::Deref for crate::Oculus::Platform::Callback_RequestCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback")]
 impl std::ops::DerefMut for crate::Oculus::Platform::Callback_RequestCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -455,14 +455,14 @@ for crate::Oculus::Platform::Callback_RequestCallback_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Oculus::Platform::Callback_RequestCallback_1<T> {
     type Target = crate::Oculus::Platform::Callback_RequestCallback;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Oculus::Platform::Callback_RequestCallback_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

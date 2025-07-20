@@ -28,14 +28,14 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
     type Target = crate::Newtonsoft::Json::JsonConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -283,14 +283,14 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -413,14 +413,14 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

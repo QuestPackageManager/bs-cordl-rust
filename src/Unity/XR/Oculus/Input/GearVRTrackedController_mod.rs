@@ -66,13 +66,13 @@ for crate::Unity::XR::Oculus::Input::GearVRTrackedController {
 #[cfg(feature = "Unity+XR+Oculus+Input+GearVRTrackedController")]
 impl std::ops::Deref for crate::Unity::XR::Oculus::Input::GearVRTrackedController {
     type Target = crate::UnityEngine::InputSystem::XR::XRController;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+XR+Oculus+Input+GearVRTrackedController")]
 impl std::ops::DerefMut for crate::Unity::XR::Oculus::Input::GearVRTrackedController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

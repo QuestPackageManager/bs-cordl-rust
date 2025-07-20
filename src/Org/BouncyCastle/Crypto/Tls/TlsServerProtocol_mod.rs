@@ -46,13 +46,13 @@ for crate::Org::BouncyCastle::Crypto::Tls::TlsServerProtocol {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServerProtocol")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsServerProtocol {
     type Target = crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsServerProtocol")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsServerProtocol {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

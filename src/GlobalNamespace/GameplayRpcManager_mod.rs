@@ -148,13 +148,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::GameplayRpcM
 #[cfg(feature = "GameplayRpcManager")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayRpcManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2553,14 +2553,14 @@ for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySceneReadyRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySceneReadyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+GetGameplaySceneReadyRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySceneReadyRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2634,14 +2634,14 @@ for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySongReadyRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySongReadyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+GetGameplaySongReadyRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayRpcManager_GetGameplaySongReadyRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2722,13 +2722,13 @@ impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_LevelFinishe
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+LevelFinishedRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayRpcManager_LevelFinishedRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2807,13 +2807,13 @@ impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_NoteCutRpc {
         f32,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteCutInfoNetSerializable>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+NoteCutRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayRpcManager_NoteCutRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2892,13 +2892,13 @@ impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_NoteMissedRp
         f32,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteMissInfoNetSerializable>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+NoteMissedRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayRpcManager_NoteMissedRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2977,13 +2977,13 @@ impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_NoteSpawnedR
         f32,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::NoteSpawnInfoNetSerializable>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+NoteSpawnedRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayRpcManager_NoteSpawnedRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3066,14 +3066,14 @@ impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_ObstacleSpaw
             crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+ObstacleSpawnedRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayRpcManager_ObstacleSpawnedRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3147,14 +3147,14 @@ for crate::GlobalNamespace::GameplayRpcManager_RequestReturnToMenuRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_RequestReturnToMenuRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+RequestReturnToMenuRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayRpcManager_RequestReturnToMenuRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3227,13 +3227,13 @@ for crate::GlobalNamespace::GameplayRpcManager_ReturnToMenuRpc {
 #[cfg(feature = "GameplayRpcManager+ReturnToMenuRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_ReturnToMenuRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+ReturnToMenuRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayRpcManager_ReturnToMenuRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3420,14 +3420,14 @@ for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySceneReadyRpc {
             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+SetGameplaySceneReadyRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySceneReadyRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3511,14 +3511,14 @@ for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySceneSyncFinishedRpc {
         >,
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+SetGameplaySceneSyncFinishedRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySceneSyncFinishedRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3592,14 +3592,14 @@ for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySongReadyRpc {
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySongReadyRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+SetGameplaySongReadyRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayRpcManager_SetGameplaySongReadyRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3685,14 +3685,14 @@ for crate::GlobalNamespace::GameplayRpcManager_SetPlayerDidConnectLateRpc {
         >,
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+SetPlayerDidConnectLateRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayRpcManager_SetPlayerDidConnectLateRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3765,14 +3765,14 @@ for crate::GlobalNamespace::GameplayRpcManager_SetSongStartTimeRpc {
 #[cfg(feature = "GameplayRpcManager+SetSongStartTimeRpc")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_SetSongStartTimeRpc {
     type Target = crate::GlobalNamespace::RemoteProcedureCall_1<i64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+SetSongStartTimeRpc")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayRpcManager_SetSongStartTimeRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3851,13 +3851,13 @@ impl std::ops::Deref for crate::GlobalNamespace::GameplayRpcManager_SliderSpawne
         f32,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderSpawnInfoNetSerializable>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayRpcManager+SliderSpawnedRpc")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayRpcManager_SliderSpawnedRpc {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::BGNet::Logging::Debug {
 #[cfg(feature = "BGNet+Logging+Debug")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BGNet+Logging+Debug")]
 impl std::ops::DerefMut for crate::BGNet::Logging::Debug {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -422,13 +422,13 @@ for crate::BGNet::Logging::Debug_LoggerLinkedList {
 #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
 impl std::ops::Deref for crate::BGNet::Logging::Debug_LoggerLinkedList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BGNet+Logging+Debug+LoggerLinkedList")]
 impl std::ops::DerefMut for crate::BGNet::Logging::Debug_LoggerLinkedList {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

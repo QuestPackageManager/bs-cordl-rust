@@ -48,13 +48,13 @@ for crate::UnityEngine::UIElements::MultiColumnListView {
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MultiColumnListView {
     type Target = crate::UnityEngine::UIElements::BaseListView;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::MultiColumnListView {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -487,14 +487,14 @@ for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
             crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -582,14 +582,14 @@ for crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseListView_UxmlTraits;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

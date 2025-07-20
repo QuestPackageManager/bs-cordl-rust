@@ -27,13 +27,13 @@ for crate::System::Runtime::InteropServices::Marshal {
 #[cfg(feature = "System+Runtime+InteropServices+Marshal")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::Marshal {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal")]
 impl std::ops::DerefMut for crate::System::Runtime::InteropServices::Marshal {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1718,14 +1718,14 @@ for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyCompare
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+MarshalerInstanceKeyComparer")]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::Marshal_MarshalerInstanceKeyComparer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1913,14 +1913,14 @@ for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
 impl std::ops::Deref
 for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+Marshal+SecureStringAllocator")]
 impl std::ops::DerefMut
 for crate::System::Runtime::InteropServices::Marshal_SecureStringAllocator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

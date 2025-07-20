@@ -36,13 +36,13 @@ for crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
 #[cfg(feature = "LightRotationBeatmapEventDataBox")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
     type Target = crate::GlobalNamespace::BeatmapEventDataBox;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightRotationBeatmapEventDataBox")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightRotationBeatmapEventDataBox {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

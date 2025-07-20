@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::Http::StringCont
 #[cfg(feature = "System+Net+Http+StringContent")]
 impl std::ops::Deref for crate::System::Net::Http::StringContent {
     type Target = crate::System::Net::Http::ByteArrayContent;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+Http+StringContent")]
 impl std::ops::DerefMut for crate::System::Net::Http::StringContent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

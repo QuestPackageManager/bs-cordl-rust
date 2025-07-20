@@ -132,13 +132,13 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
     type Target = crate::HoudiniEngineUnity::HEU_ThreadedTask;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1494,14 +1494,14 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback {
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadCallback")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1809,14 +1809,14 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData {
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadData")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1911,14 +1911,14 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadObject {
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadObject")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadObject {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

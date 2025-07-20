@@ -113,13 +113,13 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager {
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::LiteNetLibConnectionManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LiteNetLibConnectionManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2449,14 +2449,14 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
     type Target = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectToServerParams {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2633,14 +2633,14 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2748,14 +2748,14 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3091,14 +3091,14 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3410,14 +3410,14 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
     type Target = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartClientParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3493,14 +3493,14 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
     type Target = crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LiteNetLibConnectionManager_StartServerParams {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

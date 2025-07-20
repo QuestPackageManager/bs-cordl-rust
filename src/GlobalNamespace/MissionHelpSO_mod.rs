@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::MissionHelpS
 #[cfg(feature = "MissionHelpSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionHelpSO {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MissionHelpSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MissionHelpSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

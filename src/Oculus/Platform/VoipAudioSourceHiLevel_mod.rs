@@ -31,13 +31,13 @@ for crate::Oculus::Platform::VoipAudioSourceHiLevel {
 #[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel")]
 impl std::ops::Deref for crate::Oculus::Platform::VoipAudioSourceHiLevel {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel")]
 impl std::ops::DerefMut for crate::Oculus::Platform::VoipAudioSourceHiLevel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -289,14 +289,14 @@ for crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
 impl std::ops::Deref
 for crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Oculus+Platform+VoipAudioSourceHiLevel+FilterReadDelegate")]
 impl std::ops::DerefMut
 for crate::Oculus::Platform::VoipAudioSourceHiLevel_FilterReadDelegate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

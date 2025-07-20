@@ -38,14 +38,14 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLight
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId {
     type Target = crate::GlobalNamespace::LightWithIdMonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -149,14 +149,14 @@ for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLight
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundColorsGradientElementWithLightId+Elements")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundColorsGradientElementWithLightId_Elements {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

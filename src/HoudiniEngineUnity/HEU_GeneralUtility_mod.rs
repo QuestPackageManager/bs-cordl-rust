@@ -27,13 +27,13 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility {
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeneralUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_GeneralUtility {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3381,14 +3381,14 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetArray1ArgDel_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray1ArgDel_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3631,7 +3631,7 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T> {
 impl<ARG2: quest_hook::libil2cpp::Type, T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3641,7 +3641,7 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray2ArgDel_2<ARG2, T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3913,7 +3913,7 @@ impl<
 > std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<ARG3, ARG2, T> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -3924,7 +3924,7 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetArray3ArgDel_3<ARG3, ARG2, T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4200,14 +4200,14 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+GetAttributeArrayInputFunc_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_GetAttributeArrayInputFunc_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4482,14 +4482,14 @@ for crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<T> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneralUtility+SetAttributeArrayFunc_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_GeneralUtility_SetAttributeArrayFunc_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

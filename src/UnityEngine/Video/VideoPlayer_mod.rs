@@ -50,13 +50,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Video::VideoPlay
 #[cfg(feature = "UnityEngine+Video+VideoPlayer")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer {
     type Target = crate::UnityEngine::Behaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer")]
 impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2737,13 +2737,13 @@ for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+ErrorEventHandler")]
 impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_ErrorEventHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2863,13 +2863,13 @@ for crate::UnityEngine::Video::VideoPlayer_EventHandler {
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_EventHandler {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+EventHandler")]
 impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_EventHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2983,14 +2983,14 @@ for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+FrameReadyEventHandler")]
 impl std::ops::DerefMut
 for crate::UnityEngine::Video::VideoPlayer_FrameReadyEventHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3108,13 +3108,13 @@ for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
 impl std::ops::Deref for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Video+VideoPlayer+TimeEventHandler")]
 impl std::ops::DerefMut for crate::UnityEngine::Video::VideoPlayer_TimeEventHandler {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

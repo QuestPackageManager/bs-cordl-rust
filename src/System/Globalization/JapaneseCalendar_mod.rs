@@ -30,13 +30,13 @@ for crate::System::Globalization::JapaneseCalendar {
 #[cfg(feature = "System+Globalization+JapaneseCalendar")]
 impl std::ops::Deref for crate::System::Globalization::JapaneseCalendar {
     type Target = crate::System::Globalization::Calendar;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Globalization+JapaneseCalendar")]
 impl std::ops::DerefMut for crate::System::Globalization::JapaneseCalendar {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

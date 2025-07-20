@@ -186,14 +186,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_AcquireVideoStreamingService")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__AcquireVideoStreamingService {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -373,14 +373,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraErrorNameFromEnum")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraErrorNameFromEnum {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -552,13 +552,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraFrameSize")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraFrameSize {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -773,13 +773,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraIntrinsics")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraIntrinsics {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -991,13 +991,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetCameraProjection")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRTrackedCamera__GetCameraProjection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1214,14 +1214,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamFrameBuffer")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamFrameBuffer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1456,14 +1456,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureD3D11")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureD3D11 {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1709,14 +1709,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureGL")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureGL {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1947,14 +1947,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_GetVideoStreamTextureSize")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__GetVideoStreamTextureSize {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2180,13 +2180,13 @@ for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_HasCamera")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRTrackedCamera__HasCamera {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2366,14 +2366,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamTextureGL")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamTextureGL {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2550,14 +2550,14 @@ for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRTrackedCamera+_ReleaseVideoStreamingService")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRTrackedCamera__ReleaseVideoStreamingService {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

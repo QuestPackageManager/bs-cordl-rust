@@ -36,13 +36,13 @@ for crate::GlobalNamespace::FileSystemFileStorage {
 #[cfg(feature = "FileSystemFileStorage")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileSystemFileStorage")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FileSystemFileStorage {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -405,14 +405,14 @@ for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
     type Target = crate::GlobalNamespace::SyncBackgroundCommand;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileSystemFileStorage+DeleteFileCommand")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FileSystemFileStorage_DeleteFileCommand {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -518,14 +518,14 @@ for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
 impl std::ops::Deref
 for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
     type Target = crate::GlobalNamespace::SyncBackgroundCommand_1<bool>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileSystemFileStorage+FileExistsCommand")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FileSystemFileStorage_FileExistsCommand {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -626,14 +626,14 @@ impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_LoadFileC
     type Target = crate::GlobalNamespace::SyncBackgroundCommand_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileSystemFileStorage+LoadFileCommand")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FileSystemFileStorage_LoadFileCommand {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -741,14 +741,14 @@ for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
 #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
     type Target = crate::GlobalNamespace::SyncBackgroundCommand;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FileSystemFileStorage+SaveFileCommand")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::FileSystemFileStorage_SaveFileCommand {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

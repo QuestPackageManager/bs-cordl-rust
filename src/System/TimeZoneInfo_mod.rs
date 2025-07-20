@@ -41,13 +41,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo {
 #[cfg(feature = "System+TimeZoneInfo")]
 impl std::ops::Deref for crate::System::TimeZoneInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+TimeZoneInfo")]
 impl std::ops::DerefMut for crate::System::TimeZoneInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3506,13 +3506,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_Adjustme
 #[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
 impl std::ops::Deref for crate::System::TimeZoneInfo_AdjustmentRule {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+TimeZoneInfo+AdjustmentRule")]
 impl std::ops::DerefMut for crate::System::TimeZoneInfo_AdjustmentRule {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4232,13 +4232,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::TimeZoneInfo_CachedDa
 #[cfg(feature = "System+TimeZoneInfo+CachedData")]
 impl std::ops::Deref for crate::System::TimeZoneInfo_CachedData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+TimeZoneInfo+CachedData")]
 impl std::ops::DerefMut for crate::System::TimeZoneInfo_CachedData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -55,13 +55,13 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 impl std::ops::Deref for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 impl std::ops::DerefMut for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -389,14 +389,14 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
 impl std::ops::Deref
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
 impl std::ops::DerefMut
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -483,14 +483,14 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap 
 impl std::ops::Deref
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
 impl std::ops::DerefMut
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

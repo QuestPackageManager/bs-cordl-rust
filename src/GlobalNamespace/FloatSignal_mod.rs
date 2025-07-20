@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::FloatSignal 
 #[cfg(feature = "FloatSignal")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatSignal {
     type Target = crate::GlobalNamespace::GenericSignal_1<f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "FloatSignal")]
 impl std::ops::DerefMut for crate::GlobalNamespace::FloatSignal {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -203,13 +203,13 @@ for crate::UnityEngine::TextCore::Text::TextGenerator {
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator")]
 impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextGenerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1351,14 +1351,14 @@ for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallb
 impl std::ops::Deref
 for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextGenerator+MissingCharacterEventCallback")]
 impl std::ops::DerefMut
 for crate::UnityEngine::TextCore::Text::TextGenerator_MissingCharacterEventCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

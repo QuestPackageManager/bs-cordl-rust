@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::BoundsPropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::Bounds,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::BoundsPropertyBag {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -121,14 +121,14 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+CenterProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::BoundsPropertyBag_CenterProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -234,14 +234,14 @@ for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
         crate::UnityEngine::Bounds,
         crate::UnityEngine::Vector3,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsPropertyBag+ExtentsProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::BoundsPropertyBag_ExtentsProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

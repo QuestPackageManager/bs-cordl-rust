@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::InputSystem::Fas
 #[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::FastMouse {
     type Target = crate::UnityEngine::InputSystem::Mouse;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+FastMouse")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::FastMouse {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

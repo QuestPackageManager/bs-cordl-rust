@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Jobs::IJobExtensions {
 #[cfg(feature = "Unity+Jobs+IJobExtensions")]
 impl std::ops::Deref for crate::Unity::Jobs::IJobExtensions {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Jobs+IJobExtensions")]
 impl std::ops::DerefMut for crate::Unity::Jobs::IJobExtensions {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -380,14 +380,14 @@ for crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<T> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Jobs+IJobExtensions+JobStruct_1+ExecuteJobFunction")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Unity::Jobs::JobStruct_1_IJobExtensions_ExecuteJobFunction<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

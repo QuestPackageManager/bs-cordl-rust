@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_BakedDataEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_BakedEventData>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_BakedDataEvent")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_BakedDataEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UI::DefaultContr
 #[cfg(feature = "UnityEngine+UI+DefaultControls")]
 impl std::ops::Deref for crate::UnityEngine::UI::DefaultControls {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls")]
 impl std::ops::DerefMut for crate::UnityEngine::UI::DefaultControls {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -585,14 +585,14 @@ for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
 #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 impl std::ops::Deref for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UI+DefaultControls+DefaultRuntimeFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UI::DefaultControls_DefaultRuntimeFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

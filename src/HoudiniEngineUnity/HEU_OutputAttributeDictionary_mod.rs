@@ -33,13 +33,13 @@ impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_OutputAttributeDictionar
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         quest_hook::libil2cpp::Gc<crate::HoudiniEngineUnity::HEU_OutputAttribute>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributeDictionary")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_OutputAttributeDictionary {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -28,13 +28,13 @@ for crate::System::Runtime::InteropServices::SafeBuffer {
 #[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]
 impl std::ops::Deref for crate::System::Runtime::InteropServices::SafeBuffer {
     type Target = crate::Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+InteropServices+SafeBuffer")]
 impl std::ops::DerefMut for crate::System::Runtime::InteropServices::SafeBuffer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

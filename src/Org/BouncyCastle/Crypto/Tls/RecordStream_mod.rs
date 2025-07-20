@@ -73,13 +73,13 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::RecordStream {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -820,14 +820,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStrea
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+HandshakeHashUpdateStream")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_HandshakeHashUpdateStream {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -949,14 +949,14 @@ for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+RecordStream+SequenceNumber")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Tls::RecordStream_SequenceNumber {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

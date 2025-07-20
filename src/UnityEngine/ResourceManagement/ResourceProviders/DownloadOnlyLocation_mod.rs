@@ -28,14 +28,14 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocat
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocation {
     type Target = crate::UnityEngine::ResourceManagement::ResourceLocations::LocationWrapper;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+DownloadOnlyLocation")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::DownloadOnlyLocation {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

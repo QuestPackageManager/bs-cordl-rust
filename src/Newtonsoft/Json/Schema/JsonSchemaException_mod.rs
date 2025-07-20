@@ -32,13 +32,13 @@ for crate::Newtonsoft::Json::Schema::JsonSchemaException {
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaException")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaException {
     type Target = crate::Newtonsoft::Json::JsonException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaException")]
 impl std::ops::DerefMut for crate::Newtonsoft::Json::Schema::JsonSchemaException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

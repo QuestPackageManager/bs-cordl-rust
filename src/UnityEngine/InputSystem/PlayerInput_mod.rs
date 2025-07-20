@@ -130,13 +130,13 @@ for crate::UnityEngine::InputSystem::PlayerInput {
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::PlayerInput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2380,13 +2380,13 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_ActionEven
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2593,14 +2593,14 @@ for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ControlsChangedEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInput_ControlsChangedEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2677,14 +2677,14 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::PlayerInput_DeviceLost
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceLostEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInput_DeviceLostEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2762,14 +2762,14 @@ for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
     type Target = crate::UnityEngine::Events::UnityEvent_1<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::PlayerInput>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+DeviceRegainedEvent")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::PlayerInput_DeviceRegainedEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

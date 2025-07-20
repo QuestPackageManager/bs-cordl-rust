@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag {
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::Color,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::ColorPropertyBag {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -118,14 +118,14 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_AProperty {
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_AProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+AProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::ColorPropertyBag_AProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -224,14 +224,14 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+BProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::ColorPropertyBag_BProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -330,14 +330,14 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_GProperty {
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_GProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+GProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::ColorPropertyBag_GProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -436,14 +436,14 @@ for crate::Unity::Properties::Internal::ColorPropertyBag_RProperty {
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
 impl std::ops::Deref for crate::Unity::Properties::Internal::ColorPropertyBag_RProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Color, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+ColorPropertyBag+RProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::ColorPropertyBag_RProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

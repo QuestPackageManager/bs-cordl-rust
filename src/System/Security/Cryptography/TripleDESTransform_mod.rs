@@ -45,13 +45,13 @@ for crate::System::Security::Cryptography::TripleDESTransform {
 #[cfg(feature = "System+Security+Cryptography+TripleDESTransform")]
 impl std::ops::Deref for crate::System::Security::Cryptography::TripleDESTransform {
     type Target = crate::Mono::Security::Cryptography::SymmetricTransform;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+TripleDESTransform")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::TripleDESTransform {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

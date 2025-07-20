@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::Vector2PropertyBag 
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::Vector2,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector2PropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::Vector2PropertyBag {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -118,14 +118,14 @@ for crate::Unity::Properties::Internal::Vector2PropertyBag_XProperty {
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector2PropertyBag_XProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector2, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector2PropertyBag+XProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector2PropertyBag_XProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -228,14 +228,14 @@ for crate::Unity::Properties::Internal::Vector2PropertyBag_YProperty {
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector2PropertyBag_YProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector2, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector2PropertyBag+YProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector2PropertyBag_YProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

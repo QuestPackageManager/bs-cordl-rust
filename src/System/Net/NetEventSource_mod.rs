@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NetEventSource {
 #[cfg(feature = "System+Net+NetEventSource")]
 impl std::ops::Deref for crate::System::Net::NetEventSource {
     type Target = crate::System::Diagnostics::Tracing::EventSource;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+NetEventSource")]
 impl std::ops::DerefMut for crate::System::Net::NetEventSource {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -902,13 +902,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Net::NetEventSource_K
 #[cfg(feature = "System+Net+NetEventSource+Keywords")]
 impl std::ops::Deref for crate::System::Net::NetEventSource_Keywords {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+NetEventSource+Keywords")]
 impl std::ops::DerefMut for crate::System::Net::NetEventSource_Keywords {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

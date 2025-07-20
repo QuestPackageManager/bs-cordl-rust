@@ -68,13 +68,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::XSDSchema {
 #[cfg(feature = "System+Data+XSDSchema")]
 impl std::ops::Deref for crate::System::Data::XSDSchema {
     type Target = crate::System::Data::XMLSchema;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+XSDSchema")]
 impl std::ops::DerefMut for crate::System::Data::XSDSchema {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1823,13 +1823,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Data::XSDSchema_NameT
 #[cfg(feature = "System+Data+XSDSchema+NameType")]
 impl std::ops::Deref for crate::System::Data::XSDSchema_NameType {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+XSDSchema+NameType")]
 impl std::ops::DerefMut for crate::System::Data::XSDSchema_NameType {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

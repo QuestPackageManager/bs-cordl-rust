@@ -32,14 +32,14 @@ for crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
 #[cfg(feature = "BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
 impl std::ops::Deref for crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
     type Target = crate::GlobalNamespace::BeatToTimeConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapDataLoaderVersion4+ColorBoostEventItemConverter")]
 impl std::ops::DerefMut
 for crate::BeatmapDataLoaderVersion4::ColorBoostEventItemConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

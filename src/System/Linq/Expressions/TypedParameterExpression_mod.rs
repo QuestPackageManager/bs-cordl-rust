@@ -28,13 +28,13 @@ for crate::System::Linq::Expressions::TypedParameterExpression {
 #[cfg(feature = "System+Linq+Expressions+TypedParameterExpression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::TypedParameterExpression {
     type Target = crate::System::Linq::Expressions::ParameterExpression;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Linq+Expressions+TypedParameterExpression")]
 impl std::ops::DerefMut for crate::System::Linq::Expressions::TypedParameterExpression {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

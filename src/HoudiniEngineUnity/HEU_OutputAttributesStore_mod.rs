@@ -30,13 +30,13 @@ for crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
 #[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributesStore")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributesStore")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

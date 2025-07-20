@@ -27,13 +27,13 @@ for crate::Org::BouncyCastle::Bcpg::RevocationReason {
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReason")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::RevocationReason {
     type Target = crate::Org::BouncyCastle::Bcpg::SignatureSubpacket;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+RevocationReason")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::RevocationReason {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

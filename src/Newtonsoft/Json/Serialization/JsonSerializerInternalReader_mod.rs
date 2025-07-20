@@ -28,14 +28,14 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
     type Target = crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalReader")]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2488,7 +2488,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creator
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2497,7 +2497,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_Creator
 )]
 impl std::ops::DerefMut
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalReader_CreatorPropertyContext {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

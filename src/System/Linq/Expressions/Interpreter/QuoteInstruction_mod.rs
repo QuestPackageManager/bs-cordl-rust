@@ -41,14 +41,14 @@ for crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
     type Target = crate::System::Linq::Expressions::Interpreter::Instruction;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+QuoteInstruction")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::QuoteInstruction {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -260,14 +260,14 @@ for crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQu
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQuoter {
     type Target = crate::System::Linq::Expressions::ExpressionVisitor;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+QuoteInstruction+ExpressionQuoter")]
 impl std::ops::DerefMut
 for crate::System::Linq::Expressions::Interpreter::QuoteInstruction_ExpressionQuoter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

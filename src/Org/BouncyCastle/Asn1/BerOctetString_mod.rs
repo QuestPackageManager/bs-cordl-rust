@@ -33,13 +33,13 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString {
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerOctetString {
     type Target = crate::Org::BouncyCastle::Asn1::DerOctetString;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::BerOctetString {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -590,14 +590,14 @@ for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetString+ChunkEnumerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::BerOctetString_ChunkEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

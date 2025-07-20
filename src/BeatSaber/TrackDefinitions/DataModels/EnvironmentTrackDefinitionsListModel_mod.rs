@@ -42,7 +42,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsL
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -51,7 +51,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsL
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

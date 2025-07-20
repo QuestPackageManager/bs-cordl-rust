@@ -76,14 +76,14 @@ for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
     type Target = crate::UnityEngine::UIElements::BindableElement;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseField_1<TValueType> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1206,14 +1206,14 @@ for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
     type Target = crate::UnityEngine::UIElements::BindableElement_UxmlTraits;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseField_1+UxmlTraits")]
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

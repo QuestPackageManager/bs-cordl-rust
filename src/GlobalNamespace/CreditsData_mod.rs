@@ -33,13 +33,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsData 
 #[cfg(feature = "CreditsData")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -147,13 +147,13 @@ for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
 #[cfg(feature = "CreditsData+ChildCreditsItem")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsData+ChildCreditsItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -268,13 +268,13 @@ for crate::GlobalNamespace::CreditsData_RootCreditsItem {
 #[cfg(feature = "CreditsData+RootCreditsItem")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData_RootCreditsItem {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsData+RootCreditsItem")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsData_RootCreditsItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -397,13 +397,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::CreditsData_
 #[cfg(feature = "CreditsData+Text")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData_Text {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "CreditsData+Text")]
 impl std::ops::DerefMut for crate::GlobalNamespace::CreditsData_Text {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

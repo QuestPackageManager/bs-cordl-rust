@@ -34,7 +34,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnl
 impl std::ops::Deref
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnlyAttribute {
     type Target = crate::System::Attribute;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -43,7 +43,7 @@ for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnl
 )]
 impl std::ops::DerefMut
 for crate::Unity::Collections::LowLevel::Unsafe::NativeContainerIsAtomicWriteOnlyAttribute {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -73,7 +73,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
     TFieldValue,
 > {
     type Target = crate::UnityEngine::UIElements::BaseField_1<TValueType>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -88,7 +88,7 @@ for crate::UnityEngine::UIElements::BaseCompositeField_3<
     TField,
     TFieldValue,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -735,7 +735,7 @@ for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteD
     TFieldValue,
 > {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -752,7 +752,7 @@ for crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteD
     TField,
     TFieldValue,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

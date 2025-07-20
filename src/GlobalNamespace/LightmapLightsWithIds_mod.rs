@@ -35,13 +35,13 @@ for crate::GlobalNamespace::LightmapLightsWithIds {
 #[cfg(feature = "LightmapLightsWithIds")]
 impl std::ops::Deref for crate::GlobalNamespace::LightmapLightsWithIds {
     type Target = crate::GlobalNamespace::LightWithIds;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightmapLightsWithIds")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightmapLightsWithIds {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -230,14 +230,14 @@ for crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
 impl std::ops::Deref
 for crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
     type Target = crate::GlobalNamespace::LightWithIds_LightWithId;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightmapLightsWithIds+LightIntensitiesWithId")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::LightmapLightsWithIds_LightIntensitiesWithId {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

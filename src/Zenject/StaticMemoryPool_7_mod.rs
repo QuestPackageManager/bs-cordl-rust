@@ -101,7 +101,7 @@ for crate::Zenject::StaticMemoryPool_7<
     TValue,
 > {
     type Target = crate::Zenject::StaticMemoryPoolBase_1<TValue>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -124,7 +124,7 @@ for crate::Zenject::StaticMemoryPool_7<
     TParam6,
     TValue,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

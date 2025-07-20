@@ -30,13 +30,13 @@ for crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
 #[cfg(feature = "System+Data+SqlTypes+SqlXmlStreamWrapper")]
 impl std::ops::Deref for crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
     type Target = crate::System::IO::Stream;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlXmlStreamWrapper")]
 impl std::ops::DerefMut for crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -27,13 +27,13 @@ for crate::System::Xml::Schema::XmlSchemaInferenceException {
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInferenceException")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaInferenceException {
     type Target = crate::System::Xml::Schema::XmlSchemaException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInferenceException")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaInferenceException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

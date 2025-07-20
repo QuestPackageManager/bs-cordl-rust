@@ -58,13 +58,13 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter {
 #[cfg(feature = "MaterialPropertyValuesSetter")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialPropertyValuesSetter {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialPropertyValuesSetter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -237,14 +237,14 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValueP
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair {
     type Target = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameColorValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameColorValuePair {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -319,14 +319,14 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValueP
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair {
     type Target = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameFloatValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameFloatValuePair {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -401,14 +401,14 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePai
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair {
     type Target = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameIntValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameIntValuePair {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -483,14 +483,14 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValue
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair {
     type Target = crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyNameVectorValuePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValuePair {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -566,14 +566,14 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

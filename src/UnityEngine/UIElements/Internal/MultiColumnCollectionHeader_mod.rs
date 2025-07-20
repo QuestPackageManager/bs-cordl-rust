@@ -81,14 +81,14 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
     type Target = crate::UnityEngine::UIElements::VisualElement;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1471,7 +1471,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Column
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1480,7 +1480,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Column
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1845,14 +1845,14 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -82,13 +82,13 @@ for crate::GlobalNamespace::GameLiftConnectionManager {
 #[cfg(feature = "GameLiftConnectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::GameLiftConnectionManager {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameLiftConnectionManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1579,14 +1579,14 @@ for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
 impl std::ops::Deref
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
     type Target = crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager+ConnectToServerParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameLiftConnectionManager_ConnectToServerParams {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1766,14 +1766,14 @@ for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerP
 impl std::ops::Deref
 for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager+GameLiftConnectionManagerParamsBase")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1877,14 +1877,14 @@ for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
 impl std::ops::Deref
 for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
     type Target = crate::GlobalNamespace::GameLiftConnectionManager_GameLiftConnectionManagerParamsBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameLiftConnectionManager+StartClientParams")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameLiftConnectionManager_StartClientParams {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

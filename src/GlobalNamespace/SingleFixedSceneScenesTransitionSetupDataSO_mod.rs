@@ -29,14 +29,14 @@ for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
 impl std::ops::Deref
 for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SingleFixedSceneScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -214,13 +214,13 @@ for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_DecompressSkeletalBoneData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__DecompressSkeletalBoneData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -468,13 +468,13 @@ for crate::OVR::OpenVR::IVRInput__GetActionHandle {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetActionHandle {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionHandle")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetActionHandle {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -660,13 +660,13 @@ for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionOrigins")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionOrigins")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetActionOrigins {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -879,13 +879,13 @@ for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionSetHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetActionSetHandle")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetActionSetHandle {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1071,13 +1071,13 @@ for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetAnalogActionData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetAnalogActionData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetAnalogActionData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1294,13 +1294,13 @@ for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetDigitalActionData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetDigitalActionData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetDigitalActionData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1517,13 +1517,13 @@ for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetInputSourceHandle")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetInputSourceHandle {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1714,13 +1714,13 @@ for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginLocalizedName")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetOriginLocalizedName {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1910,13 +1910,13 @@ for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetOriginTrackedDeviceInfo")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetOriginTrackedDeviceInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2118,13 +2118,13 @@ for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetPoseActionData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetPoseActionData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetPoseActionData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2358,13 +2358,13 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalActionData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetSkeletalActionData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2581,13 +2581,13 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneData")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2825,13 +2825,13 @@ for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_GetSkeletalBoneDataCompressed")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__GetSkeletalBoneDataCompressed {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3059,13 +3059,13 @@ for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_SetActionManifestPath")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_SetActionManifestPath")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__SetActionManifestPath {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3243,13 +3243,13 @@ for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_ShowActionOrigins")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_ShowActionOrigins")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__ShowActionOrigins {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3428,13 +3428,13 @@ for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_ShowBindingsForActionSet")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__ShowBindingsForActionSet {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3659,13 +3659,13 @@ for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_TriggerHapticVibrationAction")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__TriggerHapticVibrationAction {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3876,13 +3876,13 @@ for crate::OVR::OpenVR::IVRInput__UpdateActionState {
 #[cfg(feature = "OVR+OpenVR+IVRInput+_UpdateActionState")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRInput__UpdateActionState {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRInput+_UpdateActionState")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRInput__UpdateActionState {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

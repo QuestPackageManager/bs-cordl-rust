@@ -59,13 +59,13 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1621,14 +1621,14 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+Enumerator")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_Enumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1999,14 +1999,14 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController 
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventTrace+ReplayController")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::LowLevel::InputEventTrace_ReplayController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

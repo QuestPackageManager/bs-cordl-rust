@@ -27,13 +27,13 @@ for crate::System::ComponentModel::TypeConverter {
 #[cfg(feature = "System+ComponentModel+TypeConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::TypeConverter {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::TypeConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1332,14 +1332,14 @@ for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
     type Target = crate::System::ComponentModel::PropertyDescriptor;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+SimplePropertyDescriptor")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1627,14 +1627,14 @@ for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
 impl std::ops::Deref
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+TypeConverter+StandardValuesCollection")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::TypeConverter_StandardValuesCollection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

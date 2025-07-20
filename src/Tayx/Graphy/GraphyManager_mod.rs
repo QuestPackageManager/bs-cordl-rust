@@ -84,13 +84,13 @@ impl std::ops::Deref for crate::Tayx::Graphy::GraphyManager {
     type Target = crate::Tayx::Graphy::Utils::G_Singleton_1<
         quest_hook::libil2cpp::Gc<crate::Tayx::Graphy::GraphyManager>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Tayx+Graphy+GraphyManager")]
 impl std::ops::DerefMut for crate::Tayx::Graphy::GraphyManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

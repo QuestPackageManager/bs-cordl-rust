@@ -30,13 +30,13 @@ for crate::GlobalNamespace::MultipliedAndAddedColorSO {
 #[cfg(feature = "MultipliedAndAddedColorSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MultipliedAndAddedColorSO {
     type Target = crate::GlobalNamespace::ColorSO;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultipliedAndAddedColorSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultipliedAndAddedColorSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

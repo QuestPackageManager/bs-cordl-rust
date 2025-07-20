@@ -50,13 +50,13 @@ for crate::UnityEngine::UIElements::InlineStyleAccess {
 #[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::InlineStyleAccess {
     type Target = crate::UnityEngine::UIElements::StyleValueCollection;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+InlineStyleAccess")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::InlineStyleAccess {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

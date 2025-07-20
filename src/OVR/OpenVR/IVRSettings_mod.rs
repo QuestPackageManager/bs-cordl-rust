@@ -165,13 +165,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Get
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetBool")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetBool {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetBool")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__GetBool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -373,13 +373,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Get
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetFloat")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetFloat {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetFloat")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__GetFloat {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -581,13 +581,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Get
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetInt32")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetInt32 {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetInt32")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__GetInt32 {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -790,14 +790,14 @@ for crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum {
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetSettingsErrorNameFromEnum")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetSettingsErrorNameFromEnum")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRSettings__GetSettingsErrorNameFromEnum {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -968,13 +968,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Get
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetString")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__GetString {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_GetString")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__GetString {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1201,13 +1201,13 @@ for crate::OVR::OpenVR::IVRSettings__RemoveKeyInSection {
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveKeyInSection")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__RemoveKeyInSection {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveKeyInSection")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__RemoveKeyInSection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1411,13 +1411,13 @@ for crate::OVR::OpenVR::IVRSettings__RemoveSection {
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveSection")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__RemoveSection {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_RemoveSection")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__RemoveSection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1608,13 +1608,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Set
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetBool")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__SetBool {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetBool")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__SetBool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1820,13 +1820,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Set
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetFloat")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__SetFloat {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetFloat")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__SetFloat {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2033,13 +2033,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Set
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetInt32")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__SetInt32 {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetInt32")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__SetInt32 {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2245,13 +2245,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Set
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetString")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__SetString {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_SetString")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__SetString {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2462,13 +2462,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::OVR::OpenVR::IVRSettings__Syn
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_Sync")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRSettings__Sync {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRSettings+_Sync")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRSettings__Sync {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

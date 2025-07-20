@@ -143,13 +143,13 @@ for crate::GlobalNamespace::NetworkPlayersTableView {
 #[cfg(feature = "NetworkPlayersTableView")]
 impl std::ops::Deref for crate::GlobalNamespace::NetworkPlayersTableView {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetworkPlayersTableView")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NetworkPlayersTableView {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -460,13 +460,13 @@ for crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
 #[cfg(feature = "NetworkPlayersTableView+CellInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "NetworkPlayersTableView+CellInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

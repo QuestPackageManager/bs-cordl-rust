@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Canvas {
 #[cfg(feature = "UnityEngine+Canvas")]
 impl std::ops::Deref for crate::UnityEngine::Canvas {
     type Target = crate::UnityEngine::Behaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Canvas")]
 impl std::ops::DerefMut for crate::UnityEngine::Canvas {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1537,13 +1537,13 @@ for crate::UnityEngine::Canvas_WillRenderCanvases {
 #[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
 impl std::ops::Deref for crate::UnityEngine::Canvas_WillRenderCanvases {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Canvas+WillRenderCanvases")]
 impl std::ops::DerefMut for crate::UnityEngine::Canvas_WillRenderCanvases {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

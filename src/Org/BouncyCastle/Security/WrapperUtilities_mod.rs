@@ -27,13 +27,13 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities {
 #[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Security::WrapperUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Security::WrapperUtilities {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -205,14 +205,14 @@ for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Security+WrapperUtilities+BufferedCipherWrapper")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Security::WrapperUtilities_BufferedCipherWrapper {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

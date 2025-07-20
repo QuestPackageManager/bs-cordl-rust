@@ -30,13 +30,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TextField {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextField {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -467,13 +467,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TextField_TextInput {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField+TextInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextField_TextInput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -629,13 +629,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TextField_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextField_UxmlTraits>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextField_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -715,13 +715,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::TextField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextField_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

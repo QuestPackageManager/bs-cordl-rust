@@ -47,14 +47,14 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -220,14 +220,14 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1+Take")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

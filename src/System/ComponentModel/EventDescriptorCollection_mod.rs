@@ -42,13 +42,13 @@ for crate::System::ComponentModel::EventDescriptorCollection {
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::EventDescriptorCollection {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection")]
 impl std::ops::DerefMut for crate::System::ComponentModel::EventDescriptorCollection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1103,14 +1103,14 @@ for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerat
 impl std::ops::Deref
 for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+EventDescriptorCollection+ArraySubsetEnumerator")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::EventDescriptorCollection_ArraySubsetEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

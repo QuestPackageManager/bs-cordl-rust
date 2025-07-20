@@ -39,13 +39,13 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
     type Target = crate::Org::BouncyCastle::Cms::CmsSignedGenerator;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedDataStreamGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1378,7 +1378,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOut
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOutputStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1387,7 +1387,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOut
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_CmsSignedDataOutputStream {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1659,7 +1659,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerI
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1668,7 +1668,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerI
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_DigestAndSignerInfoGeneratorHolder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1818,7 +1818,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGenera
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1827,7 +1827,7 @@ for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGenera
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsSignedDataStreamGenerator_SignerInfoGeneratorImpl {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

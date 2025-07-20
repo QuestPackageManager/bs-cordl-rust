@@ -30,13 +30,13 @@ for crate::GlobalNamespace::OculusTestExperiment {
 #[cfg(feature = "OculusTestExperiment")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusTestExperiment {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusTestExperiment")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusTestExperiment {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -134,13 +134,13 @@ for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
 #[cfg(feature = "OculusTestExperiment+ExperimentData")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OculusTestExperiment+ExperimentData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OculusTestExperiment_ExperimentData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -28,14 +28,14 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Imp
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl {
     type Target = crate::System::Security::Cryptography::X509Certificates::X509CertificateImpl;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509Certificate2Impl")]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

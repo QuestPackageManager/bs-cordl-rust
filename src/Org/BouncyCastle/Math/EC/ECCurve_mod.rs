@@ -46,13 +46,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Math::EC::
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::ECCurve {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1385,13 +1385,13 @@ for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1622,14 +1622,14 @@ for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+DefaultLookupTable")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::ECCurve_DefaultLookupTable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

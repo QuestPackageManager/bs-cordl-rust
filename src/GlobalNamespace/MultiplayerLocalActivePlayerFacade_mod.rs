@@ -65,13 +65,13 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
 #[cfg(feature = "MultiplayerLocalActivePlayerFacade")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerFacade")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -656,14 +656,14 @@ for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory {
             crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerLocalActivePlayerFacade+Factory")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::MultiplayerLocalActivePlayerFacade_Factory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

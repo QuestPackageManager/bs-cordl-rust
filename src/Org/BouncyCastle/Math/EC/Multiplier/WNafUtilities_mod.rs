@@ -27,14 +27,14 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -765,7 +765,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasep
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasepointCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -774,7 +774,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasep
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasepointCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -930,14 +930,14 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallba
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1094,14 +1094,14 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCall
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1339,7 +1339,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWith
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1348,7 +1348,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWith
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

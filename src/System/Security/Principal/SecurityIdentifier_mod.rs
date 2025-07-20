@@ -28,13 +28,13 @@ for crate::System::Security::Principal::SecurityIdentifier {
 #[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
 impl std::ops::Deref for crate::System::Security::Principal::SecurityIdentifier {
     type Target = crate::System::Security::Principal::IdentityReference;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Security+Principal+SecurityIdentifier")]
 impl std::ops::DerefMut for crate::System::Security::Principal::SecurityIdentifier {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

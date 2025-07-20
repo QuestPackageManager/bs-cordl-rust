@@ -32,13 +32,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<
         crate::UnityEngine::Hash128,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -358,13 +358,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_Hash128Inp
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
         crate::UnityEngine::Hash128,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+Hash128Input")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field_Hash128Input {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -538,13 +538,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlFactor
             crate::UnityEngine::UIElements::Hash128Field_UxmlTraits,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -627,13 +627,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::Hash128Field_UxmlTraits
             crate::UnityEngine::UIElements::UxmlHash128AttributeDescription,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::Hash128Field_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

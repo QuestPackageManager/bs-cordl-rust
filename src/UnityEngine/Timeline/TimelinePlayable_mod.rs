@@ -56,13 +56,13 @@ for crate::UnityEngine::Timeline::TimelinePlayable {
 #[cfg(feature = "UnityEngine+Timeline+TimelinePlayable")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelinePlayable {
     type Target = crate::UnityEngine::Playables::PlayableBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelinePlayable")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::TimelinePlayable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

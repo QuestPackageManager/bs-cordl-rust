@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ExpressionEvalua
 #[cfg(feature = "UnityEngine+ExpressionEvaluator")]
 impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator")]
 impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -707,13 +707,13 @@ for crate::UnityEngine::ExpressionEvaluator_Expression {
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
 impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator_Expression {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
 impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator_Expression {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -933,13 +933,13 @@ for crate::UnityEngine::ExpressionEvaluator_Operator {
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
 impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator_Operator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
 impl std::ops::DerefMut for crate::UnityEngine::ExpressionEvaluator_Operator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

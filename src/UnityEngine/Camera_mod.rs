@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera {
 #[cfg(feature = "UnityEngine+Camera")]
 impl std::ops::Deref for crate::UnityEngine::Camera {
     type Target = crate::UnityEngine::Behaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Camera")]
 impl std::ops::DerefMut for crate::UnityEngine::Camera {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6791,13 +6791,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Camera_CameraCal
 #[cfg(feature = "UnityEngine+Camera+CameraCallback")]
 impl std::ops::Deref for crate::UnityEngine::Camera_CameraCallback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Camera+CameraCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::Camera_CameraCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

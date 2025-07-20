@@ -34,13 +34,13 @@ for crate::System::Reflection::RuntimePropertyInfo {
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
 impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo {
     type Target = crate::System::Reflection::PropertyInfo;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo")]
 impl std::ops::DerefMut for crate::System::Reflection::RuntimePropertyInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1111,14 +1111,14 @@ for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 impl std::ops::Deref for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+GetterAdapter")]
 impl std::ops::DerefMut
 for crate::System::Reflection::RuntimePropertyInfo_GetterAdapter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1257,14 +1257,14 @@ for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
 impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+Getter_2")]
 impl<T: quest_hook::libil2cpp::Type, R: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Reflection::RuntimePropertyInfo_Getter_2<T, R> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1409,14 +1409,14 @@ for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
 impl<R: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Reflection+RuntimePropertyInfo+StaticGetter_1")]
 impl<R: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Reflection::RuntimePropertyInfo_StaticGetter_1<R> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

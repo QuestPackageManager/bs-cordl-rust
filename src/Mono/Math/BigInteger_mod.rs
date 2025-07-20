@@ -28,13 +28,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::BigInteger {
 #[cfg(feature = "Mono+Math+BigInteger")]
 impl std::ops::Deref for crate::Mono::Math::BigInteger {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Math+BigInteger")]
 impl std::ops::DerefMut for crate::Mono::Math::BigInteger {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -255,6 +255,22 @@ impl crate::Mono::Math::BigInteger {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn IsProbablePrime(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), bool, 0usize>("IsProbablePrime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "IsProbablePrime", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn LowestSetBit(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -396,6 +412,55 @@ impl crate::Mono::Math::BigInteger {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Randomize_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Randomize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Randomize", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Randomize_RandomNumberGenerator0(
+        &mut self,
+        rng: quest_hook::libil2cpp::Gc<
+            crate::System::Security::Cryptography::RandomNumberGenerator,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Security::Cryptography::RandomNumberGenerator,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Randomize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "Randomize", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            method.invoke_unchecked(self, (rng))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetBit__cordl_bool1(
         &mut self,
         bitNum: u32,
@@ -443,12 +508,28 @@ impl crate::Mono::Math::BigInteger {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TestBit(&mut self, bitNum: i32) -> quest_hook::libil2cpp::Result<bool> {
+    pub fn TestBit_i32_1(&mut self, bitNum: i32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 Self::class()
                     .find_method::<(i32), bool, 1usize>("TestBit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "TestBit", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { method.invoke_unchecked(self, (bitNum))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TestBit_u32_0(&mut self, bitNum: u32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_method::<(u32), bool, 1usize>("TestBit")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -1062,7 +1143,7 @@ impl crate::Mono::Math::BigInteger {
         let __cordl_ret: u32 = unsafe { method.invoke_unchecked((), (bi, ui))? };
         Ok(__cordl_ret.into())
     }
-    pub fn op_Multiply(
+    pub fn op_Multiply_BigInteger0(
         bi1: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
         bi2: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1089,6 +1170,33 @@ impl crate::Mono::Math::BigInteger {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
             method.invoke_unchecked((), (bi1, bi2))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_i32_1(
+        bi: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, i32),
+                        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+                        2usize,
+                    >("op_Multiply")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "op_Multiply", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
+            method.invoke_unchecked((), (bi, i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1187,13 +1295,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::BigInteger_Kernel
 #[cfg(feature = "Mono+Math+BigInteger+Kernel")]
 impl std::ops::Deref for crate::Mono::Math::BigInteger_Kernel {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Math+BigInteger+Kernel")]
 impl std::ops::DerefMut for crate::Mono::Math::BigInteger_Kernel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1386,6 +1494,33 @@ impl crate::Mono::Math::BigInteger_Kernel {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             method
                 .invoke_unchecked((), (x, xOffset, xLen, y, yOffset, yLen, d, dOffset))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn MultiplyByDword(
+        n: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+        f: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let method: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                Self::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>, u32),
+                        quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger>,
+                        2usize,
+                    >("MultiplyByDword")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            Self::class(), "MultiplyByDword", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Mono::Math::BigInteger> = unsafe {
+            method.invoke_unchecked((), (n, f))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1682,13 +1817,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Mono::Math::BigInteger_Modulu
 #[cfg(feature = "Mono+Math+BigInteger+ModulusRing")]
 impl std::ops::Deref for crate::Mono::Math::BigInteger_ModulusRing {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Mono+Math+BigInteger+ModulusRing")]
 impl std::ops::DerefMut for crate::Mono::Math::BigInteger_ModulusRing {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

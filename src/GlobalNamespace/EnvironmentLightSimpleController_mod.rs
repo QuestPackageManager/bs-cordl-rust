@@ -32,13 +32,13 @@ for crate::GlobalNamespace::EnvironmentLightSimpleController {
 #[cfg(feature = "EnvironmentLightSimpleController")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentLightSimpleController {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentLightSimpleController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentLightSimpleController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

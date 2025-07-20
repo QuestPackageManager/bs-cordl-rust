@@ -56,14 +56,14 @@ unsafe impl<
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::Events::UnityEvent_2<T0, T1> {
     type Target = crate::UnityEngine::Events::UnityEventBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Events+UnityEvent_2")]
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::Events::UnityEvent_2<T0, T1> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -69,13 +69,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::Schema::XdrBuild
 #[cfg(feature = "System+Xml+Schema+XdrBuilder")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder {
     type Target = crate::System::Xml::Schema::SchemaBuilder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2795,13 +2795,13 @@ for crate::System::Xml::Schema::XdrBuilder_AttributeContent {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+AttributeContent")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_AttributeContent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+AttributeContent")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_AttributeContent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2890,13 +2890,13 @@ for crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+DeclBaseInfo")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_DeclBaseInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3005,13 +3005,13 @@ for crate::System::Xml::Schema::XdrBuilder_ElementContent {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+ElementContent")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_ElementContent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+ElementContent")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_ElementContent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3089,13 +3089,13 @@ for crate::System::Xml::Schema::XdrBuilder_GroupContent {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_GroupContent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+GroupContent")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_GroupContent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3244,13 +3244,13 @@ for crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrAttributeEntry")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrAttributeEntry {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3395,14 +3395,14 @@ for crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBeginChildFunction")]
 impl std::ops::DerefMut
 for crate::System::Xml::Schema::XdrBuilder_XdrBeginChildFunction {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3516,13 +3516,13 @@ for crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrBuildFunction")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrBuildFunction {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3646,13 +3646,13 @@ for crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEndChildFunction")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrEndChildFunction {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3785,13 +3785,13 @@ for crate::System::Xml::Schema::XdrBuilder_XdrEntry {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEntry")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrEntry")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrEntry {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3933,13 +3933,13 @@ for crate::System::Xml::Schema::XdrBuilder_XdrInitFunction {
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrInitFunction")]
 impl std::ops::Deref for crate::System::Xml::Schema::XdrBuilder_XdrInitFunction {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XdrBuilder+XdrInitFunction")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XdrBuilder_XdrInitFunction {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

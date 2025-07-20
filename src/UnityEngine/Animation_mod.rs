@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Animation {
 #[cfg(feature = "UnityEngine+Animation")]
 impl std::ops::Deref for crate::UnityEngine::Animation {
     type Target = crate::UnityEngine::Behaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Animation")]
 impl std::ops::DerefMut for crate::UnityEngine::Animation {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1635,13 +1635,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Animation_Enumer
 #[cfg(feature = "UnityEngine+Animation+Enumerator")]
 impl std::ops::Deref for crate::UnityEngine::Animation_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Animation+Enumerator")]
 impl std::ops::DerefMut for crate::UnityEngine::Animation_Enumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

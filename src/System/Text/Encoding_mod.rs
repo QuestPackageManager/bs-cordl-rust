@@ -34,13 +34,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Text::Encoding {
 #[cfg(feature = "System+Text+Encoding")]
 impl std::ops::Deref for crate::System::Text::Encoding {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Text+Encoding")]
 impl std::ops::DerefMut for crate::System::Text::Encoding {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2103,13 +2103,13 @@ for crate::System::Text::Encoding_DefaultDecoder {
 #[cfg(feature = "System+Text+Encoding+DefaultDecoder")]
 impl std::ops::Deref for crate::System::Text::Encoding_DefaultDecoder {
     type Target = crate::System::Text::Decoder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Text+Encoding+DefaultDecoder")]
 impl std::ops::DerefMut for crate::System::Text::Encoding_DefaultDecoder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2553,13 +2553,13 @@ for crate::System::Text::Encoding_DefaultEncoder {
 #[cfg(feature = "System+Text+Encoding+DefaultEncoder")]
 impl std::ops::Deref for crate::System::Text::Encoding_DefaultEncoder {
     type Target = crate::System::Text::Encoder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Text+Encoding+DefaultEncoder")]
 impl std::ops::DerefMut for crate::System::Text::Encoding_DefaultEncoder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2939,13 +2939,13 @@ for crate::System::Text::Encoding_EncodingByteBuffer {
 #[cfg(feature = "System+Text+Encoding+EncodingByteBuffer")]
 impl std::ops::Deref for crate::System::Text::Encoding_EncodingByteBuffer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Text+Encoding+EncodingByteBuffer")]
 impl std::ops::DerefMut for crate::System::Text::Encoding_EncodingByteBuffer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3249,13 +3249,13 @@ for crate::System::Text::Encoding_EncodingCharBuffer {
 #[cfg(feature = "System+Text+Encoding+EncodingCharBuffer")]
 impl std::ops::Deref for crate::System::Text::Encoding_EncodingCharBuffer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Text+Encoding+EncodingCharBuffer")]
 impl std::ops::DerefMut for crate::System::Text::Encoding_EncodingCharBuffer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

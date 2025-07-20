@@ -28,14 +28,14 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+TeleTrust+TeleTrusTNamedCurves")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -478,7 +478,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP16
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160r1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -487,7 +487,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP16
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160r1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -599,7 +599,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP16
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160t1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -608,7 +608,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP16
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP160t1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -720,7 +720,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP19
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192r1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -729,7 +729,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP19
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192r1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -841,7 +841,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP19
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192t1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -850,7 +850,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP19
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP192t1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -962,7 +962,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP22
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224r1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -971,7 +971,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP22
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224r1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1083,7 +1083,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP22
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224t1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1092,7 +1092,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP22
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP224t1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1204,7 +1204,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256r1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1213,7 +1213,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256r1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1325,7 +1325,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256t1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1334,7 +1334,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP25
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP256t1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1446,7 +1446,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP32
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320r1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1455,7 +1455,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP32
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320r1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1567,7 +1567,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP32
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320t1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1576,7 +1576,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP32
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP320t1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1688,7 +1688,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384r1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1697,7 +1697,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384r1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1809,7 +1809,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384t1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1818,7 +1818,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP38
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP384t1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1930,7 +1930,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP51
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512r1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1939,7 +1939,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP51
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512r1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2051,7 +2051,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP51
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512t1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -2060,7 +2060,7 @@ for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP51
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::TeleTrust::TeleTrusTNamedCurves_BrainpoolP512t1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

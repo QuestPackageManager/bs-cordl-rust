@@ -102,7 +102,7 @@ for crate::Zenject::PoolableMemoryPoolProvider_7<
     TMemoryPool,
 > {
     type Target = crate::Zenject::PoolableMemoryPoolProviderBase_1<TContract>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -125,7 +125,7 @@ for crate::Zenject::PoolableMemoryPoolProvider_7<
     TContract,
     TMemoryPool,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

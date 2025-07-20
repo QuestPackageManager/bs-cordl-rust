@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Zenject::ZenInjectMethod {
 #[cfg(feature = "Zenject+ZenInjectMethod")]
 impl std::ops::Deref for crate::Zenject::ZenInjectMethod {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+ZenInjectMethod")]
 impl std::ops::DerefMut for crate::Zenject::ZenInjectMethod {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

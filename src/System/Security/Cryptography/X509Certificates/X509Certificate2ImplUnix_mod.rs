@@ -36,7 +36,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Imp
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplUnix {
     type Target = crate::System::Security::Cryptography::X509Certificates::X509Certificate2Impl;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -45,7 +45,7 @@ for crate::System::Security::Cryptography::X509Certificates::X509Certificate2Imp
 )]
 impl std::ops::DerefMut
 for crate::System::Security::Cryptography::X509Certificates::X509Certificate2ImplUnix {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

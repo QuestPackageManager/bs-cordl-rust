@@ -28,14 +28,14 @@ for crate::Org::BouncyCastle::X509::Extension::AuthorityKeyIdentifierStructure {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::X509::Extension::AuthorityKeyIdentifierStructure {
     type Target = crate::Org::BouncyCastle::Asn1::X509::AuthorityKeyIdentifier;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+X509+Extension+AuthorityKeyIdentifierStructure")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::X509::Extension::AuthorityKeyIdentifierStructure {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

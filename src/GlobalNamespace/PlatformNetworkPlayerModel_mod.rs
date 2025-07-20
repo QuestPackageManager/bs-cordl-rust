@@ -27,13 +27,13 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel {
 #[cfg(feature = "PlatformNetworkPlayerModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformNetworkPlayerModel {
     type Target = crate::GlobalNamespace::BaseNetworkPlayerModel;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformNetworkPlayerModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PlatformNetworkPlayerModel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -171,14 +171,14 @@ for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
 impl std::ops::Deref
 for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
     type Target = crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PlatformNetworkPlayerModel+CreatePartyConfig")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PlatformNetworkPlayerModel_CreatePartyConfig {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

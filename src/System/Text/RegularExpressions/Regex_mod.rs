@@ -55,13 +55,13 @@ for crate::System::Text::RegularExpressions::Regex {
 #[cfg(feature = "System+Text+RegularExpressions+Regex")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Regex {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex")]
 impl std::ops::DerefMut for crate::System::Text::RegularExpressions::Regex {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1417,14 +1417,14 @@ for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Text+RegularExpressions+Regex+CachedCodeEntry")]
 impl std::ops::DerefMut
 for crate::System::Text::RegularExpressions::Regex_CachedCodeEntry {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

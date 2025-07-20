@@ -30,14 +30,14 @@ for crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
 #[cfg(feature = "BloomPrePassBackgroundTextureGradient")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
     type Target = crate::GlobalNamespace::BloomPrePassNonLightPass;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BloomPrePassBackgroundTextureGradient")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::BloomPrePassBackgroundTextureGradient {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

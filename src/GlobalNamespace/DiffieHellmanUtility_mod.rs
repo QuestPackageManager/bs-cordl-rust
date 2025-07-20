@@ -27,13 +27,13 @@ for crate::GlobalNamespace::DiffieHellmanUtility {
 #[cfg(feature = "DiffieHellmanUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DiffieHellmanUtility {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -305,14 +305,14 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 impl std::ops::Deref
 for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -532,14 +532,14 @@ for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
 impl std::ops::Deref
 for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -848,13 +848,13 @@ for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -43,14 +43,14 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis1DMap")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis1DMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -154,14 +154,14 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualAxis2DMap")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualAxis2DMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -293,14 +293,14 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualButtonMap")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualButtonMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -404,14 +404,14 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualNearTouchMap")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualNearTouchMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -523,14 +523,14 @@ for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase+VirtualTouchMap")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRControllerBase_OVRInput_VirtualTouchMap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -627,13 +627,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput {
 #[cfg(feature = "OVRInput")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3447,13 +3447,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRInput_Hap
 #[cfg(feature = "OVRInput+HapticInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_HapticInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+HapticInfo")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_HapticInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4136,13 +4136,13 @@ for crate::GlobalNamespace::OVRInput_OVRControllerBase {
 #[cfg(feature = "OVRInput+OVRControllerBase")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerBase")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerBase {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4657,14 +4657,14 @@ for crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
 #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
     type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerGamepadAndroid")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRInput_OVRControllerGamepadAndroid {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4857,13 +4857,13 @@ for crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
 #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
     type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerGamepadPC")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerGamepadPC {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5056,13 +5056,13 @@ for crate::GlobalNamespace::OVRInput_OVRControllerHands {
 #[cfg(feature = "OVRInput+OVRControllerHands")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerHands {
     type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerHands")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerHands {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5271,13 +5271,13 @@ for crate::GlobalNamespace::OVRInput_OVRControllerLHand {
 #[cfg(feature = "OVRInput+OVRControllerLHand")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerLHand {
     type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerLHand")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerLHand {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5486,13 +5486,13 @@ for crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
 #[cfg(feature = "OVRInput+OVRControllerLTouch")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
     type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerLTouch")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerLTouch {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5701,13 +5701,13 @@ for crate::GlobalNamespace::OVRInput_OVRControllerRHand {
 #[cfg(feature = "OVRInput+OVRControllerRHand")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerRHand {
     type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerRHand")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerRHand {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -5916,13 +5916,13 @@ for crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
 #[cfg(feature = "OVRInput+OVRControllerRTouch")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
     type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerRTouch")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerRTouch {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6131,13 +6131,13 @@ for crate::GlobalNamespace::OVRInput_OVRControllerRemote {
 #[cfg(feature = "OVRInput+OVRControllerRemote")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerRemote {
     type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerRemote")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerRemote {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6330,13 +6330,13 @@ for crate::GlobalNamespace::OVRInput_OVRControllerTouch {
 #[cfg(feature = "OVRInput+OVRControllerTouch")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRInput_OVRControllerTouch {
     type Target = crate::GlobalNamespace::OVRInput_OVRControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRInput+OVRControllerTouch")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRInput_OVRControllerTouch {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

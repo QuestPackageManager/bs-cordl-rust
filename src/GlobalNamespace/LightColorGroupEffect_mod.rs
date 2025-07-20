@@ -55,13 +55,13 @@ for crate::GlobalNamespace::LightColorGroupEffect {
 #[cfg(feature = "LightColorGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::LightColorGroupEffect {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorGroupEffect")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightColorGroupEffect {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -395,13 +395,13 @@ for crate::GlobalNamespace::LightColorGroupEffect_InitData {
 #[cfg(feature = "LightColorGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::LightColorGroupEffect_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LightColorGroupEffect+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LightColorGroupEffect_InitData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

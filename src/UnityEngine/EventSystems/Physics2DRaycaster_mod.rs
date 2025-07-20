@@ -30,13 +30,13 @@ for crate::UnityEngine::EventSystems::Physics2DRaycaster {
 #[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]
 impl std::ops::Deref for crate::UnityEngine::EventSystems::Physics2DRaycaster {
     type Target = crate::UnityEngine::EventSystems::PhysicsRaycaster;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+EventSystems+Physics2DRaycaster")]
 impl std::ops::DerefMut for crate::UnityEngine::EventSystems::Physics2DRaycaster {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

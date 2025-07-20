@@ -27,13 +27,13 @@ for crate::GlobalNamespace::X509CertificateUtility {
 #[cfg(feature = "X509CertificateUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::X509CertificateUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "X509CertificateUtility")]
 impl std::ops::DerefMut for crate::GlobalNamespace::X509CertificateUtility {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -404,14 +404,14 @@ for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
 #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
 impl std::ops::Deref for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "X509CertificateUtility+PasswordFinder")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::X509CertificateUtility_PasswordFinder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -571,14 +571,14 @@ for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvi
 impl std::ops::Deref
 for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "X509CertificateUtility+RSACertificateEncryptionProvider")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::X509CertificateUtility_RSACertificateEncryptionProvider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

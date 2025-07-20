@@ -27,13 +27,13 @@ for crate::System::Net::ProtocolViolationException {
 #[cfg(feature = "System+Net+ProtocolViolationException")]
 impl std::ops::Deref for crate::System::Net::ProtocolViolationException {
     type Target = crate::System::InvalidOperationException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+ProtocolViolationException")]
 impl std::ops::DerefMut for crate::System::Net::ProtocolViolationException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

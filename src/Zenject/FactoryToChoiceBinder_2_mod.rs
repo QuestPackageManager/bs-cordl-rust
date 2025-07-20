@@ -54,7 +54,7 @@ impl<
     TContract: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::FactoryToChoiceBinder_2<TParam1, TContract> {
     type Target = crate::Zenject::FactoryFromBinder_2<TParam1, TContract>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -63,7 +63,7 @@ impl<
     TParam1: quest_hook::libil2cpp::Type,
     TContract: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut for crate::Zenject::FactoryToChoiceBinder_2<TParam1, TContract> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

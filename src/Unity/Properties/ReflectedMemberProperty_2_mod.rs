@@ -85,7 +85,7 @@ impl<
 > std::ops::Deref
 for crate::Unity::Properties::ReflectedMemberProperty_2<TContainer, TValue> {
     type Target = crate::Unity::Properties::Property_2<TContainer, TValue>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -95,7 +95,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut
 for crate::Unity::Properties::ReflectedMemberProperty_2<TContainer, TValue> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -288,7 +288,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
     TValue,
 > {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -301,7 +301,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetClassValueAction<
     TContainer,
     TValue,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -471,7 +471,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
     TValue,
 > {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -484,7 +484,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_GetStructValueAction<
     TContainer,
     TValue,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -658,7 +658,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
     TValue,
 > {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -671,7 +671,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetClassValueAction<
     TContainer,
     TValue,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -848,7 +848,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
     TValue,
 > {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -861,7 +861,7 @@ for crate::Unity::Properties::ReflectedMemberProperty_2_SetStructValueAction<
     TContainer,
     TValue,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -30,13 +30,13 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
     type Target = crate::HoudiniEngineUnity::HEU_InputInterface;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -271,14 +271,14 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
     type Target = crate::HoudiniEngineUnity::HEU_InputData;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputInterfaceTilemap+HEU_InputDataTilemap")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_InputInterfaceTilemap_HEU_InputDataTilemap {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

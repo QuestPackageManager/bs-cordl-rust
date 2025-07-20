@@ -53,13 +53,13 @@ for crate::Zenject::Internal::ReflectionTypeInfo {
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo")]
 impl std::ops::Deref for crate::Zenject::Internal::ReflectionTypeInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo")]
 impl std::ops::DerefMut for crate::Zenject::Internal::ReflectionTypeInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -257,14 +257,14 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
 impl std::ops::Deref
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectConstructorInfo")]
 impl std::ops::DerefMut
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -375,14 +375,14 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectFieldInfo")]
 impl std::ops::Deref for crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectFieldInfo")]
 impl std::ops::DerefMut
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -477,14 +477,14 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectMethodInfo")]
 impl std::ops::Deref for crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectMethodInfo")]
 impl std::ops::DerefMut
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -594,14 +594,14 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
 impl std::ops::Deref
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectParameterInfo")]
 impl std::ops::DerefMut
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -695,14 +695,14 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
 impl std::ops::Deref
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectPropertyInfo")]
 impl std::ops::DerefMut
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

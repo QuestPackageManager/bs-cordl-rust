@@ -34,7 +34,7 @@ for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
 impl std::ops::Deref
 for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
     type Target = crate::GlobalNamespace::CastInstruction_CastInstructionNoT;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::CastInstructionNoT_CastInstruction_Value {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

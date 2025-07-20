@@ -27,13 +27,13 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
     type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -275,14 +275,14 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetup
 impl std::ops::Deref
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
     type Target = crate::GlobalNamespace::SceneSetupData;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

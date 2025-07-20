@@ -78,13 +78,13 @@ for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+BeatAvatarVisualController")]
 impl std::ops::DerefMut for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -342,7 +342,7 @@ for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDeleg
 impl std::ops::Deref
 for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -351,7 +351,7 @@ for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDeleg
 )]
 impl std::ops::DerefMut
 for crate::BeatSaber::BeatAvatarSDK::BeatAvatarVisualController_HighlighterDelegate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -31,14 +31,14 @@ for crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
     type Target = crate::Zenject::SubContainerCreatorDynamicContext;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabDynamicContext")]
 impl std::ops::DerefMut
 for crate::Zenject::SubContainerCreatorByNewPrefabDynamicContext {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

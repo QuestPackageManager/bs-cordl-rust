@@ -52,13 +52,13 @@ for crate::GlobalNamespace::PacketEncryptionLayer {
 #[cfg(feature = "PacketEncryptionLayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PacketEncryptionLayer {
     type Target = crate::LiteNetLib::Layers::PacketLayerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PacketEncryptionLayer")]
 impl std::ops::DerefMut for crate::GlobalNamespace::PacketEncryptionLayer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -901,14 +901,14 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1320,14 +1320,14 @@ for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

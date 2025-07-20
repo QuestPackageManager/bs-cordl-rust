@@ -33,13 +33,13 @@ for crate::LiteNetLib::EventBasedNatPunchListener {
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
 impl std::ops::Deref for crate::LiteNetLib::EventBasedNatPunchListener {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener")]
 impl std::ops::DerefMut for crate::LiteNetLib::EventBasedNatPunchListener {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -317,14 +317,14 @@ for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest {
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionRequest")]
 impl std::ops::DerefMut
 for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionRequest {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -515,14 +515,14 @@ for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess {
 impl std::ops::Deref
 for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+EventBasedNatPunchListener+OnNatIntroductionSuccess")]
 impl std::ops::DerefMut
 for crate::LiteNetLib::EventBasedNatPunchListener_OnNatIntroductionSuccess {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

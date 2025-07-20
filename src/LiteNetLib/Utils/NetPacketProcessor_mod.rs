@@ -41,13 +41,13 @@ for crate::LiteNetLib::Utils::NetPacketProcessor {
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetPacketProcessor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
 impl std::ops::DerefMut for crate::LiteNetLib::Utils::NetPacketProcessor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1051,14 +1051,14 @@ for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1105,14 +1105,14 @@ for crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+SubscribeDelegate")]
 impl std::ops::DerefMut
 for crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -490,14 +490,14 @@ for crate::System::Threading::Tasks::ValueTask_ValueTaskSourceAsTask {
     type Target = crate::System::Threading::Tasks::Task_1<
         crate::System::Threading::Tasks::VoidTaskResult,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Threading+Tasks+ValueTask+ValueTaskSourceAsTask")]
 impl std::ops::DerefMut
 for crate::System::Threading::Tasks::ValueTask_ValueTaskSourceAsTask {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

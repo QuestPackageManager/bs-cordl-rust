@@ -27,13 +27,13 @@ for crate::System::Reflection::TargetInvocationException {
 #[cfg(feature = "System+Reflection+TargetInvocationException")]
 impl std::ops::Deref for crate::System::Reflection::TargetInvocationException {
     type Target = crate::System::ApplicationException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Reflection+TargetInvocationException")]
 impl std::ops::DerefMut for crate::System::Reflection::TargetInvocationException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

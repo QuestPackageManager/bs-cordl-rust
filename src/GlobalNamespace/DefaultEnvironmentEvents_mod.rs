@@ -41,13 +41,13 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents {
 #[cfg(feature = "DefaultEnvironmentEvents")]
 impl std::ops::Deref for crate::GlobalNamespace::DefaultEnvironmentEvents {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DefaultEnvironmentEvents {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -232,14 +232,14 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents+BasicBeatmapEvent")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DefaultEnvironmentEvents_BasicBeatmapEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -372,14 +372,14 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupDistribution")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupDistribution {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -557,14 +557,14 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupEvent")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupEvent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1182,14 +1182,14 @@ for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
 impl std::ops::Deref
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DefaultEnvironmentEvents+LightGroupFiltering")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::DefaultEnvironmentEvents_LightGroupFiltering {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

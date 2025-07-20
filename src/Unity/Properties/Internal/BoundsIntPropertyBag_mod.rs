@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::BoundsIntPropertyBa
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::BoundsInt,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsIntPropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::BoundsIntPropertyBag {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -121,14 +121,14 @@ for crate::Unity::Properties::Internal::BoundsIntPropertyBag_PositionProperty {
         crate::UnityEngine::BoundsInt,
         crate::UnityEngine::Vector3Int,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsIntPropertyBag+PositionProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::BoundsIntPropertyBag_PositionProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -234,14 +234,14 @@ for crate::Unity::Properties::Internal::BoundsIntPropertyBag_SizeProperty {
         crate::UnityEngine::BoundsInt,
         crate::UnityEngine::Vector3Int,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+BoundsIntPropertyBag+SizeProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::BoundsIntPropertyBag_SizeProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

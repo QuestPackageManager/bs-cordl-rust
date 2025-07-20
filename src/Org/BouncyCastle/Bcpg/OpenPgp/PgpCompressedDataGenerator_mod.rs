@@ -34,14 +34,14 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpCompressedDataGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -288,7 +288,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeCBZi
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeCBZip2OutputStream {
     type Target = crate::Org::BouncyCastle::Apache::Bzip2::CBZip2OutputStream;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -297,7 +297,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeCBZi
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeCBZip2OutputStream {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -408,7 +408,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeZOut
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeZOutputStream {
     type Target = crate::Org::BouncyCastle::Utilities::Zlib::ZOutputStream;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -417,7 +417,7 @@ for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeZOut
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpCompressedDataGenerator_SafeZOutputStream {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

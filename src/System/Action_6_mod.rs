@@ -66,7 +66,7 @@ impl<
     T6: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Action_6<T1, T2, T3, T4, T5, T6> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -79,7 +79,7 @@ impl<
     T5: quest_hook::libil2cpp::Type,
     T6: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut for crate::System::Action_6<T1, T2, T3, T4, T5, T6> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

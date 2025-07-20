@@ -35,13 +35,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::ColorHueSlid
 #[cfg(feature = "ColorHueSlider")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorHueSlider {
     type Target = crate::HMUI::CircleSlider;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "ColorHueSlider")]
 impl std::ops::DerefMut for crate::GlobalNamespace::ColorHueSlider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

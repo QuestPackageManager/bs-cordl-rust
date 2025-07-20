@@ -35,13 +35,13 @@ for crate::GlobalNamespace::SonyLevelPacksPriceModel {
 #[cfg(feature = "SonyLevelPacksPriceModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLevelPacksPriceModel {
     type Target = crate::GlobalNamespace::PersistentScriptableObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelPacksPriceModel")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SonyLevelPacksPriceModel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -208,14 +208,14 @@ for crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair {
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SonyLevelPacksPriceModel+PricePerBundlePair")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::SonyLevelPacksPriceModel_PricePerBundlePair {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

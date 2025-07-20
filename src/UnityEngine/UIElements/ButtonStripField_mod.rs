@@ -32,13 +32,13 @@ for crate::UnityEngine::UIElements::ButtonStripField {
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ButtonStripField {
     type Target = crate::UnityEngine::UIElements::BaseField_1<i32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ButtonStripField {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -174,14 +174,14 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::ButtonStripField_UxmlFa
             crate::UnityEngine::UIElements::ButtonStripField_UxmlTraits,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField+UxmlFactory")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::ButtonStripField_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -254,13 +254,13 @@ for crate::UnityEngine::UIElements::ButtonStripField_UxmlTraits {
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ButtonStripField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<i32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ButtonStripField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ButtonStripField_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

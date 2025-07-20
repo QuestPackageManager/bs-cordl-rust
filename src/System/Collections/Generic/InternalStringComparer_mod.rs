@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::System::Collections::Generic::InternalStringComp
     type Target = crate::System::Collections::Generic::EqualityComparer_1<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Collections+Generic+InternalStringComparer")]
 impl std::ops::DerefMut for crate::System::Collections::Generic::InternalStringComparer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

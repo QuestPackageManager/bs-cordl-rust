@@ -131,13 +131,13 @@ for crate::UnityEngine::UIElements::VisualElement {
 #[cfg(feature = "UnityEngine+UIElements+VisualElement")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement {
     type Target = crate::UnityEngine::UIElements::Focusable;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -8843,14 +8843,14 @@ for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
     type Target = crate::UnityEngine::UIElements::ScheduledItem;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+BaseVisualElementScheduledItem")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -9242,14 +9242,14 @@ for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+CustomStyleAccess")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_CustomStyleAccess {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -10667,14 +10667,14 @@ for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
     type Target = crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
         quest_hook::libil2cpp::Gc<crate::System::Action>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+SimpleScheduledItem")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_SimpleScheduledItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -10799,14 +10799,14 @@ for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
             crate::System::Action_1<crate::UnityEngine::UIElements::TimerState>,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+TimerStateScheduledItem")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_TimerStateScheduledItem {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -10934,13 +10934,13 @@ for crate::UnityEngine::UIElements::VisualElement_TypeData {
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_TypeData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+TypeData")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_TypeData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -11132,13 +11132,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_UxmlFacto
             crate::UnityEngine::UIElements::VisualElement_UxmlTraits,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -11248,13 +11248,13 @@ for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::UxmlTraits;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualElement+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualElement_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -11447,7 +11447,7 @@ for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
     ActionType,
 > {
     type Target = crate::UnityEngine::UIElements::VisualElement_BaseVisualElementScheduledItem;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -11456,7 +11456,7 @@ impl<ActionType: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualElement_VisualElementScheduledItem_1<
     ActionType,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

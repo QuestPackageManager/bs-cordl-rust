@@ -51,14 +51,14 @@ for crate::System::Threading::Tasks::TaskFactory_1<TResult> {
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::TaskFactory_1<TResult> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Threading+Tasks+TaskFactory_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::System::Threading::Tasks::TaskFactory_1<TResult> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -874,7 +874,7 @@ for crate::System::Threading::Tasks::TaskFactory_1_FromAsyncTrimPromise_1<
     TInstance,
 > {
     type Target = crate::System::Threading::Tasks::Task_1<TResult>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -887,7 +887,7 @@ for crate::System::Threading::Tasks::TaskFactory_1_FromAsyncTrimPromise_1<
     TResult,
     TInstance,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

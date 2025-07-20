@@ -43,14 +43,14 @@ for crate::Oculus::Platform::Message_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Oculus::Platform::Message_1<T> {
     type Target = crate::Oculus::Platform::Message;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Oculus+Platform+Message_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Oculus::Platform::Message_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -205,14 +205,14 @@ for crate::Oculus::Platform::Message_1_Callback<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Oculus::Platform::Message_1_Callback<T> {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Oculus+Platform+Message_1+Callback")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Oculus::Platform::Message_1_Callback<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

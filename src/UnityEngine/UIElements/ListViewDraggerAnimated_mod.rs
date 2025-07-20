@@ -39,13 +39,13 @@ for crate::UnityEngine::UIElements::ListViewDraggerAnimated {
 #[cfg(feature = "UnityEngine+UIElements+ListViewDraggerAnimated")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ListViewDraggerAnimated {
     type Target = crate::UnityEngine::UIElements::ListViewDragger;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+ListViewDraggerAnimated")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::ListViewDraggerAnimated {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

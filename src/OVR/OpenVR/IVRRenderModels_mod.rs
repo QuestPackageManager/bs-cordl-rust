@@ -219,13 +219,13 @@ for crate::OVR::OpenVR::IVRRenderModels__FreeRenderModel {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeRenderModel")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__FreeRenderModel {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeRenderModel")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__FreeRenderModel {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -397,13 +397,13 @@ for crate::OVR::OpenVR::IVRRenderModels__FreeTexture {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTexture")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__FreeTexture {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTexture")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__FreeTexture {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -575,13 +575,13 @@ for crate::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11 {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTextureD3D11")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11 {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_FreeTextureD3D11")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__FreeTextureD3D11 {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -753,13 +753,13 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentButtonMask")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentButtonMask")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__GetComponentButtonMask {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -951,13 +951,13 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentCount {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentCount {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentCount")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__GetComponentCount {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1133,13 +1133,13 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentName {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentName {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentName")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__GetComponentName {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1356,14 +1356,14 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentRenderModelName")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRRenderModels__GetComponentRenderModelName {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1587,13 +1587,13 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentState {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentState")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetComponentState {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentState")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__GetComponentState {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1866,14 +1866,14 @@ for crate::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetComponentStateForDevicePath")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRRenderModels__GetComponentStateForDevicePath {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2127,13 +2127,13 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelCount {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelCount {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelCount")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelCount {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2293,14 +2293,14 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelErrorNameFromEnum")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelErrorNameFromEnum {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2472,13 +2472,13 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelName {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelName {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelName")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelName {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2681,14 +2681,14 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelOriginalPath")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelOriginalPath {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2916,14 +2916,14 @@ for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_GetRenderModelThumbnailURL")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRRenderModels__GetRenderModelThumbnailURL {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3151,14 +3151,14 @@ for crate::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async {
 impl std::ops::Deref
 for crate::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadIntoTextureD3D11_Async")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRRenderModels__LoadIntoTextureD3D11_Async {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3333,13 +3333,13 @@ for crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadRenderModel_Async")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadRenderModel_Async")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__LoadRenderModel_Async {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3533,13 +3533,13 @@ for crate::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTextureD3D11_Async")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTextureD3D11_Async")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__LoadTextureD3D11_Async {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3729,13 +3729,13 @@ for crate::OVR::OpenVR::IVRRenderModels__LoadTexture_Async {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTexture_Async")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__LoadTexture_Async {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_LoadTexture_Async")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRRenderModels__LoadTexture_Async {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3914,14 +3914,14 @@ for crate::OVR::OpenVR::IVRRenderModels__RenderModelHasComponent {
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_RenderModelHasComponent")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRRenderModels__RenderModelHasComponent {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRRenderModels+_RenderModelHasComponent")]
 impl std::ops::DerefMut
 for crate::OVR::OpenVR::IVRRenderModels__RenderModelHasComponent {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

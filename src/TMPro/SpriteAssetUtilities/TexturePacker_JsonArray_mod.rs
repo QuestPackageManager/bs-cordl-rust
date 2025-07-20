@@ -27,13 +27,13 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 impl std::ops::Deref for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 impl std::ops::DerefMut for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -343,14 +343,14 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject
 impl std::ops::Deref
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 impl std::ops::DerefMut
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

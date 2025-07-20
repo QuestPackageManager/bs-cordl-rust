@@ -27,13 +27,13 @@ for crate::GlobalNamespace::MultiplayerPlayerPlacement {
 #[cfg(feature = "MultiplayerPlayerPlacement")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPlayerPlacement {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MultiplayerPlayerPlacement")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerPlayerPlacement {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -45,14 +45,14 @@ for crate::Zenject::BindSignalIdToBinder_1<TSignal> {
 impl<TSignal: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::BindSignalIdToBinder_1<TSignal> {
     type Target = crate::Zenject::BindSignalToBinder_1<TSignal>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Zenject+BindSignalIdToBinder_1")]
 impl<TSignal: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Zenject::BindSignalIdToBinder_1<TSignal> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

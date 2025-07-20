@@ -48,14 +48,14 @@ for crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<T> {
     type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BGLib+AppFlow+Initialization+AddressablesAsyncInstaller_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::BGLib::AppFlow::Initialization::AddressablesAsyncInstaller_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

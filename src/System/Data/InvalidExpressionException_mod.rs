@@ -27,13 +27,13 @@ for crate::System::Data::InvalidExpressionException {
 #[cfg(feature = "System+Data+InvalidExpressionException")]
 impl std::ops::Deref for crate::System::Data::InvalidExpressionException {
     type Target = crate::System::Data::DataException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+InvalidExpressionException")]
 impl std::ops::DerefMut for crate::System::Data::InvalidExpressionException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

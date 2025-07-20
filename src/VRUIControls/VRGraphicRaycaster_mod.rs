@@ -39,13 +39,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::VRUIControls::VRGraphicRaycas
 #[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
 impl std::ops::Deref for crate::VRUIControls::VRGraphicRaycaster {
     type Target = crate::UnityEngine::EventSystems::BaseRaycaster;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "VRUIControls+VRGraphicRaycaster")]
 impl std::ops::DerefMut for crate::VRUIControls::VRGraphicRaycaster {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

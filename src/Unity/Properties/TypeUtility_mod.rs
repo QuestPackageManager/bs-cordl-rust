@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Unity::Properties::TypeUtilit
 #[cfg(feature = "Unity+Properties+TypeUtility")]
 impl std::ops::Deref for crate::Unity::Properties::TypeUtility {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility")]
 impl std::ops::DerefMut for crate::Unity::Properties::TypeUtility {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1014,13 +1014,13 @@ for crate::Unity::Properties::TypeUtility_NonConstructable {
 #[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
 impl std::ops::Deref for crate::Unity::Properties::TypeUtility_NonConstructable {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+NonConstructable")]
 impl std::ops::DerefMut for crate::Unity::Properties::TypeUtility_NonConstructable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1162,14 +1162,14 @@ for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 impl std::ops::Deref for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructorVisitor")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::TypeUtility_TypeConstructorVisitor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1303,14 +1303,14 @@ for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+TypeUtility+TypeConstructor_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::Unity::Properties::TypeUtility_TypeConstructor_1<T> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

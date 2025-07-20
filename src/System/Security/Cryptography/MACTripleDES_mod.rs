@@ -38,13 +38,13 @@ for crate::System::Security::Cryptography::MACTripleDES {
 #[cfg(feature = "System+Security+Cryptography+MACTripleDES")]
 impl std::ops::Deref for crate::System::Security::Cryptography::MACTripleDES {
     type Target = crate::System::Security::Cryptography::KeyedHashAlgorithm;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Security+Cryptography+MACTripleDES")]
 impl std::ops::DerefMut for crate::System::Security::Cryptography::MACTripleDES {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

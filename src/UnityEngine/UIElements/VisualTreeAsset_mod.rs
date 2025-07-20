@@ -67,13 +67,13 @@ for crate::UnityEngine::UIElements::VisualTreeAsset {
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualTreeAsset {
     type Target = crate::UnityEngine::ScriptableObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::VisualTreeAsset {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1967,14 +1967,14 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

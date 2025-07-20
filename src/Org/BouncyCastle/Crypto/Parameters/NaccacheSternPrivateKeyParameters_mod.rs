@@ -30,14 +30,14 @@ for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParamet
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParameters {
     type Target = crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyParameters;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+NaccacheSternPrivateKeyParameters")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternPrivateKeyParameters {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

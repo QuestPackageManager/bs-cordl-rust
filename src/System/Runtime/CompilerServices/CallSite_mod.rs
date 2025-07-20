@@ -31,13 +31,13 @@ for crate::System::Runtime::CompilerServices::CallSite {
 #[cfg(feature = "System+Runtime+CompilerServices+CallSite")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::CallSite {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSite")]
 impl std::ops::DerefMut for crate::System::Runtime::CompilerServices::CallSite {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

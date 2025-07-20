@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::MonoCustomAttrs {
 #[cfg(feature = "System+MonoCustomAttrs")]
 impl std::ops::Deref for crate::System::MonoCustomAttrs {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+MonoCustomAttrs")]
 impl std::ops::DerefMut for crate::System::MonoCustomAttrs {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -857,13 +857,13 @@ for crate::System::MonoCustomAttrs_AttributeInfo {
 #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]
 impl std::ops::Deref for crate::System::MonoCustomAttrs_AttributeInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+MonoCustomAttrs+AttributeInfo")]
 impl std::ops::DerefMut for crate::System::MonoCustomAttrs_AttributeInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

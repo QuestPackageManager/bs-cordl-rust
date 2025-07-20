@@ -28,14 +28,14 @@ for crate::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue {
 impl std::ops::Deref
 for crate::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue {
     type Target = crate::System::Net::Http::Headers::TransferCodingHeaderValue;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Net+Http+Headers+TransferCodingWithQualityHeaderValue")]
 impl std::ops::DerefMut
 for crate::System::Net::Http::Headers::TransferCodingWithQualityHeaderValue {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

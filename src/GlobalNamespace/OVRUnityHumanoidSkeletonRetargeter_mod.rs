@@ -326,14 +326,14 @@ for crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetarget
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata+BoneData")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -486,13 +486,13 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
     type Target = crate::GlobalNamespace::OVRSkeleton;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1213,14 +1213,14 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+JointAdjustment")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1294,14 +1294,14 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBones
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1367,14 +1367,14 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetada
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

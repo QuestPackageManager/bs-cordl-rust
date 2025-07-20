@@ -27,14 +27,14 @@ for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ProBuilder+MeshOperations+MergeElements")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ProBuilder::MeshOperations::MergeElements {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

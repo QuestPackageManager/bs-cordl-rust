@@ -63,7 +63,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Linq::EnumerableSorter_2<TElement, TKey> {
     type Target = crate::System::Linq::EnumerableSorter_1<TElement>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -72,7 +72,7 @@ impl<
     TElement: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
 > std::ops::DerefMut for crate::System::Linq::EnumerableSorter_2<TElement, TKey> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

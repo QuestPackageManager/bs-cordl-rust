@@ -38,13 +38,13 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -329,14 +329,14 @@ for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
     type Target = crate::System::IO::MemoryStream;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Signers+Ed25519ctxSigner+Buffer")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Signers::Ed25519ctxSigner_Buffer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

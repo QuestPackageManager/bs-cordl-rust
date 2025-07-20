@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::TerrainCallbacks
 #[cfg(feature = "UnityEngine+TerrainCallbacks")]
 impl std::ops::Deref for crate::UnityEngine::TerrainCallbacks {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+TerrainCallbacks")]
 impl std::ops::DerefMut for crate::UnityEngine::TerrainCallbacks {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -146,14 +146,14 @@ for crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback {
 #[cfg(feature = "UnityEngine+TerrainCallbacks+HeightmapChangedCallback")]
 impl std::ops::Deref for crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+TerrainCallbacks+HeightmapChangedCallback")]
 impl std::ops::DerefMut
 for crate::UnityEngine::TerrainCallbacks_HeightmapChangedCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -271,13 +271,13 @@ for crate::UnityEngine::TerrainCallbacks_TextureChangedCallback {
 #[cfg(feature = "UnityEngine+TerrainCallbacks+TextureChangedCallback")]
 impl std::ops::Deref for crate::UnityEngine::TerrainCallbacks_TextureChangedCallback {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+TerrainCallbacks+TextureChangedCallback")]
 impl std::ops::DerefMut for crate::UnityEngine::TerrainCallbacks_TextureChangedCallback {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

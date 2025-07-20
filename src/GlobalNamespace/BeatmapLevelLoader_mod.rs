@@ -46,13 +46,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapLevel
 #[cfg(feature = "BeatmapLevelLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelLoader {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelLoader")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelLoader {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -688,13 +688,13 @@ for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
 #[cfg(feature = "BeatmapLevelLoader+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "BeatmapLevelLoader+InitData")]
 impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelLoader_InitData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

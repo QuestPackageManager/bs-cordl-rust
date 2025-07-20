@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::Vector3IntPropertyB
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::Vector3Int,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::Vector3IntPropertyBag {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -123,14 +123,14 @@ for crate::Unity::Properties::Internal::Vector3IntPropertyBag_XProperty {
         crate::UnityEngine::Vector3Int,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag+XProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector3IntPropertyBag_XProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -236,14 +236,14 @@ for crate::Unity::Properties::Internal::Vector3IntPropertyBag_YProperty {
         crate::UnityEngine::Vector3Int,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag+YProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector3IntPropertyBag_YProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -349,14 +349,14 @@ for crate::Unity::Properties::Internal::Vector3IntPropertyBag_ZProperty {
         crate::UnityEngine::Vector3Int,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector3IntPropertyBag+ZProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector3IntPropertyBag_ZProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

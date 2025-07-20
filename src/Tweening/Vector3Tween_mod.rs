@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Tweening::Vector3Tween {
 #[cfg(feature = "Tweening+Vector3Tween")]
 impl std::ops::Deref for crate::Tweening::Vector3Tween {
     type Target = crate::Tweening::Tween_1<crate::UnityEngine::Vector3>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Tweening+Vector3Tween")]
 impl std::ops::DerefMut for crate::Tweening::Vector3Tween {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

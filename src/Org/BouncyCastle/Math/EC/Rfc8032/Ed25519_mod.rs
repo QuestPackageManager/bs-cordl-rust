@@ -27,13 +27,13 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519 {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2357,14 +2357,14 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointAccum")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointAccum {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2441,14 +2441,14 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt {
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointExt")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointExt")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointExt {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2525,14 +2525,14 @@ for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointPrecomp {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointPrecomp {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Rfc8032+Ed25519+PointPrecomp")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Rfc8032::Ed25519_PointPrecomp {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

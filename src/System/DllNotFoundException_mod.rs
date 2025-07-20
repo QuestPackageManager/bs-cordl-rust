@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DllNotFoundException 
 #[cfg(feature = "System+DllNotFoundException")]
 impl std::ops::Deref for crate::System::DllNotFoundException {
     type Target = crate::System::TypeLoadException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+DllNotFoundException")]
 impl std::ops::DerefMut for crate::System::DllNotFoundException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

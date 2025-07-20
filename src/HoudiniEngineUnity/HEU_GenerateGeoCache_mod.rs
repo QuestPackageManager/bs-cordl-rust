@@ -248,13 +248,13 @@ for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1476,14 +1476,14 @@ for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

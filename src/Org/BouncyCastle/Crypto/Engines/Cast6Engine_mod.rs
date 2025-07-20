@@ -32,13 +32,13 @@ for crate::Org::BouncyCastle::Crypto::Engines::Cast6Engine {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Cast6Engine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Engines::Cast6Engine {
     type Target = crate::Org::BouncyCastle::Crypto::Engines::Cast5Engine;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Engines+Cast6Engine")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Engines::Cast6Engine {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

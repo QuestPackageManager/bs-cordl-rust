@@ -27,13 +27,13 @@ for crate::UnityEngine::Tilemaps::TilemapRenderer {
 #[cfg(feature = "UnityEngine+Tilemaps+TilemapRenderer")]
 impl std::ops::Deref for crate::UnityEngine::Tilemaps::TilemapRenderer {
     type Target = crate::UnityEngine::Renderer;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Tilemaps+TilemapRenderer")]
 impl std::ops::DerefMut for crate::UnityEngine::Tilemaps::TilemapRenderer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

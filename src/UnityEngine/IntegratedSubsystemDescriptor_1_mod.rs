@@ -45,14 +45,14 @@ for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
 impl<TSubsystem: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
     type Target = crate::UnityEngine::IntegratedSubsystemDescriptor;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+IntegratedSubsystemDescriptor_1")]
 impl<TSubsystem: quest_hook::libil2cpp::Type> std::ops::DerefMut
 for crate::UnityEngine::IntegratedSubsystemDescriptor_1<TSubsystem> {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -388,7 +388,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuatio
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -397,7 +397,7 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_Continuatio
 )]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_ContinuationWrapper {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -516,14 +516,14 @@ for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRun
 impl std::ops::Deref
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncMethodBuilderCore+MoveNextRunner")]
 impl std::ops::DerefMut
 for crate::System::Runtime::CompilerServices::AsyncMethodBuilderCore_MoveNextRunner {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

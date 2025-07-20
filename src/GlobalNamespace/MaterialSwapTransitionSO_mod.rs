@@ -35,13 +35,13 @@ for crate::GlobalNamespace::MaterialSwapTransitionSO {
 #[cfg(feature = "MaterialSwapTransitionSO")]
 impl std::ops::Deref for crate::GlobalNamespace::MaterialSwapTransitionSO {
     type Target = crate::GlobalNamespace::BaseTransitionSO;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MaterialSwapTransitionSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::MaterialSwapTransitionSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -34,13 +34,13 @@ for crate::System::IO::Compression::DeflateStream {
 #[cfg(feature = "System+IO+Compression+DeflateStream")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream {
     type Target = crate::System::IO::Stream;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+IO+Compression+DeflateStream")]
 impl std::ops::DerefMut for crate::System::IO::Compression::DeflateStream {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -908,13 +908,13 @@ for crate::System::IO::Compression::DeflateStream_ReadMethod {
 #[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream_ReadMethod {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+IO+Compression+DeflateStream+ReadMethod")]
 impl std::ops::DerefMut for crate::System::IO::Compression::DeflateStream_ReadMethod {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1098,13 +1098,13 @@ for crate::System::IO::Compression::DeflateStream_WriteMethod {
 #[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
 impl std::ops::Deref for crate::System::IO::Compression::DeflateStream_WriteMethod {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+IO+Compression+DeflateStream+WriteMethod")]
 impl std::ops::DerefMut for crate::System::IO::Compression::DeflateStream_WriteMethod {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -173,13 +173,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::HEU_Houdi
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_HoudiniAsset {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -6803,14 +6803,14 @@ for crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate {
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+UpdateUIDelegate")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_HoudiniAsset+UpdateUIDelegate")]
 impl std::ops::DerefMut
 for crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

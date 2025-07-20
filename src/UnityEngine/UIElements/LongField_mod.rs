@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Long
 #[cfg(feature = "UnityEngine+UIElements+LongField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::LongField {
     type Target = crate::UnityEngine::UIElements::TextValueField_1<i64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+LongField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::LongField {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -283,13 +283,13 @@ for crate::UnityEngine::UIElements::LongField_LongInput {
 #[cfg(feature = "UnityEngine+UIElements+LongField+LongInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::LongField_LongInput {
     type Target = crate::UnityEngine::UIElements::TextValueField_1_TextValueInput<i64>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+LongField+LongInput")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::LongField_LongInput {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -525,13 +525,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::LongField_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LongField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::LongField_UxmlTraits>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+LongField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::LongField_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -614,13 +614,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::LongField_UxmlTraits {
             crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
         >,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+LongField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::LongField_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

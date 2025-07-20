@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::Vector4PropertyBag 
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         crate::UnityEngine::Vector4,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag")]
 impl std::ops::DerefMut for crate::Unity::Properties::Internal::Vector4PropertyBag {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -122,14 +122,14 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty {
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector4, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+WProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector4PropertyBag_WProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -232,14 +232,14 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty {
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector4, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+XProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector4PropertyBag_XProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -342,14 +342,14 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty {
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector4, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+YProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector4PropertyBag_YProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -452,14 +452,14 @@ for crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty {
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty {
     type Target = crate::Unity::Properties::Property_2<crate::UnityEngine::Vector4, f32>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+Vector4PropertyBag+ZProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::Vector4PropertyBag_ZProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

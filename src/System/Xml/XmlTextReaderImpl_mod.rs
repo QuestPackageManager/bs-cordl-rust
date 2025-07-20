@@ -140,13 +140,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlTextReaderImp
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl {
     type Target = crate::System::Xml::XmlReader;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7519,7 +7519,7 @@ for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataCompa
 impl std::ops::Deref
 for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -7528,7 +7528,7 @@ for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataCompa
 )]
 impl std::ops::DerefMut
 for crate::System::Xml::XmlTextReaderImpl_DtdDefaultAttributeInfoToNodeDataComparer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -7705,13 +7705,13 @@ for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+DtdParserProxy")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_DtdParserProxy {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -9057,13 +9057,13 @@ for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+LaterInitParam")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_LaterInitParam {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -9136,13 +9136,13 @@ for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
     type Target = crate::System::Xml::XmlNamespaceManager;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NoNamespaceManager")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_NoNamespaceManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -9490,13 +9490,13 @@ for crate::System::Xml::XmlTextReaderImpl_NodeData {
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_NodeData {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+NodeData")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_NodeData {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -10246,14 +10246,14 @@ for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
 impl std::ops::Deref
 for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+OnDefaultAttributeUseDelegate")]
 impl std::ops::DerefMut
 for crate::System::Xml::XmlTextReaderImpl_OnDefaultAttributeUseDelegate {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -10787,13 +10787,13 @@ for crate::System::Xml::XmlTextReaderImpl_XmlContext {
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
 impl std::ops::Deref for crate::System::Xml::XmlTextReaderImpl_XmlContext {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlTextReaderImpl+XmlContext")]
 impl std::ops::DerefMut for crate::System::Xml::XmlTextReaderImpl_XmlContext {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

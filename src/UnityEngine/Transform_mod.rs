@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Transform {
 #[cfg(feature = "UnityEngine+Transform")]
 impl std::ops::Deref for crate::UnityEngine::Transform {
     type Target = crate::UnityEngine::Component;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Transform")]
 impl std::ops::DerefMut for crate::UnityEngine::Transform {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -4029,13 +4029,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Transform_Enumer
 #[cfg(feature = "UnityEngine+Transform+Enumerator")]
 impl std::ops::Deref for crate::UnityEngine::Transform_Enumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Transform+Enumerator")]
 impl std::ops::DerefMut for crate::UnityEngine::Transform_Enumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

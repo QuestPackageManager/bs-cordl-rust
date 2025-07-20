@@ -27,13 +27,13 @@ for crate::System::Data::SqlTypes::SqlNullValueException {
 #[cfg(feature = "System+Data+SqlTypes+SqlNullValueException")]
 impl std::ops::Deref for crate::System::Data::SqlTypes::SqlNullValueException {
     type Target = crate::System::Data::SqlTypes::SqlTypeException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Data+SqlTypes+SqlNullValueException")]
 impl std::ops::DerefMut for crate::System::Data::SqlTypes::SqlNullValueException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

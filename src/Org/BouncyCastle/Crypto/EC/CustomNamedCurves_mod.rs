@@ -27,13 +27,13 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -527,14 +527,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+Curve25519Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_Curve25519Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -636,14 +636,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SM2P256V1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SM2P256V1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -745,14 +745,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP128R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP128R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -854,14 +854,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -963,14 +963,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1072,14 +1072,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP160R2Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP160R2Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1181,14 +1181,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1290,14 +1290,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP192R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP192R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1399,14 +1399,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1508,14 +1508,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP224R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP224R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1617,14 +1617,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1726,14 +1726,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP256R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP256R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1835,14 +1835,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP384R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP384R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1944,14 +1944,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecP521R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecP521R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2053,14 +2053,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2162,14 +2162,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT113R2Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT113R2Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2271,14 +2271,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2380,14 +2380,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT131R2Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT131R2Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2489,14 +2489,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2598,14 +2598,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2707,14 +2707,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT163R2Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT163R2Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2816,14 +2816,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -2925,14 +2925,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT193R2Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT193R2Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3034,14 +3034,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3143,14 +3143,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT233R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT233R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3252,14 +3252,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT239K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT239K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3361,14 +3361,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3470,14 +3470,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT283R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT283R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3579,14 +3579,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3688,14 +3688,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT409R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT409R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3797,14 +3797,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571K1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571K1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3906,14 +3906,14 @@ for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
     type Target = crate::Org::BouncyCastle::Asn1::X9::X9ECParametersHolder;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+EC+CustomNamedCurves+SecT571R1Holder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::EC::CustomNamedCurves_SecT571R1Holder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

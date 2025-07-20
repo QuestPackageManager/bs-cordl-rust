@@ -42,14 +42,14 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase {
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Collections+Specialized+NameObjectCollectionBase")]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameObjectCollectionBase {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -832,7 +832,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -841,7 +841,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectEntry {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -946,7 +946,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
 impl std::ops::Deref
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -955,7 +955,7 @@ for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObject
 )]
 impl std::ops::DerefMut
 for crate::System::Collections::Specialized::NameObjectCollectionBase_NameObjectKeysEnumerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -31,13 +31,13 @@ impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Long {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderController+Pool+Long")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Pool_SliderController_Long {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -114,13 +114,13 @@ impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Medium {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderController+Pool+Medium")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Pool_SliderController_Medium {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -197,13 +197,13 @@ impl std::ops::Deref for crate::GlobalNamespace::Pool_SliderController_Short {
     type Target = crate::Zenject::MonoMemoryPool_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SliderController>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderController+Pool+Short")]
 impl std::ops::DerefMut for crate::GlobalNamespace::Pool_SliderController_Short {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -340,13 +340,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SliderContro
 #[cfg(feature = "SliderController")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderController {
     type Target = crate::GlobalNamespace::SliderControllerBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1574,13 +1574,13 @@ for crate::GlobalNamespace::SliderController_Pool {
 #[cfg(feature = "SliderController+Pool")]
 impl std::ops::Deref for crate::GlobalNamespace::SliderController_Pool {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "SliderController+Pool")]
 impl std::ops::DerefMut for crate::GlobalNamespace::SliderController_Pool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

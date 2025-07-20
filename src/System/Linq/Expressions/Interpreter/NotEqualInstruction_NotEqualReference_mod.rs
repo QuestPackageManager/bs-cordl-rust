@@ -33,7 +33,7 @@ for crate::GlobalNamespace::NotEqualInstruction_NotEqualReference {
 )]
 impl std::ops::Deref for crate::GlobalNamespace::NotEqualInstruction_NotEqualReference {
     type Target = crate::System::Linq::Expressions::Interpreter::NotEqualInstruction;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -42,7 +42,7 @@ impl std::ops::Deref for crate::GlobalNamespace::NotEqualInstruction_NotEqualRef
 )]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::NotEqualInstruction_NotEqualReference {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

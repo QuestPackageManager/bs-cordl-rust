@@ -63,13 +63,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneMana
 #[cfg(feature = "OVRSceneManager")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneManager")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneManager {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -987,13 +987,13 @@ for crate::GlobalNamespace::OVRSceneManager_Classification {
 #[cfg(feature = "OVRSceneManager+Classification")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager_Classification {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneManager+Classification")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneManager_Classification {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1092,13 +1092,13 @@ for crate::GlobalNamespace::OVRSceneManager_Development {
 #[cfg(feature = "OVRSceneManager+Development")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager_Development {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneManager+Development")]
 impl std::ops::DerefMut for crate::GlobalNamespace::OVRSceneManager_Development {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1460,14 +1460,14 @@ for crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
 #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

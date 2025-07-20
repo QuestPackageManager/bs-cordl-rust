@@ -30,13 +30,13 @@ for crate::System::Reflection::RuntimeParameterInfo {
 #[cfg(feature = "System+Reflection+RuntimeParameterInfo")]
 impl std::ops::Deref for crate::System::Reflection::RuntimeParameterInfo {
     type Target = crate::System::Reflection::ParameterInfo;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Reflection+RuntimeParameterInfo")]
 impl std::ops::DerefMut for crate::System::Reflection::RuntimeParameterInfo {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

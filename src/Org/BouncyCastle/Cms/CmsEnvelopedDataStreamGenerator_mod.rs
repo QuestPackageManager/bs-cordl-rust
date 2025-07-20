@@ -33,14 +33,14 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
     type Target = crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedDataStreamGenerator")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -415,7 +415,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedD
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -424,7 +424,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedD
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator_CmsEnvelopedDataOutputStream {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

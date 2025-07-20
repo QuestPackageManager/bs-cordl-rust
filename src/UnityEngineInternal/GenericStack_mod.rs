@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngineInternal::GenericS
 #[cfg(feature = "UnityEngineInternal+GenericStack")]
 impl std::ops::Deref for crate::UnityEngineInternal::GenericStack {
     type Target = crate::System::Collections::Stack;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngineInternal+GenericStack")]
 impl std::ops::DerefMut for crate::UnityEngineInternal::GenericStack {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -140,13 +140,13 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverCount")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRDriverManager__GetDriverCount {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -305,13 +305,13 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverHandle")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRDriverManager__GetDriverHandle {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -483,13 +483,13 @@ for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 impl std::ops::Deref for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
     type Target = crate::System::MulticastDelegate;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "OVR+OpenVR+IVRDriverManager+_GetDriverName")]
 impl std::ops::DerefMut for crate::OVR::OpenVR::IVRDriverManager__GetDriverName {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -32,14 +32,14 @@ for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBAFloat {
     type Target = crate::UnityEngine::UIElements::UIR::ShaderInfoStorage_1<
         crate::UnityEngine::Color,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+ShaderInfoStorageRGBAFloat")]
 impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::ShaderInfoStorageRGBAFloat {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

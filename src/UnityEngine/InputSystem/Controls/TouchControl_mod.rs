@@ -70,13 +70,13 @@ impl std::ops::Deref for crate::UnityEngine::InputSystem::Controls::TouchControl
     type Target = crate::UnityEngine::InputSystem::InputControl_1<
         crate::UnityEngine::InputSystem::LowLevel::TouchState,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+Controls+TouchControl")]
 impl std::ops::DerefMut for crate::UnityEngine::InputSystem::Controls::TouchControl {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

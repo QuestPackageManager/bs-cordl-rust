@@ -27,13 +27,13 @@ for crate::GlobalNamespace::LeaderboardViewController {
 #[cfg(feature = "LeaderboardViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardViewController {
     type Target = crate::HMUI::ViewController;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "LeaderboardViewController")]
 impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardViewController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

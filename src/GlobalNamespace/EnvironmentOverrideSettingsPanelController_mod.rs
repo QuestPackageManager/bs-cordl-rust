@@ -51,14 +51,14 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
 impl std::ops::Deref
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
     type Target = crate::UnityEngine::MonoBehaviour;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -311,14 +311,14 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements 
 impl std::ops::Deref
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -27,13 +27,13 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration {
 #[cfg(feature = "GameplayModifiersConfiguration")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplayModifiersConfiguration {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration")]
 impl std::ops::DerefMut for crate::GlobalNamespace::GameplayModifiersConfiguration {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -86,14 +86,14 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration+CutAngleTolerance")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayModifiersConfiguration_CutAngleTolerance {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -142,14 +142,14 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration+NoteUniformScale")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayModifiersConfiguration_NoteUniformScale {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -198,14 +198,14 @@ for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
 impl std::ops::Deref
 for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "GameplayModifiersConfiguration+SongSpeed")]
 impl std::ops::DerefMut
 for crate::GlobalNamespace::GameplayModifiersConfiguration_SongSpeed {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

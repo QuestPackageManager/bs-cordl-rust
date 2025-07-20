@@ -31,14 +31,14 @@ impl std::ops::Deref for crate::Unity::Properties::Internal::SystemVersionProper
     type Target = crate::Unity::Properties::ContainerPropertyBag_1<
         quest_hook::libil2cpp::Gc<crate::System::Version>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -128,14 +128,14 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+BuildProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_BuildProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -241,14 +241,14 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MajorProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MajorProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -354,14 +354,14 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+MinorProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_MinorProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -467,14 +467,14 @@ for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionPropert
         quest_hook::libil2cpp::Gc<crate::System::Version>,
         i32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Properties+Internal+SystemVersionPropertyBag+RevisionProperty")]
 impl std::ops::DerefMut
 for crate::Unity::Properties::Internal::SystemVersionPropertyBag_RevisionProperty {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

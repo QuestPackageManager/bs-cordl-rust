@@ -28,14 +28,14 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+SceneProvider")]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -396,7 +396,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -405,7 +405,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Sce
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_SceneOp {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -923,7 +923,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Unl
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
         crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -932,7 +932,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_Unl
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::ResourceManagement::ResourceProviders::SceneProvider_UnloadSceneOp {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

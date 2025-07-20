@@ -27,13 +27,13 @@ for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
     type Target = crate::Org::BouncyCastle::Asn1::BerGenerator;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -250,14 +250,14 @@ for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator_BufferedBerOctetStre
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator_BufferedBerOctetStream {
     type Target = crate::Org::BouncyCastle::Utilities::IO::BaseOutputStream;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+BerOctetStringGenerator+BufferedBerOctetStream")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Asn1::BerOctetStringGenerator_BufferedBerOctetStream {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

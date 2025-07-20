@@ -26,13 +26,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::DivideByZeroException
 #[cfg(feature = "System+DivideByZeroException")]
 impl std::ops::Deref for crate::System::DivideByZeroException {
     type Target = crate::System::ArithmeticException;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+DivideByZeroException")]
 impl std::ops::DerefMut for crate::System::DivideByZeroException {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

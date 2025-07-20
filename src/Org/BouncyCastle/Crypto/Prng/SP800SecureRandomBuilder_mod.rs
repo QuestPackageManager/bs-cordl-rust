@@ -39,14 +39,14 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -460,14 +460,14 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProv
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+SP800SecureRandomBuilder+CtrDrbgProvider")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_CtrDrbgProvider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -656,7 +656,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -665,7 +665,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgPro
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HMacDrbgProvider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -843,7 +843,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPro
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -852,7 +852,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgPro
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Crypto::Prng::SP800SecureRandomBuilder_HashDrbgProvider {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

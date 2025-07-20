@@ -34,13 +34,13 @@ for crate::System::Xml::Schema::XmlSchemaSimpleContentExtension {
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleContentExtension")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSimpleContentExtension {
     type Target = crate::System::Xml::Schema::XmlSchemaContent;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSimpleContentExtension")]
 impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaSimpleContentExtension {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

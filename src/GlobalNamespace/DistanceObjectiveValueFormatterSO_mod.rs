@@ -27,13 +27,13 @@ for crate::GlobalNamespace::DistanceObjectiveValueFormatterSO {
 #[cfg(feature = "DistanceObjectiveValueFormatterSO")]
 impl std::ops::Deref for crate::GlobalNamespace::DistanceObjectiveValueFormatterSO {
     type Target = crate::GlobalNamespace::ObjectiveValueFormatterSO;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "DistanceObjectiveValueFormatterSO")]
 impl std::ops::DerefMut for crate::GlobalNamespace::DistanceObjectiveValueFormatterSO {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -27,13 +27,13 @@ for crate::MS::Internal::Xml::Cache::XPathNodeHelper {
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeHelper")]
 impl std::ops::Deref for crate::MS::Internal::Xml::Cache::XPathNodeHelper {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeHelper")]
 impl std::ops::DerefMut for crate::MS::Internal::Xml::Cache::XPathNodeHelper {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

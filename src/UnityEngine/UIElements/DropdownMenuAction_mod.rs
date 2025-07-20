@@ -50,13 +50,13 @@ for crate::UnityEngine::UIElements::DropdownMenuAction {
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownMenuAction {
     type Target = crate::UnityEngine::UIElements::DropdownMenuItem;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownMenuAction {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -74,7 +74,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
     TValue,
 > {
     type Target = crate::Unity::Properties::PropertyBag_1<TDictionary>;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -89,7 +89,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3<
     TKey,
     TValue,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -303,7 +303,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProper
         TDictionary,
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -318,7 +318,7 @@ for crate::Unity::Properties::KeyValueCollectionPropertyBag_3_KeyValuePairProper
     TKey,
     TValue,
 > {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

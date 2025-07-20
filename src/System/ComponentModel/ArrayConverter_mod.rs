@@ -27,13 +27,13 @@ for crate::System::ComponentModel::ArrayConverter {
 #[cfg(feature = "System+ComponentModel+ArrayConverter")]
 impl std::ops::Deref for crate::System::ComponentModel::ArrayConverter {
     type Target = crate::System::ComponentModel::CollectionConverter;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter")]
 impl std::ops::DerefMut for crate::System::ComponentModel::ArrayConverter {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -233,14 +233,14 @@ for crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
 impl std::ops::Deref
 for crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
     type Target = crate::System::ComponentModel::TypeConverter_SimplePropertyDescriptor;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+ComponentModel+ArrayConverter+ArrayPropertyDescriptor")]
 impl std::ops::DerefMut
 for crate::System::ComponentModel::ArrayConverter_ArrayPropertyDescriptor {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

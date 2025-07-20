@@ -27,13 +27,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::HoudiniEngineUnity::JSONBool 
 #[cfg(feature = "HoudiniEngineUnity+JSONBool")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::JSONBool {
     type Target = crate::HoudiniEngineUnity::JSONNode;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "HoudiniEngineUnity+JSONBool")]
 impl std::ops::DerefMut for crate::HoudiniEngineUnity::JSONBool {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

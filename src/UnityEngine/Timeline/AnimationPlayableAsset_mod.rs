@@ -38,13 +38,13 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset {
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AnimationPlayableAsset {
     type Target = crate::UnityEngine::Playables::PlayableAsset;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationPlayableAsset")]
 impl std::ops::DerefMut for crate::UnityEngine::Timeline::AnimationPlayableAsset {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -1026,7 +1026,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetU
 impl std::ops::Deref
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -1035,7 +1035,7 @@ for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetU
 )]
 impl std::ops::DerefMut
 for crate::UnityEngine::Timeline::AnimationPlayableAsset_AnimationPlayableAssetUpgrade {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

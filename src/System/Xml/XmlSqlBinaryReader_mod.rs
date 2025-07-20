@@ -92,13 +92,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlSqlBinaryRead
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader")]
 impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader {
     type Target = crate::System::Xml::XmlReader;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader")]
 impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3475,13 +3475,13 @@ for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
 impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NamespaceDecl")]
 impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader_NamespaceDecl {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -3606,13 +3606,13 @@ for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
 impl std::ops::Deref for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "System+Xml+XmlSqlBinaryReader+NestedBinXml")]
 impl std::ops::DerefMut for crate::System::Xml::XmlSqlBinaryReader_NestedBinXml {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

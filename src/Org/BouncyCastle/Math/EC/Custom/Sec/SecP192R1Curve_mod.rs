@@ -31,14 +31,14 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve {
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractFpCurve;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Custom+Sec+SecP192R1Curve")]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -478,7 +478,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve_SecP192R1Loo
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve_SecP192R1LookupTable {
     type Target = crate::Org::BouncyCastle::Math::EC::AbstractECLookupTable;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
@@ -487,7 +487,7 @@ for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve_SecP192R1Loo
 )]
 impl std::ops::DerefMut
 for crate::Org::BouncyCastle::Math::EC::Custom::Sec::SecP192R1Curve_SecP192R1LookupTable {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

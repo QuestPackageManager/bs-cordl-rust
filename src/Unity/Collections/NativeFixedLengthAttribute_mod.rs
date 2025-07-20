@@ -27,13 +27,13 @@ for crate::Unity::Collections::NativeFixedLengthAttribute {
 #[cfg(feature = "Unity+Collections+NativeFixedLengthAttribute")]
 impl std::ops::Deref for crate::Unity::Collections::NativeFixedLengthAttribute {
     type Target = crate::System::Attribute;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Unity+Collections+NativeFixedLengthAttribute")]
 impl std::ops::DerefMut for crate::Unity::Collections::NativeFixedLengthAttribute {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

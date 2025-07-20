@@ -34,13 +34,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RectField {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FloatField>,
         f32,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RectField")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RectField {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -210,13 +210,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RectField_UxmlFactory {
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RectField>,
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::RectField_UxmlTraits>,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RectField+UxmlFactory")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RectField_UxmlFactory {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -305,13 +305,13 @@ impl std::ops::Deref for crate::UnityEngine::UIElements::RectField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
         crate::UnityEngine::Rect,
     >;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+RectField+UxmlTraits")]
 impl std::ops::DerefMut for crate::UnityEngine::UIElements::RectField_UxmlTraits {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

@@ -29,13 +29,13 @@ unsafe impl quest_hook::libil2cpp::Type for crate::Org::BouncyCastle::Ocsp::Sing
 #[cfg(feature = "Org+BouncyCastle+Ocsp+SingleResp")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::SingleResp {
     type Target = crate::Org::BouncyCastle::X509::X509ExtensionBase;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+SingleResp")]
 impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::SingleResp {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }

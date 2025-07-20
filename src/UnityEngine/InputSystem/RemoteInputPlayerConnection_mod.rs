@@ -40,14 +40,14 @@ for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
     type Target = crate::UnityEngine::ScriptableObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
@@ -619,14 +619,14 @@ for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
     type Target = quest_hook::libil2cpp::Il2CppObject;
-    fn deref(&self) -> &Self::Target {
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+InputSystem+RemoteInputPlayerConnection+Subscriber")]
 impl std::ops::DerefMut
 for crate::UnityEngine::InputSystem::RemoteInputPlayerConnection_Subscriber {
-    fn deref_mut(&mut self) -> &mut Self::Target {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
